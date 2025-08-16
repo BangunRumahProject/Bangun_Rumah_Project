@@ -4,10 +4,10 @@
         <div class="flex flex-col items-center mr-4 md:mr-8">
             {{-- Logo that changes based on scroll state --}}
             <div class="relative">
-                <img src="/img/logo-white-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300" id="logo-white">
-                <img src="/img/logo-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-dark">
+                <img src="/img/logo-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300" id="logo-dark">
+                <img src="/img/logo-white-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-white">
             </div>
-            <span class="font-bold text-[8px] md:text-[11px] text-yellow-400 text-center leading-tight">Bangun Rumah Project</span>
+            <span class="font-bold text-[8px] md:text-[11px] text-yellow-400 text-center leading-tight transition-colors duration-300" id="brand-text">Bangun Rumah Project</span>
         </div>
 
         {{-- Desktop Menu --}}

@@ -321,21 +321,19 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                             <!-- Advantage 1 -->
                             <div class="space-y-2 fade-in" data-delay="0.1">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Legalitas Terjamin
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                   Menjamin kepercayaan penuh dengan badan hukum resmi dalam setiap proyek.
                                 </p>
                             </div>
 
                             <!-- Advantage 2 -->
                             <div class="space-y-2 fade-in" data-delay="0.2">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Proses Kerja Terstandarisasi
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                   Setiap tahap pembangunan berjalan rapi, terukur, dan sesuai prosedur.
                                 </p>
                             </div>
                         </div>
@@ -344,21 +342,19 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                             <!-- Advantage 3 -->
                             <div class="space-y-2 fade-in" data-delay="0.3">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Kualitas Bersertifikat
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                    Tersertifikasi ISO 9001:2015 sebagai bukti standar internasional yang kami pegang.
                                 </p>
                             </div>
 
                             <!-- Advantage 4 -->
                             <div class="space-y-2 fade-in" data-delay="0.4">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Tim Profesional Handal
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                   Didukung tenaga ahli berpengalaman yang siap memberikan hasil terbaik.
                                 </p>
                             </div>
                         </div>
@@ -367,21 +363,19 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                             <!-- Advantage 5 -->
                             <div class="space-y-2 fade-in" data-delay="0.5">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Rekam Jejak Terbukti
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                    Berbagai proyek konstruksi dan desain sukses menjadi bukti dedikasi kami.
                                 </p>
                             </div>
 
                             <!-- Advantage 6 -->
                             <div class="space-y-2 fade-in" data-delay="0.6">
-                                <h3 class="text-base sm:text-lg font-semibold text-white">Lorem ipsum dolor sit amet,
+                                <h3 class="text-base sm:text-lg font-semibold text-white">Harga Transparan
                                 </h3>
                                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    tincidunt
+                                    Memberikan estimasi biaya yang jelas, tanpa biaya tersembunyi.
                                 </p>
                             </div>
                         </div>

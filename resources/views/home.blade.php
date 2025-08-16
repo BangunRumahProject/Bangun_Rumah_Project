@@ -1,17 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- Vertical Lines --}}
-<div class="fixed left-0 top-0 w-1 h-full bg-blue-500 z-10"></div>
-<div class="fixed right-0 top-0 w-1 h-full bg-blue-500 z-10"></div>
-
 {{-- Navbar --}}
 <x-navbar />
 
 {{-- Hero Section --}}
-<section id="home" class="pt-28 pb-0 bg-gradient-to-b from-black/80 to-transparent relative min-h-[500px] flex items-end" style="background:url('/img/hero-rumah.jpg') center/cover no-repeat;">
-    <div class="w-full bg-gradient-to-t from-black/80 to-transparent px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left">
-        <div class=" flex flex-col justify-center pb-16">
+<section id="home" class="pt-20 pb-0 relative min-h-screen flex items-center" style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/hero-rumah.jpg') center/cover no-repeat;">
+    <!-- Overlay untuk memastikan teks terbaca -->
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="w-full px-16 md:px-24 lg:px-32 pt-8 pb-8 text-left relative z-10">
+        <div class="flex flex-col justify-center">
         <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
             Bangun Rancang<br>Desain Rumah
         </h1>
@@ -23,10 +21,10 @@
 </section>
 
 {{-- Gradient Divider --}}
-<div class="h-12 w-full bg-gradient-to-b from-black to-transparent"></div>
+<div class="gradient-divider"></div>
 
 {{-- Section Project --}}
-<section id="profil" class="bg-gradient-to-b from-white to-gray-100 py-16">
+<section id="profil" class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-12">
     <div class="max-w-3xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
         <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=600&q=80" alt="Project" class="rounded-lg shadow-lg w-full max-w-xs hover:scale-110 transition-all duration-500 parallax-img animate-fade-in-left">
         <div class="flex flex-col items-center md:items-start">
@@ -40,7 +38,7 @@
 </section>
 
 {{-- Top Section (Dark Background) with Single Overlapping Image --}}
-<section class="pt-16 pb-16 bg-black relative min-h-screen mb-16 overflow-visible">
+<section class="py-12 bg-black relative min-h-screen overflow-visible">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row items-center relative">
         <!-- Gambar di kiri, portrait, overlap ke bawah -->
         <div class="w-full lg:w-1/3 flex-shrink-0 mb-12 lg:mb-0 lg:mr-12 relative">
@@ -61,7 +59,7 @@
                     <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan dengan presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap proyek yang dikerjakan.</p>
                 </div>
 
-                <div class="mb-12 text-center lg:text-left animate-fade-in-right delay-400">
+                <div class="mb-8 text-center lg:text-left animate-fade-in-right delay-400">
                     <a href="#kontak" class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all duration-300 font-bold text-base hover:scale-105 hover:shadow-xl">
                         KONSULTASI GRATIS SEKARANG
                     </a>
@@ -126,9 +124,9 @@
     </div>
 </section>
 {{-- Section Jasa-Jasa --}}
-<section class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-12 pl-0">
-        <div class="mb-16">
+<section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="mb-8">
             <h2 class="text-base md:text-lg font-bold text-gray-900 mb-4 text-justify max-w-2xl ml-auto">
                 Kami menyediakan jasa Kontraktor yang terpercaya agar pembangunan rumah lebih mudah dan sesuai yang diperlukan
             </h2>
@@ -142,43 +140,43 @@
             </div>
         </div>
         {{-- Services List --}}
-        <div id="service-list" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl ml-auto text-right">
-            <div class="space-y-4">
+        <div id="service-list" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl ml-auto text-right">
+            <div class="space-y-3">
                 <div class="service-item flex flex-col cursor-pointer border-b border-gray-200 rounded-lg p-0">
-                    <div class="flex items-center justify-between p-6 hover:bg-gray-50 transition duration-300 text-sm">
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-50 transition duration-300 text-sm">
                         <span class="font-semibold text-gray-800">Jasa Bangun Rumah</span>
                         <span class="text-2xl font-bold text-yellow-400">+</span>
                     </div>
-                    <div class="service-desc hidden px-6 pb-4 text-left text-gray-600 text-sm">
+                    <div class="service-desc hidden px-4 pb-4 text-left text-gray-600 text-sm">
                         Layanan pembangunan rumah dari awal hingga selesai, dengan tim profesional dan material berkualitas.
                     </div>
                 </div>
                 <div class="service-item flex flex-col cursor-pointer border-b border-gray-200 rounded-lg p-0">
-                    <div class="flex items-center justify-between p-6 hover:bg-gray-50 transition duration-300 text-sm">
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-50 transition duration-300 text-sm">
                         <span class="font-semibold text-gray-800">Jasa Renovasi Rumah</span>
                         <span class="text-2xl font-bold text-yellow-400">+</span>
                     </div>
-                    <div class="service-desc hidden px-6 pb-4 text-left text-gray-600 text-sm">
+                    <div class="service-desc hidden px-4 pb-4 text-left text-gray-600 text-sm">
                         Renovasi rumah lama menjadi baru, penambahan ruangan, perbaikan struktur, dan upgrade desain interior.
                     </div>
                 </div>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-3">
                 <div class="service-item flex flex-col cursor-pointer border-b border-gray-200 rounded-lg p-0">
-                    <div class="flex items-center justify-between p-6 hover:bg-gray-50 transition duration-300 text-sm">
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-50 transition duration-300 text-sm">
                         <span class="font-semibold text-gray-800">Jasa Desain Interior</span>
                         <span class="text-2xl font-bold text-yellow-400">+</span>
                     </div>
-                    <div class="service-desc hidden px-6 pb-4 text-left text-gray-600 text-sm">
+                    <div class="service-desc hidden px-4 pb-4 text-left text-gray-600 text-sm">
                         Desain interior rumah, apartemen, kantor, dan ruang usaha sesuai kebutuhan dan gaya Anda.
                     </div>
                 </div>
                 <div class="service-item flex flex-col cursor-pointer border-b border-gray-200 rounded-lg p-0">
-                    <div class="flex items-center justify-between p-6 hover:bg-gray-50 transition duration-300 text-sm">
+                    <div class="flex items-center justify-between p-4 hover:bg-gray-50 transition duration-300 text-sm">
                         <span class="font-semibold text-gray-800">Jasa Pembuatan RAB</span>
                         <span class="text-2xl font-bold text-yellow-400">+</span>
                     </div>
-                    <div class="service-desc hidden px-6 pb-4 text-left text-gray-600 text-sm">
+                    <div class="service-desc hidden px-4 pb-4 text-left text-gray-600 text-sm">
                         Pembuatan Rencana Anggaran Biaya (RAB) dan pengurusan dokumen PGB/IMB secara profesional dan transparan.
                     </div>
                 </div>
@@ -189,12 +187,12 @@
 
 {{-- Section Konsultasi dengan Gradient Background --}}
 {{-- Section Konsultasi dengan Gradient Background --}}
-<section class="py-20 bg-white">
+<section class="py-12 bg-gradient-to-b from-gray-50 to-white">
     <div class="max-w-7xl mx-auto">
         <div class="flex flex-col lg:flex-row items-stretch gap-0">
             <!-- Konten Kiri -->
             <div class="lg:w-2/5">
-                <div class="bg-gradient-to-r from-black via-gray-900 to-yellow-400 p-8 lg:p-12 h-full flex flex-col justify-center">
+                <div class="bg-gradient-to-br from-black via-gray-900 to-yellow-600 p-8 h-full flex flex-col justify-center">
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
                         Bangun Rumah,<br>Tanpa Ribet!
                     </h1>
@@ -209,7 +207,7 @@
 
             <!-- Form Kanan -->
             <div class="lg:w-3/5">
-                <div class="bg-white p-8 lg:p-12 h-full flex flex-col justify-center">
+                <div class="bg-white p-8 h-full flex flex-col justify-center shadow-lg">
 
                     {{-- Pesan sukses --}}
                     @if(session('success'))
@@ -270,10 +268,10 @@
 </section>
 
 {{-- Section Konten dengan Gambar --}}
-<section class="bg-white py-20">
+<section class="bg-gradient-to-b from-white to-gray-50 py-12">
     <div class="max-w-6xl mx-auto px-8">
-        <div class="text-center mb-16">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" alt="Modern Living Room" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl mb-12 hover:scale-105 transition parallax-img">
+        <div class="text-center mb-12">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" alt="Modern Living Room" class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl mb-8 hover:scale-105 transition parallax-img">
         </div>
 
         <div class="max-w-4xl mx-auto space-y-8 text-left">
@@ -293,7 +291,7 @@
 </section>
 
 {{-- Section Portfolio --}}
-<section id="portofolio" class="bg-black py-16 mt-32">
+<section id="portofolio" class="bg-black py-12">
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
             <div class="w-2/3">
@@ -328,10 +326,10 @@
 </section>
 
 {{-- Section FAQ --}}
-<section class="bg-white py-16">
+<section class="bg-gradient-to-b from-gray-50 to-white py-12">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
         <div>
-            <div class="bg-black rounded-lg p-8 mb-6">
+            <div class="bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-lg p-8 mb-6 shadow-lg">
                 <h2 class="text-2xl font-bold text-yellow-400 mb-2">Frequently Ask<br><span class="text-white">Question</span></h2>
                 <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                 <p class="text-gray-300 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
@@ -395,12 +393,12 @@
 </section>
 
 {{-- Section Artikel --}}
-<section class="bg-gray-100 py-16">
-    <div class="max-w-6xl mx-auto px-4 relative pb-14">
+<section class="bg-gradient-to-b from-gray-100 via-gray-50 to-white py-12">
+    <div class="max-w-6xl mx-auto px-4 relative pb-8">
         <h2 class="text-2xl font-bold mb-6">ARTIKEL</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @for($i=0;$i<3;$i++)
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition animate-fade-in-up">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition animate-fade-in-up">
                 <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Artikel" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
                 <div class="p-4">
                     <div class="font-bold mb-2">Pengaruh Penerimaan Bangunan pada Kamar Tidur</div>
@@ -431,61 +429,6 @@
 <script>
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initial navbar state check
-    const navbar = document.getElementById('main-navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('bg-white', 'shadow-lg');
-        navbar.classList.remove('bg-transparent');
-        // Change text colors when navbar becomes white
-        const navLinks = navbar.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.classList.remove('text-yellow-400');
-            link.classList.add('text-gray-800');
-        });
-        // Change logo text color
-        const logoText = navbar.querySelector('span');
-        if (logoText) {
-            logoText.classList.remove('text-yellow-400');
-            logoText.classList.add('text-gray-800');
-        }
-    }
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('main-navbar');
-        if (window.scrollY > 50) {
-            navbar.classList.add('bg-white', 'shadow-lg');
-            navbar.classList.remove('bg-transparent');
-            // Change text colors when navbar becomes white
-            const navLinks = navbar.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.classList.remove('text-yellow-400');
-                link.classList.add('text-gray-800');
-            });
-            // Change logo text color
-            const logoText = navbar.querySelector('span');
-            if (logoText) {
-                logoText.classList.remove('text-yellow-400');
-                logoText.classList.add('text-gray-800');
-            }
-        } else {
-            navbar.classList.remove('bg-white', 'shadow-lg');
-            navbar.classList.add('bg-transparent');
-            // Restore original colors
-            const navLinks = navbar.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.classList.add('text-yellow-400');
-                link.classList.remove('text-gray-800');
-            });
-            // Restore logo text color
-            const logoText = navbar.querySelector('span');
-            if (logoText) {
-                logoText.classList.add('text-yellow-400');
-                logoText.classList.remove('text-gray-800');
-            }
-        }
-    });
-
     // Counter animation
     function animateCounter(element, target, duration = 2000) {
         let start = 0;
@@ -654,16 +597,6 @@ style.textContent = `
         transform: scale(1.05);
     }
 
-    /* Navbar transition */
-    #main-navbar {
-        transition: all 0.3s ease;
-    }
-
-    #main-navbar.bg-white {
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.95) !important;
-    }
-
     /* Counter animation */
     .counter {
         transition: all 0.3s ease;
@@ -688,6 +621,35 @@ style.textContent = `
     /* Ensure smooth scrolling */
     html {
         scroll-behavior: smooth;
+    }
+
+    /* Consistent section spacing */
+    section {
+        margin: 0;
+        padding: 3rem 0;
+    }
+
+    /* Consistent container padding */
+    .max-w-6xl,
+    .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .max-w-6xl,
+        .max-w-7xl {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .max-w-6xl,
+        .max-w-7xl {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
     }
 `;
 document.head.appendChild(style);

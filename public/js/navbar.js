@@ -4,6 +4,7 @@ export class NavbarManager {
         this.navbar = null;
         this.logoWhite = null;
         this.logoDark = null;
+        this.brandText = null;
         this.navLinks = [];
         this.scrollThreshold = 30;
         this.isInitialized = false;
@@ -18,17 +19,27 @@ export class NavbarManager {
     // Initialize navbar functionality
     initialize() {
         if (this.isInitialized) {
+            console.log('Navbar already initialized');
             return;
         }
 
         this.navbar = document.getElementById('main-navbar');
         this.logoWhite = document.getElementById('logo-white');
         this.logoDark = document.getElementById('logo-dark');
+        this.brandText = document.getElementById('brand-text');
         this.navLinks = document.querySelectorAll('.nav-link');
         this.mobileMenu = document.getElementById('mobile-menu-overlay');
         this.mobileMenuContent = document.querySelector('.mobile-menu-content');
         this.mainBurgerBtn = document.getElementById('main-burger-btn');
         this.closeBurgerBtn = document.getElementById('close-burger-btn');
+
+        console.log('Navbar elements found:', {
+            navbar: !!this.navbar,
+            logoWhite: !!this.logoWhite,
+            logoDark: !!this.logoDark,
+            brandText: !!this.brandText,
+            navLinks: this.navLinks.length
+        });
 
         if (!this.navbar) {
             console.warn('Navbar element not found');
@@ -58,7 +69,7 @@ export class NavbarManager {
         });
 
         this.isInitialized = true;
-        console.log('Navbar manager initialized');
+        console.log('Navbar manager initialized successfully');
     }
 
     // Setup dropdown functionality
@@ -269,18 +280,94 @@ export class NavbarManager {
             const style = document.createElement('style');
             style.id = 'navbar-styles';
             style.textContent = `
-                .navbar-scrolled {
-                    background-color: white !important;
-                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+                /* Override any existing background styles with maximum specificity */
+                nav#main-navbar.navbar-scrolled,
+                nav#main-navbar.navbar-scrolled.bg-transparent,
+                nav#main-navbar.navbar-scrolled.flex,
+                nav#main-navbar.navbar-scrolled.items-center,
+                nav#main-navbar.navbar-scrolled.justify-between,
+                nav#main-navbar.navbar-scrolled.px-4,
+                nav#main-navbar.navbar-scrolled.md\\:px-8,
+                nav#main-navbar.navbar-scrolled.py-3,
+                nav#main-navbar.navbar-scrolled.fixed,
+                nav#main-navbar.navbar-scrolled.w-full,
+                nav#main-navbar.navbar-scrolled.z-20,
+                nav#main-navbar.navbar-scrolled.transition,
+                nav#main-navbar.navbar-scrolled.duration-300 {
+                    background-color: black !important;
+                    background: black !important;
+                    background-image: none !important;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
                 }
 
-                .navbar-scrolled .nav-link {
-                    color: #1f2937 !important;
+                /* Force black background with higher specificity */
+                nav#main-navbar.navbar-scrolled {
+                    background: black !important;
+                    background-color: black !important;
+                    background-image: none !important;
                 }
 
-                .navbar-scrolled .nav-link:hover {
-                    background-color: rgba(0, 0, 0, 0.1) !important;
-                    color: #1f2937 !important;
+                /* Additional specificity to override any Tailwind classes */
+                nav#main-navbar.navbar-scrolled.bg-transparent {
+                    background: black !important;
+                    background-color: black !important;
+                    background-image: none !important;
+                }
+
+                /* Override any existing background styles */
+                #main-navbar.navbar-scrolled {
+                    background: black !important;
+                    background-color: black !important;
+                    background-image: none !important;
+                }
+
+                /* Force black background with higher specificity */
+                nav#main-navbar.navbar-scrolled {
+                    background: black !important;
+                    background-color: black !important;
+                    background-image: none !important;
+                }
+
+                /* Additional specificity to override any Tailwind classes */
+                nav#main-navbar.navbar-scrolled.bg-transparent {
+                    background: black !important;
+                    background-color: black !important;
+                    background-image: none !important;
+                }
+
+                nav#main-navbar.navbar-scrolled .nav-link {
+                    color: white !important;
+                }
+
+                nav#main-navbar.navbar-scrolled .nav-link:hover {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                    color: white !important;
+                }
+
+                nav#main-navbar.navbar-scrolled #brand-text {
+                    color: white !important;
+                }
+
+                nav#main-navbar.navbar-scrolled #main-burger-btn {
+                    color: white !important;
+                }
+
+                nav#main-navbar.navbar-scrolled #main-burger-btn:hover {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                }
+
+                /* Ensure transparent background when not scrolled */
+                nav#main-navbar:not(.navbar-scrolled) {
+                    background-color: transparent !important;
+                    background: transparent !important;
+                    background-image: none !important;
+                }
+
+                /* Force transparent background with higher specificity */
+                nav#main-navbar:not(.navbar-scrolled) {
+                    background: transparent !important;
+                    background-color: transparent !important;
+                    background-image: none !important;
                 }
 
                 .logo-container {
@@ -504,43 +591,71 @@ export class NavbarManager {
                 }
             `;
             document.head.appendChild(style);
+            console.log('Navbar styles added successfully');
         }
     }
 
     // Update navbar based on scroll position
     updateNavbar() {
         if (!this.navbar || !this.logoWhite || !this.logoDark) {
+            console.warn('Navbar elements not found');
             return;
         }
 
+        console.log('Scroll position:', window.scrollY, 'Threshold:', this.scrollThreshold);
+
         if (window.scrollY > this.scrollThreshold) {
-            // Scrolled - show dark logo and change navbar style
-            this.logoWhite.style.opacity = '0';
-            this.logoDark.style.opacity = '1';
+            // Scrolled - show white logo and black navbar
+            this.logoWhite.style.opacity = '1';
+            this.logoDark.style.opacity = '0';
             
             // Add scrolled class to navbar
             this.navbar.classList.add('navbar-scrolled');
             this.navbar.classList.remove('bg-transparent');
             
-            // Update nav links
+            // Force black background with inline style
+            this.navbar.style.backgroundColor = 'black';
+            this.navbar.style.background = 'black';
+            
+            console.log('Navbar scrolled - background set to black');
+            
+            // Update nav links to white
             this.navLinks.forEach(link => {
                 link.classList.remove('text-yellow-400');
-                link.classList.add('text-gray-800');
+                link.classList.add('text-white');
             });
+
+            // Update brand text to white
+            if (this.brandText) {
+                this.brandText.classList.remove('text-yellow-400');
+                this.brandText.classList.add('text-white');
+            }
         } else {
-            // Not scrolled - show white logo and transparent navbar
-            this.logoWhite.style.opacity = '1';
-            this.logoDark.style.opacity = '0';
+            // Not scrolled - show dark logo and transparent navbar
+            this.logoWhite.style.opacity = '0';
+            this.logoDark.style.opacity = '1';
             
             // Remove scrolled class from navbar
             this.navbar.classList.remove('navbar-scrolled');
             this.navbar.classList.add('bg-transparent');
             
-            // Update nav links
+            // Force transparent background with inline style
+            this.navbar.style.backgroundColor = 'transparent';
+            this.navbar.style.background = 'transparent';
+            
+            console.log('Navbar not scrolled - background set to transparent');
+            
+            // Update nav links to yellow
             this.navLinks.forEach(link => {
-                link.classList.remove('text-gray-800');
+                link.classList.remove('text-white');
                 link.classList.add('text-yellow-400');
             });
+
+            // Update brand text to yellow
+            if (this.brandText) {
+                this.brandText.classList.remove('text-white');
+                this.brandText.classList.add('text-yellow-400');
+            }
         }
     }
 
