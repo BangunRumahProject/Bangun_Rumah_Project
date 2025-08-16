@@ -14,50 +14,47 @@
 
 <body class="bg-black font-sans">
     <!-- Hero Section -->
-
     <!-- Section 1: Bangun Rumah Project -->
     <section class="relative w-full min-h-screen bg-gray-900 overflow-hidden">
         <!-- Background Image dengan Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-            style="background-image: url('{{ asset('image/Profile-background.png') }}');">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+            style="background-image: url('{{ asset('img/rumah1.jpg') }}');">
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/30"></div>
 
         <!-- Main Content Container -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh]">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start min-h-[80vh]">
 
                 <!-- Left Content - Text Section -->
-                <div class="space-y-4 sm:space-y-6 mb-8 lg:mb-0">
+                <div class="space-y-4 sm:space-y-6 mb-4 lg:mb-0 transform -translate-y-8 lg:-translate-y-12">
                     <!-- Main Title -->
                     <div class="space-y-2 sm:space-y-4">
                         <h1
-                            class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-yellow-400 leading-tight text-gradient">
+                            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl pt-16 font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
                             Bangun Rumah
                         </h1>
                         <h2
-                            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-yellow-400 leading-tight text-gradient">
+                            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
                             Project
                         </h2>
                     </div>
 
                     <!-- Description -->
                     <div class="space-y-4 sm:space-y-6 max-w-xl">
-                        <p class="text-white text-lg sm:text-xl lg:text-2xl leading-relaxed font-medium">
-                            Wujudkan hunian impian Anda dengan desain arsitektur modern yang memadukan
-                            estetika dan fungsionalitas. Setiap detail dirancang khusus untuk menciptakan
-                            ruang hidup yang nyaman dan berkelas.
+                        <p class="text-white text-lg sm:text-xl lg:text-2xl leading-relaxed font-medium drop-shadow-lg animate-fade-in-up">
+                            Bangun Rumah Project menghadirkan layanan arsitektur
+                            dan konstruksi hunian modern dengan perpaduan estetika, fungsionalitas, dan kenyamanan yang sesuai kebutuhan Anda.
                         </p>
 
-                        <p class="text-gray-200 text-base sm:text-lg lg:text-xl leading-relaxed">
-                            Dari konsep awal hingga finishing, kami menghadirkan solusi konstruksi
-                            terpadu dengan standar kualitas tinggi. Tim profesional kami siap
-                            merealisasikan visi arsitektur yang sesuai dengan gaya hidup modern Anda.
+                        <p class="text-gray-200 text-base sm:text-lg lg:text-xl leading-relaxed drop-shadow-lg animate-fade-in-up">
+                           Dengan pendekatan end-to-end solution, mulai dari perencanaan konsep hingga tahap finishing,
+                           tim profesional kami menghadirkan standar kualitas tinggi untuk mewujudkan hunian impian yang selaras dengan gaya hidup modern.
                         </p>
                     </div>
 
                     <!-- CTA Button -->
-                    <div class="pt-4 sm:pt-6">
+                    <div class="pt-2 sm:pt-4 drop-shadow-lg animate-fade-in-up">
                         <a href="#"
                             class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-xl btn-hover magnetic">
                             <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" fill="none" stroke="currentColor"
@@ -74,54 +71,54 @@
                 </div>
 
                 <!-- Right Content - Image Gallery -->
-                <div class="relative mt-8 lg:mt-0">
+                <div class="relative mt-8 lg:mt-0 ">
                     <!-- Main Container untuk Gallery -->
                     <div class="grid grid-cols-2 gap-2 sm:gap-3 max-w-sm sm:max-w-md mx-auto lg:max-w-lg">
 
                         <!-- Column 1 (Left) -->
-                        <div class="space-y-2 sm:space-y-3">
+                        <div class="space-y-2 sm:space-y-3 drop-shadow-lg animate-fade-in-left">
                             <!-- Image 1 - Large rectangular -->
                             <div
                                 class="aspect-[4/3] bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image1.png') }}" alt="Modern House Design 1"
+                                <img src="{{ asset('img/45ab47b1-71b8-4203-8cd2-fa72b28e65c7.jpg') }}" alt="Modern House Design 1"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
 
                             <!-- Image 2 - Square -->
                             <div
                                 class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image2.png') }}" alt="Modern House Design 2"
+                                <img src="{{ asset('img/69fef66e-929c-4bf9-b1f1-67678a6726aa.jpg') }}" alt="Modern House Design 2"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
 
                             <!-- Image 3 - Square -->
                             <div
                                 class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image3.png') }}" alt="Modern House Design 3"
+                                <img src="{{ asset('img/95f1baeb-9961-4d57-bda6-0baa36a9ce53.jpg') }}" alt="Modern House Design 3"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
                         </div>
 
                         <!-- Column 2 (Right) -->
-                        <div class="space-y-2 sm:space-y-3 pt-4 sm:pt-8">
+                        <div class="space-y-2 sm:space-y-3 pt-4 sm:pt-8 drop-shadow-lg animate-fade-in-right">
                             <!-- Image 4 - Square -->
                             <div
                                 class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image4.png') }}" alt="Modern House Design 4"
+                                <img src="{{ asset('img/2740527b-ee68-4197-abc5-b73893e2ee1f.jpg') }}" alt="Modern House Design 4"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
 
                             <!-- Image 5 - Square -->
                             <div
                                 class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image5.png') }}" alt="Modern House Design 5"
+                                <img src="{{ asset('img/rumah2.jpg') }}" alt="Modern House Design 5"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
 
                             <!-- Image 6 - Tall rectangular -->
                             <div
                                 class="aspect-[3/4] bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                                <img src="{{ asset('image/image6.png') }}" alt="Modern House Design 6"
+                                <img src="{{ asset('img/f24c142a-50e3-4f8d-bf8e-866d49e9d684.jpg') }}" alt="Modern House Design 6"
                                     class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                             </div>
                         </div>
@@ -208,10 +205,9 @@
                     <!-- Description -->
                     <div class="space-y-4 max-w-lg mx-auto lg:mx-0">
                         <p class="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Fusce ornare eget lectus ut fermentum. Ut lobortis
-                            blandit tempor. Mauris rutrum erat ac velit convallis, et
-                            mattis ante tincidunt.
+                            Lebih dari seratus proyek telah kami selesaikan dengan hasil memuaskan.
+                            Setiap pembangunan dikerjakan dengan perencanaan matang, material berkualitas, dan sentuhan desain modern.
+                            Kepercayaan klien menjadi bukti komitmen kami dalam mewujudkan hunian yang nyaman, fungsional, dan berkelas.
                         </p>
                     </div>
 
@@ -239,12 +235,11 @@
                             Rencana Besar Di <span class="text-yellow-400">Masa Depan</span>
                         </h2>
                         <p class="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum.
-                            Ut lobortis blandit tempor. Mauris rutrum erat ac velit convallis, et mattis ante tincidunt.
-                            Pellentesque rhoncus rutrum tellus ac convallis, sit bibendum orci. vulputate. Aliquam
-                            ultricies at
-                            lectus vitae rhoncus mauris vitae ut consectetur.
+                            Kami percaya bahwa setiap hunian adalah investasi jangka panjang bagi masa depan.
+                            Dengan perencanaan yang matang, desain modern, serta konstruksi yang berkualitas, Bangun Rumah Project berkomitmen untuk menghadirkan karya arsitektur yang tidak hanya indah dipandang,
+                            tetapi juga fungsional dan tahan lama.
+                            Visi kami adalah menciptakan ruang hidup yang mampu mendukung
+                            gaya hidup modern sekaligus memberikan kenyamanan bagi generasi sekarang dan mendatang.
                         </p>
                     </div>
 
@@ -258,8 +253,7 @@
                             <div class="flex items-start space-x-3">
                                 <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"></div>
                                 <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    torctor.
+                                    Setiap proyek dijalankan dengan transparansi dan kepercayaan, memastikan klien merasa tenang karena semua proses dikerjakan sesuai kesepakatan.
                                 </p>
                             </div>
 
@@ -267,8 +261,7 @@
                                 <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
                                     style="animation-delay: 0.5s;"></div>
                                 <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    torctor.
+                                    Kami mempunyai Tim yang terdiri dari tenaga ahli berpengalaman yang bekerja dengan standar tinggi, mulai dari perencanaan hingga finishing.
                                 </p>
                             </div>
 
@@ -276,8 +269,7 @@
                                 <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
                                     style="animation-delay: 1s;"></div>
                                 <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                                    torctor.
+                                    Material pilihan dan pengerjaan yang detail menjadi prioritas kami, agar hunian Anda kokoh, nyaman, dan tahan lama.
                                 </p>
                             </div>
                         </div>
