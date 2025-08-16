@@ -281,4 +281,138 @@
             document.body.classList.add('animations-ready');
         }, 100);
     });
+    const style = document.createElement('style');
+    style.textContent = `
+    /* Initial state for animated elements */
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right {
+        opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .animate-fade-in-left {
+        animation: fadeInLeft 1s ease-out forwards;
+    }
+
+    .animate-fade-in-right {
+        animation: fadeInRight 1s ease-out forwards;
+    }
+
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+        animation-delay: 0.3s;
+    }
+
+    .delay-400 {
+        animation-delay: 0.4s;
+    }
+
+    .delay-500 {
+        animation-delay: 0.5s;
+    }
+
+    .delay-600 {
+        animation-delay: 0.6s;
+    }
+
+    .delay-700 {
+        animation-delay: 0.7s;
+    }
+
+    .delay-800 {
+        animation-delay: 0.8s;
+    }
+
+    /* Smooth transitions for all interactive elements */
+    .hover-scale,
+    .parallax-img,
+    .nav-link,
+    button,
+    a {
+        transition: all 0.3s ease;
+    }
+
+    .hover-scale:hover,
+    .parallax-img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Navbar transition */
+    #main-navbar {
+        transition: all 0.3s ease;
+    }
+
+    #main-navbar.bg-white {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.95) !important;
+    }
+
+    /* Counter animation */
+    .counter {
+        transition: all 0.3s ease;
+    }
+
+    /* Service items hover effect */
+    .service-item {
+        transition: all 0.3s ease;
+    }
+
+    .service-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Button hover effects */
+    .bg-yellow-400:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+    }
+
+    /* Ensure smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+`;
+document.head.appendChild(style);
+
 </script>
