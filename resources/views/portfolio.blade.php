@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
+@section('title', 'Portfolio - Bangun Rumah Project')
+
+@section('styles')
+@include('components.styles')
+@endsection
+
 @section('content')
-    {{-- Vertical Lines --}}
-    <div class="fixed left-0 top-0 w-1 h-full bg-blue-500 z-10"></div>
-    <div class="fixed right-0 top-0 w-1 h-full bg-blue-500 z-10"></div>
-
-    {{-- Navbar --}}
-    <x-navbar />
-
+@include('components.navbar')
     {{-- Hero Section --}}
     <section class="pt-28 pb-16 bg-black relative min-h-[400px] flex items-end">
         <div class="w-full px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left">
@@ -541,4 +541,10 @@
             opacity: 1;
         }
     </style>
+@include('components.footer')
 @endsection
+
+@section('scripts')
+@include('components.scripts')
+@endsection
+

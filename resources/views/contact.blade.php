@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
-@section('content')
-<x-navbar />
+@section('title', 'Contact - Bangun Rumah Project')
 
+@section('styles')
+@include('components.styles')
+@endsection
+
+@section('content')
+@include('components.navbar')
 {{-- Hero Section --}}
 <section class="pt-24 pb-16 relative min-h-screen flex items-center" style="background:url('/img/hero-contact.jpg') center/cover no-repeat;">
     {{-- Overlay hitam transparan --}}
@@ -126,4 +131,10 @@
 import { mapManager } from '/js/map.js';
 // Map functionality is now handled by the map module
 </script>
+@include('components.footer')
 @endsection
+
+@section('scripts')
+@include('components.scripts')
+@endsection
+

@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan Pembangunan & Renovasi Rumah - Bangun Rancang Desain Rumah</title>
-    @extends('layouts.app')
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @include('components.styles')
-</head>
+@section('title', 'Contact - Bangun Rumah Project')
+
+@section('styles')
+@include('components.styles')
+@endsection
+
 @section('content')
-<x-navbar />
+@include('components.navbar')
 
 <body class="bg-black font-sans">
     <!-- Hero Section -->
@@ -880,3 +877,9 @@
 </body>
 
 </html>
+@include('components.footer')
+@endsection
+
+@section('scripts')
+@include('components.scripts')
+@endsection
