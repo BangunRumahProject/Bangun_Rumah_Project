@@ -113,6 +113,10 @@
         });
 
         // Enhanced navbar scroll effect with smooth transitions
+        // NOTE: Navbar functionality is now handled by navbar.js module
+        // This section has been disabled to prevent conflicts
+        
+        /*
         let lastScrollY = window.scrollY;
         const navbar = document.getElementById('navbar');
         const links = document.querySelectorAll('.nav-link');
@@ -156,6 +160,7 @@
 
             lastScrollY = currentScrollY;
         });
+        */
 
         // Dropdown toggle with enhanced animation
         const layananBtn = document.getElementById('layanan-menu-btn');

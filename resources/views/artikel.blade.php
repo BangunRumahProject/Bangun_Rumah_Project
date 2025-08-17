@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'Artikel - Bangun Rumah Project')
+
+@section('styles')
+@include('components.styles')
+@endsection 
+
 @section('content')
-{{-- Include Navbar Component --}}
 @include('components.navbar')
 <script src="https://unpkg.com/alpinejs" defer></script>
 <script type="module">
@@ -173,6 +178,9 @@
     </div>
 
     <!-- Include Footer Component -->
-    @include('components.footer')
-</div>
+   @include('components.footer')
+@endsection
+
+@section('scripts')
+@include('components.scripts')
 @endsection

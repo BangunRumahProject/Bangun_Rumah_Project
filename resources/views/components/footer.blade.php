@@ -11,27 +11,54 @@
             <!-- Left Column - About Info -->
             <div class="text-left">
                 <div class="text-white text-base mb-4 leading-relaxed">
-                    Bangunrumahproject.com by Kontraktor bla bla menerapkan konsep arsitektur yang rama lingkungan dengan motto
+                Bangunrumahproject.com bekerja dalam satu kendali bersama CV Aura Arsitektur, menyatukan keahlian desain dan konstruksi untuk hunian impian Anda.
                 </div>
                 <div class="text-gray-300 text-sm mb-2 leading-relaxed">
-                    Perumahan Pns, Blok A7, RT.400/RW.003, Kendari, Kec. Senga Rimur, Kota bla bla, Sulawesi Tenggara - 12114
+                Bumi Punggolaka Indah, Blok B18, Lalodati, Kec. Puuwatu, Kota Kendari, Sulawesi Tenggara 93112
                 </div>
                 <div class="text-gray-300 text-sm mb-4 leading-relaxed">
-                    Jam Operasional: Sen - Sab | 9:00 - 17:00 WIB
+                    Jam Operasional: Sen - Sab | 8.00 - 18.00 WITA
                 </div>
             </div>
 
-            <!-- Right Column - Services -->
+            <!-- Right Column - Services Buttons -->
             <div class="text-right">
-                <div class="text-white text-base font-semibold mb-2">JASA BANGUN & RENOVASI RUMAH</div>
-                <div class="text-white text-base font-semibold mb-2">JASA DESAIN INTERIOR</div>
-                <div class="text-white text-base font-semibold">JASA PEMBUATAN RAB & PENGURUSAN PGB/IMB</div>
+                <h3 class="text-white text-lg font-bold mb-4">Layanan Kami</h3>
+                <div class="space-y-3">
+                    <a href="/services1" 
+                       class="inline-block text-white font-semibold text-sm hover:text-yellow-400 transition-all duration-300 transform hover:scale-105 group cursor-pointer">
+                        <div class="flex items-center justify-end gap-2">
+                            <span>JASA BANGUN & RENOVASI RUMAH</span>
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="/services3" 
+                       class="inline-block text-white font-semibold text-sm hover:text-yellow-400 transition-all duration-300 transform hover:scale-105 group cursor-pointer">
+                        <div class="flex items-center justify-end gap-2">
+                            <span>JASA DESAIN INTERIOR</span>
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="/services2" 
+                       class="inline-block text-white font-semibold text-sm hover:text-yellow-400 transition-all duration-300 transform hover:scale-105 group cursor-pointer">
+                        <div class="flex items-center justify-end gap-2">
+                            <span>JASA PEMBUATAN RAB & PENGURUSAN PBG/IMB</span>
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- Contact Section -->
         <div class="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-            <a href="https://wa.me/628123456789" class="border-2 border-yellow-400 text-yellow-400 font-semibold px-6 py-2 rounded text-center hover:bg-yellow-400 hover:text-black transition w-full md:w-auto">
+            <a href="https://wa.me/6285333353609" class="border-2 border-yellow-400 text-yellow-400 font-semibold px-6 py-2 rounded text-center hover:bg-yellow-400 hover:text-black transition w-full md:w-auto">
                 Hubungi Kami Melalui Whatsapp
             </a>
             <span class="text-yellow-400 font-semibold text-center">bangunrumahProject@gmail.com</span>
@@ -39,23 +66,11 @@
 
         <!-- Social Media Icons -->
         <div class="flex items-center space-x-5 justify-start mb-6 text-white">
-            <a href="#" aria-label="Instagram" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
+            <a href="https://www.instagram.com/bangunrumah.project?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
                 <i class="fab fa-instagram text-xl"></i>
             </a>
-            <a href="#" aria-label="Facebook" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
-                <i class="fab fa-facebook text-xl"></i>
-            </a>
-            <a href="#" aria-label="YouTube" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
-                <i class="fab fa-youtube text-xl"></i>
-            </a>
-            <a href="#" aria-label="TikTok" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
+            <a href="https://www.tiktok.com/@bangunrumah.project?is_from_webapp=1&sender_device=pc" aria-label="TikTok" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
                 <i class="fab fa-tiktok text-xl"></i>
-            </a>
-            <a href="#" aria-label="X (Twitter)" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
-                <i class="fab fa-x-twitter text-xl"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="hover:text-yellow-400 transition" target="_blank" rel="noopener">
-                <i class="fab fa-linkedin text-xl"></i>
             </a>
         </div>
 

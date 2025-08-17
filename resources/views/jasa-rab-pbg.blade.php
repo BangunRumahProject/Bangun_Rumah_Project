@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title', 'Contact - Bangun Rumah Project')
+
+@section('styles')
+@include('components.styles')
+@endsection
+
 @section('content')
 @include('components.navbar')
 <div class="min-h-screen">
@@ -661,5 +667,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+@include('components.footer')
 @endsection
+
+@section('scripts')
+@include('components.scripts')
+@endsection
+

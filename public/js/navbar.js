@@ -46,6 +46,9 @@ export class NavbarManager {
             return;
         }
 
+        // Ensure navbar is properly positioned
+        this.stabilizeNavbar();
+
         // Add CSS classes for navbar scroll effects
         this.addNavbarStyles();
 
@@ -68,8 +71,35 @@ export class NavbarManager {
             this.handleOutsideClick(e);
         });
 
+        // Listen for page visibility changes to ensure navbar stability
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                this.stabilizeNavbar();
+            }
+        });
+
+        // Listen for window focus to ensure navbar stability
+        window.addEventListener('focus', () => {
+            this.stabilizeNavbar();
+        });
+
         this.isInitialized = true;
         console.log('Navbar manager initialized successfully');
+    }
+
+    // Stabilize navbar position
+    stabilizeNavbar() {
+        if (!this.navbar) return;
+        
+        // Ensure navbar is fixed at top
+        this.navbar.style.position = 'fixed';
+        this.navbar.style.top = '0';
+        this.navbar.style.left = '0';
+        this.navbar.style.right = '0';
+        this.navbar.style.transform = 'none';
+        this.navbar.style.zIndex = '50';
+        
+        console.log('Navbar position stabilized');
     }
 
     // Setup dropdown functionality
@@ -280,6 +310,16 @@ export class NavbarManager {
             const style = document.createElement('style');
             style.id = 'navbar-styles';
             style.textContent = `
+                /* Reset and base navbar styles */
+                nav#main-navbar {
+                    position: fixed !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    right: 0 !important;
+                    z-index: 50 !important;
+                    transition: all 0.3s ease-in-out !important;
+                }
+
                 /* Override any existing background styles with maximum specificity */
                 nav#main-navbar.navbar-scrolled,
                 nav#main-navbar.navbar-scrolled.bg-transparent,
@@ -376,6 +416,63 @@ export class NavbarManager {
 
                 .logo-container img {
                     transition: opacity 0.3s ease;
+                }
+
+                /* Active Navigation Indicator Styles */
+                .nav-link {
+                    position: relative;
+                    overflow: hidden;
+                    transition: all 0.3s ease-in-out !important;
+                }
+
+                .nav-indicator {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 3px;
+                    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+                    border-radius: 2px;
+                    transform: translateX(-50%);
+                    transition: width 0.3s ease-in-out;
+                    opacity: 0;
+                }
+
+                .nav-link.nav-active .nav-indicator {
+                    width: 80%;
+                    opacity: 1;
+                }
+
+                .nav-link.nav-active {
+                    background-color: rgba(245, 158, 11, 0.1) !important;
+                    border-radius: 8px;
+                    font-weight: 700;
+                    text-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+                }
+
+                /* Scrolled state active indicator */
+                nav#main-navbar.navbar-scrolled .nav-link.nav-active {
+                    background-color: rgba(255, 255, 255, 0.15) !important;
+                    color: #f59e0b !important;
+                    font-weight: 700;
+                }
+
+                nav#main-navbar.navbar-scrolled .nav-link.nav-active .nav-indicator {
+                    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+                }
+
+                /* Mobile Navigation Active Styles */
+                .mobile-nav-link.mobile-nav-active {
+                    background-color: #374151 !important;
+                    border-left: 4px solid #f59e0b !important;
+                    color: #f59e0b !important;
+                    font-weight: 600;
+                    transform: translateX(8px);
+                    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+                }
+
+                .mobile-nav-link.mobile-nav-active svg {
+                    color: #f59e0b !important;
                 }
 
                 /* Dropdown styles */
@@ -495,12 +592,6 @@ export class NavbarManager {
                     transform: translateX(8px);
                 }
 
-                /* Active state for mobile menu items */
-                .mobile-menu nav ul li a.active {
-                    background-color: #374151;
-                    border-left: 4px solid #f59e0b;
-                }
-
                 /* Mobile menu backdrop blur */
                 .mobile-menu:not(.hidden) {
                     backdrop-filter: blur(8px);
@@ -589,6 +680,44 @@ export class NavbarManager {
                     border-top: 1px solid #374151;
                     padding: 1.5rem;
                 }
+
+                /* Enhanced hover effects for desktop nav links */
+                .nav-link:hover .nav-indicator {
+                    width: 60%;
+                    opacity: 0.7;
+                }
+
+                .nav-link:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+                }
+
+                /* Active state animations */
+                .nav-link.nav-active {
+                    animation: activePulse 2s ease-in-out infinite;
+                }
+
+                @keyframes activePulse {
+                    0%, 100% {
+                        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+                    }
+                    50% {
+                        box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+                    }
+                }
+
+                /* Fix for navbar positioning issues */
+                nav#main-navbar {
+                    transform: none !important;
+                    will-change: auto;
+                }
+
+                /* Ensure smooth transitions */
+                nav#main-navbar * {
+                    transition-property: color, background-color, opacity, transform;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-in-out;
+                }
             `;
             document.head.appendChild(style);
             console.log('Navbar styles added successfully');
@@ -617,6 +746,10 @@ export class NavbarManager {
             this.navbar.style.backgroundColor = 'black';
             this.navbar.style.background = 'black';
             
+            // Ensure navbar stays in position
+            this.navbar.style.transform = 'none';
+            this.navbar.style.top = '0';
+            
             console.log('Navbar scrolled - background set to black');
             
             // Update nav links to white
@@ -642,6 +775,10 @@ export class NavbarManager {
             // Force transparent background with inline style
             this.navbar.style.backgroundColor = 'transparent';
             this.navbar.style.background = 'transparent';
+            
+            // Ensure navbar stays in position
+            this.navbar.style.transform = 'none';
+            this.navbar.style.top = '0';
             
             console.log('Navbar not scrolled - background set to transparent');
             

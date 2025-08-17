@@ -1,11 +1,16 @@
 @extends('layouts.app')
 
+@section('title', 'Home - Bangun Rumah Project')
+
+@section('styles')
+@include('components.styles')
+@endsection
+
 @section('content')
-{{-- Navbar --}}
-<x-navbar />
+@include('components.navbar')
 
 {{-- Hero Section --}}
-<section id="home" class="pt-20 pb-0 relative min-h-screen flex items-center" style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/hero-rumah.jpg') center/cover no-repeat;">
+<section id="home" class="pt-20 pb-0 relative min-h-screen flex items-center" style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/siang2.png') center -65px/cover no-repeat;">
     <!-- Overlay untuk memastikan teks terbaca -->
     <div class="absolute inset-0 bg-black/10"></div>
     <div class="w-full px-16 md:px-24 lg:px-32 pt-8 pb-8 text-left relative z-10">
@@ -654,4 +659,9 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 </script>
+@include('components.footer')
+@endsection
+
+@section('scripts')
+@include('components.scripts')
 @endsection
