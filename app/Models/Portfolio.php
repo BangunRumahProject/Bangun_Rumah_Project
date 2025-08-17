@@ -9,21 +9,25 @@ class Portfolio extends Model
     protected $fillable = [
         'title',
         'description',
-        'image',
+        'features',
+        'advantages',
         'category',
-        'location',
-        'year',
-        'area',
         'status',
+        'year',
+        'location',
+        'area',
+        'sort_order',
         'is_featured',
-        'sort_order'
+        'image',
     ];
 
     protected $casts = [
+        'features' => 'array',
+        'advantages' => 'array',
         'is_featured' => 'boolean',
         'area' => 'decimal:2',
         'year' => 'integer',
-        'sort_order' => 'integer'
+        'sort_order' => 'integer',
     ];
 
     public function scopeFeatured($query)

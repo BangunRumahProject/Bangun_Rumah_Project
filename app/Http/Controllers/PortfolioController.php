@@ -25,19 +25,61 @@ class PortfolioController extends Controller
     {
         try {
             $validated = $request->validate([
-                'title' => 'required|string|max:255',
-                'description' => 'required|string',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:10240', // 10MB
-                'category' => 'required|in:rumah,interior,eksterior',
-                'location' => 'nullable|string|max:255',
-                'year' => 'nullable|integer|min:1900|max:' . (date('Y') + 5),
-                'area' => 'nullable|numeric|min:0',
-                'status' => 'required|in:completed,ongoing,planning',
+                'title' => 'required|string|min:3|max:255',
+                'description' => 'required|string|min:10|max:2000',
+                'features' => 'nullable|array',
+                'features.*' => 'nullable|string|min:2|max:255',
+                'advantages' => 'nullable|array',
+                'advantages.*' => 'nullable|string|min:2|max:255',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+                'category' => 'required|string|in:rumah,interior,eksterior',
+                'status' => 'required|string|in:planning,ongoing,completed',
+                'year' => 'nullable|integer|min:1900|max:' . (date('Y') + 10),
+                'location' => 'nullable|string|min:2|max:255',
+                'area' => 'nullable|numeric|min:0.01|max:999999999.99',
+                'sort_order' => 'nullable|integer|max:999',
                 'is_featured' => 'boolean',
-                'sort_order' => 'nullable|integer|min:0',
-                'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:10240', // 10MB
-                'image_titles.*' => 'nullable|string|max:255',
-                'image_descriptions.*' => 'nullable|string'
+                'additional_images' => 'nullable|array',
+                'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+                'image_titles' => 'nullable|array',
+                'image_titles.*' => 'nullable|string|min:2|max:255',
+                'image_descriptions' => 'nullable|array',
+                'image_descriptions.*' => 'nullable|string|max:1000',
+            ], [
+                'title.required' => 'Judul portfolio wajib diisi',
+                'title.min' => 'Judul portfolio minimal 3 karakter',
+                'title.max' => 'Judul portfolio maksimal 255 karakter',
+                'description.required' => 'Deskripsi portfolio wajib diisi',
+                'description.min' => 'Deskripsi portfolio minimal 10 karakter',
+                'description.max' => 'Deskripsi portfolio maksimal 2000 karakter',
+                'features.*.min' => 'Fitur minimal 2 karakter',
+                'features.*.max' => 'Fitur maksimal 255 karakter',
+                'advantages.*.min' => 'Keunggulan minimal 2 karakter',
+                'advantages.*.max' => 'Keunggulan maksimal 255 karakter',
+                'image.required' => 'Gambar utama wajib diupload',
+                'image.image' => 'File harus berupa gambar',
+                'image.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau webp',
+                'image.max' => 'Ukuran gambar maksimal 10MB',
+                'category.required' => 'Kategori wajib dipilih',
+                'category.in' => 'Kategori tidak valid',
+                'status.required' => 'Status wajib dipilih',
+                'status.in' => 'Status tidak valid',
+                'year.integer' => 'Tahun harus berupa angka',
+                'year.min' => 'Tahun minimal 1900',
+                'year.max' => 'Tahun maksimal ' . (date('Y') + 10),
+                'location.min' => 'Lokasi minimal 2 karakter',
+                'location.max' => 'Lokasi maksimal 255 karakter',
+                'area.numeric' => 'Luas area harus berupa angka',
+                'area.min' => 'Luas area minimal 0.01',
+                'area.max' => 'Luas area maksimal 999,999,999.99',
+                'sort_order.integer' => 'Urutan harus berupa angka',
+                'sort_order.max' => 'Urutan maksimal 999',
+                'additional_images.*.image' => 'File harus berupa gambar',
+                'additional_images.*.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau webp',
+                'additional_images.*.max' => 'Ukuran gambar maksimal 10MB',
+                'image_titles.*.min' => 'Judul gambar minimal 2 karakter',
+                'image_titles.*.max' => 'Judul gambar maksimal 255 karakter',
+                'image_descriptions.*.max' => 'Deskripsi gambar maksimal 1000 karakter',
             ]);
 
             if ($request->hasFile('image')) {
@@ -68,13 +110,17 @@ class PortfolioController extends Controller
             }
 
             return redirect()->route('admin.portfolios.index')->with('success', 'Portfolio berhasil ditambahkan!');
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return redirect()->back()
+                ->withErrors($e->validator)
+                ->withInput();
         } catch (\Exception $e) {
             Log::error('Portfolio creation error: ' . $e->getMessage());
             Log::error('Request data: ' . json_encode($request->all()));
 
             return redirect()->back()
                 ->withInput()
-                ->with('error', 'Terjadi kesalahan: ' . $e->getMessage());
+                ->with('error', 'Terjadi kesalahan sistem: ' . $e->getMessage());
         }
     }
 
@@ -92,82 +138,143 @@ class PortfolioController extends Controller
 
     public function update(Request $request, string $id)
     {
-        $portfolio = Portfolio::findOrFail($id);
+        try {
+            $portfolio = Portfolio::findOrFail($id);
 
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:10240', // 10MB
-            'category' => 'required|in:rumah,interior,eksterior',
-            'location' => 'nullable|string|max:255',
-            'year' => 'nullable|integer|min:1900|max:' . (date('Y') + 5),
-            'area' => 'nullable|numeric|min:0',
-            'status' => 'required|in:completed,ongoing,planning',
-            'is_featured' => 'boolean',
-            'sort_order' => 'nullable|integer|min:0',
-            'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:10240', // 10MB
-            'image_titles.*' => 'nullable|string|max:255',
-            'image_descriptions.*' => 'nullable|string'
-        ]);
+            $validated = $request->validate([
+                'title' => 'required|string|min:3|max:255',
+                'description' => 'required|string|min:10|max:2000',
+                'features' => 'nullable|array',
+                'features.*' => 'nullable|string|min:2|max:255',
+                'advantages' => 'nullable|array',
+                'advantages.*' => 'nullable|string|min:2|max:255',
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+                'category' => 'required|string|in:rumah,interior,eksterior',
+                'status' => 'required|string|in:planning,ongoing,completed',
+                'year' => 'nullable|integer|min:1900|max:' . (date('Y') + 10),
+                'location' => 'nullable|string|min:2|max:255',
+                'area' => 'nullable|numeric|min:0.01|max:999999999.99',
+                'sort_order' => 'nullable|integer|max:999',
+                'is_featured' => 'boolean',
+                'additional_images' => 'nullable|array',
+                'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+                'image_titles' => 'nullable|array',
+                'image_titles.*' => 'nullable|string|min:2|max:255',
+                'image_descriptions' => 'nullable|array',
+                'image_descriptions.*' => 'nullable|string|max:1000',
+            ], [
+                'title.required' => 'Judul portfolio wajib diisi',
+                'title.min' => 'Judul portfolio minimal 3 karakter',
+                'title.max' => 'Judul portfolio maksimal 255 karakter',
+                'description.required' => 'Deskripsi portfolio wajib diisi',
+                'description.min' => 'Deskripsi portfolio minimal 10 karakter',
+                'description.max' => 'Deskripsi portfolio maksimal 2000 karakter',
+                'features.*.min' => 'Fitur minimal 2 karakter',
+                'features.*.max' => 'Fitur maksimal 255 karakter',
+                'advantages.*.min' => 'Keunggulan minimal 2 karakter',
+                'advantages.*.max' => 'Keunggulan maksimal 255 karakter',
+                'image.image' => 'File harus berupa gambar',
+                'image.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau webp',
+                'image.max' => 'Ukuran gambar maksimal 10MB',
+                'category.required' => 'Kategori wajib dipilih',
+                'category.in' => 'Kategori tidak valid',
+                'status.required' => 'Status wajib dipilih',
+                'status.in' => 'Status tidak valid',
+                'year.integer' => 'Tahun harus berupa angka',
+                'year.min' => 'Tahun minimal 1900',
+                'year.max' => 'Tahun maksimal ' . (date('Y') + 10),
+                'location.min' => 'Lokasi minimal 2 karakter',
+                'location.max' => 'Lokasi maksimal 255 karakter',
+                'area.numeric' => 'Luas area harus berupa angka',
+                'area.min' => 'Luas area minimal 0.01',
+                'area.max' => 'Luas area maksimal 999,999,999.99',
+                'sort_order.integer' => 'Urutan harus berupa angka',
+                'sort_order.max' => 'Urutan maksimal 999',
+                'additional_images.*.image' => 'File harus berupa gambar',
+                'additional_images.*.mimes' => 'Format gambar harus jpeg, png, jpg, gif, atau webp',
+                'additional_images.*.max' => 'Ukuran gambar maksimal 10MB',
+                'image_titles.*.min' => 'Judul gambar minimal 2 karakter',
+                'image_titles.*.max' => 'Judul gambar maksimal 255 karakter',
+                'image_descriptions.*.max' => 'Deskripsi gambar maksimal 1000 karakter',
+            ]);
 
-        if ($request->hasFile('image')) {
-            // Hapus gambar lama
-            if ($portfolio->image) {
-                Storage::disk('public')->delete($portfolio->image);
+            if ($request->hasFile('image')) {
+                // Hapus gambar lama
+                if ($portfolio->image) {
+                    Storage::disk('public')->delete($portfolio->image);
+                }
+                $imagePath = $request->file('image')->store('portfolios', 'public');
+                $validated['image'] = $imagePath;
             }
-            $imagePath = $request->file('image')->store('portfolios', 'public');
-            $validated['image'] = $imagePath;
-        }
 
-        $validated['is_featured'] = $request->has('is_featured');
-        $validated['sort_order'] = $validated['sort_order'] ?? $portfolio->sort_order;
+            $validated['is_featured'] = $request->has('is_featured');
+            $validated['sort_order'] = $validated['sort_order'] ?? $portfolio->sort_order;
 
-        $portfolio->update($validated);
+            $portfolio->update($validated);
 
-        // Handle additional images
-        if ($request->hasFile('additional_images')) {
-            // Delete existing additional images
-            foreach ($portfolio->images as $image) {
-                Storage::disk('public')->delete($image->image);
-                $image->delete();
-            }
+            // Handle additional images
+            if ($request->hasFile('additional_images')) {
+                // Delete existing additional images
+                foreach ($portfolio->images as $image) {
+                    Storage::disk('public')->delete($image->image);
+                    $image->delete();
+                }
 
-            // Add new additional images
-            foreach ($request->file('additional_images') as $index => $image) {
-                if ($image && $image->isValid()) {
-                    $imagePath = $image->store('portfolios', 'public');
+                // Add new additional images
+                foreach ($request->file('additional_images') as $index => $image) {
+                    if ($image && $image->isValid()) {
+                        $imagePath = $image->store('portfolios', 'public');
 
-                    PortfolioImage::create([
-                        'portfolio_id' => $portfolio->id,
-                        'image' => $imagePath,
-                        'title' => $request->input('image_titles.' . $index),
-                        'description' => $request->input('image_descriptions.' . $index),
-                        'sort_order' => $index
-                    ]);
+                        PortfolioImage::create([
+                            'portfolio_id' => $portfolio->id,
+                            'image' => $imagePath,
+                            'title' => $request->input('image_titles.' . $index),
+                            'description' => $request->input('image_descriptions.' . $index),
+                            'sort_order' => $index
+                        ]);
+                    }
                 }
             }
-        }
 
-        return redirect()->route('admin.portfolios.index')->with('success', 'Portfolio berhasil diperbarui!');
+            return redirect()->route('admin.portfolios.index')->with('success', 'Portfolio berhasil diperbarui!');
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return redirect()->back()
+                ->withErrors($e->validator)
+                ->withInput();
+        } catch (\Exception $e) {
+            Log::error('Portfolio update error: ' . $e->getMessage());
+            Log::error('Request data: ' . json_encode($request->all()));
+
+            return redirect()->back()
+                ->withInput()
+                ->with('error', 'Terjadi kesalahan sistem: ' . $e->getMessage());
+        }
     }
 
     public function destroy(string $id)
     {
-        $portfolio = Portfolio::with('images')->findOrFail($id);
+        try {
+            $portfolio = Portfolio::with('images')->findOrFail($id);
 
-        // Hapus gambar utama
-        if ($portfolio->image) {
-            Storage::disk('public')->delete($portfolio->image);
+            // Delete portfolio images from storage
+            if ($portfolio->image) {
+                Storage::disk('public')->delete($portfolio->image);
+            }
+
+            // Delete additional images from storage
+            foreach ($portfolio->images as $image) {
+                Storage::disk('public')->delete($image->image);
+            }
+
+            // Delete the portfolio (this will also delete related images due to cascade)
+            $portfolio->delete();
+
+            return redirect()->route('admin.portfolios.index')->with('success', 'Portfolio berhasil dihapus!');
+        } catch (\Exception $e) {
+            Log::error('Portfolio deletion error: ' . $e->getMessage());
+
+            return redirect()->back()->with('error', 'Gagal menghapus portfolio: ' . $e->getMessage());
         }
-
-        // Hapus gambar tambahan
-        foreach ($portfolio->images as $image) {
-            Storage::disk('public')->delete($image->image);
-        }
-
-        $portfolio->delete();
-
-        return redirect()->route('admin.portfolios.index')->with('success', 'Portfolio berhasil dihapus!');
     }
 
     public function toggleFeatured(string $id)
