@@ -25,7 +25,7 @@
         </h1>
         <p class="text-xl text-yellow-400 font-semibold">Akurat & Profesional</p>
         <p class="text-gray-300 text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+          Kami menyediakan jasa pembuatan RAB (Rencana Anggaran Biaya) yang akurat dan profesional, serta pengurusan dokumen PBG/IMB secara lengkap. Tim ahli kami siap membantu mewujudkan rumah impian Anda dengan perencanaan yang matang dan transparan.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#contact" class="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg">
@@ -39,7 +39,7 @@
       <!-- Right Image -->
       <div class="hidden lg:flex justify-center items-center">
         <div class="bg-white p-6 md:p-8 rounded-lg shadow-2xl mt-8 md:mt-12 max-w-xs md:max-w-sm mx-auto">
-          <img src="/img/image-paruh-atas.png" alt="Denah Rumah" class="w-full h-auto max-h-[300px] md:max-h-[350px] object-contain mx-auto">
+          <img src="/img/rab-pbg Picture.jpeg" alt="Denah Rumah" class="w-full h-auto max-h-[300px] md:max-h-[350px] object-contain mx-auto">
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Left Image -->
             <div>
-                <img src="/img/image.png" alt="Modern Three-Story House" class="w-full h-auto rounded-lg">
+                <img src="/img/image-contact.jpg" alt="Modern Three-Story House" class="w-full h-auto rounded-lg">
             </div>
 
             <!-- Right Content -->
@@ -119,8 +119,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Lorem Ipsum</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 class="text-lg font-bold mb-2 text-white">Perencanaan Akurat</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Tim ahli kami melakukan perhitungan yang teliti dan akurat untuk setiap komponen pembangunan rumah.</p>
                             </div>
                         </div>
                     </div>
@@ -132,8 +132,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Lorem Ipsum</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 class="text-lg font-bold mb-2 text-white">Pelayanan Cepat</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Kami berkomitmen memberikan pelayanan yang cepat dan responsif sesuai timeline yang disepakati.</p>
                             </div>
                         </div>
                     </div>
@@ -145,8 +145,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Lorem Ipsum</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 class="text-lg font-bold mb-2 text-white">Tim Profesional</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Dibantu oleh tim ahli yang berpengalaman dan tersertifikasi dalam bidang konstruksi dan perencanaan.</p>
                             </div>
                         </div>
                     </div>
@@ -154,12 +154,12 @@
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Lorem Ipsum</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 class="text-lg font-bold mb-2 text-white">Analisis Mendalam</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Melakukan analisis komprehensif terhadap setiap aspek pembangunan untuk hasil yang optimal.</p>
                             </div>
                         </div>
                     </div>
@@ -171,8 +171,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Lorem Ipsum</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 class="text-lg font-bold mb-2 text-white">Konsultasi Gratis</h3>
+                                <p class="text-gray-300 text-sm leading-relaxed">Konsultasi awal gratis untuk memahami kebutuhan dan memberikan solusi terbaik.</p>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                     <span class="text-yellow-400">Jasa Pembuatan RAB</span>
                 </h2>
                 <p class="text-lg text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sebelum memulai pembuatan RAB, pastikan Anda telah menyiapkan dokumen dan informasi yang diperlukan untuk mendapatkan hasil yang optimal dan akurat.
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -204,7 +204,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold">Desain Arsitektur Rumah</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="text-gray-600">Desain lengkap rumah dengan denah, tampilan, dan detail arsitektur yang jelas untuk perhitungan volume yang akurat.</p>
                     </div>
 
                     <div class="space-y-4">
@@ -214,7 +214,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold">Gambar Kerja Berkul</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="text-gray-600">Gambar kerja detail yang mencakup spesifikasi material, dimensi, dan metode pelaksanaan untuk perhitungan biaya yang tepat.</p>
                     </div>
                 </div>
             </div>
@@ -233,7 +233,7 @@
         <div class="text-center space-y-8">
             <h2 class="text-4xl font-bold">Biaya Jasa Pembuatan RAB</h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Kami menawarkan paket layanan yang fleksibel dan terjangkau untuk memenuhi berbagai kebutuhan pembuatan RAB dan pengurusan PBG/IMB.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -242,7 +242,7 @@
                     <div class="relative z-10">
                         <div class="text-center mb-6">
                             <h3 class="text-2xl font-bold mb-2 text-gray-900">Paket Basic</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-gray-600">Paket lengkap untuk pembuatan RAB rumah sederhana dengan spesifikasi standar.</p>
                         </div>
                         <div class="text-center mb-8">
                             <div class="text-4xl font-black text-yellow-400 mb-2">Rp 2.500.000</div>
@@ -255,7 +255,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Lorem ipsum dolor sit amet</span>
+                                <span class="text-gray-700">Perhitungan volume dan biaya material</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -263,7 +263,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Consectetur adipiscing elit</span>
+                                <span class="text-gray-700">Analisis harga satuan pekerjaan</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -271,7 +271,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Sed do eiusmod tempor</span>
+                                <span class="text-gray-700">Dokumen RAB lengkap dan rapi</span>
                             </li>
                         </ul>
                         <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -288,7 +288,7 @@
                     <div class="relative z-10">
                         <div class="text-center mb-6">
                             <h3 class="text-2xl font-bold mb-2 text-gray-900">Paket Premium</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-gray-600">Paket lengkap dengan pengurusan PBG/IMB dan konsultasi intensif untuk rumah dengan spesifikasi tinggi.</p>
                         </div>
                         <div class="text-center mb-8">
                             <div class="text-4xl font-black text-yellow-400 mb-2">Rp 5.000.000</div>
@@ -301,7 +301,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Lorem ipsum dolor sit amet</span>
+                                <span class="text-gray-700">Semua fitur paket Basic</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -309,7 +309,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Consectetur adipiscing elit</span>
+                                <span class="text-gray-700">Pengurusan PBG/IMB lengkap</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -317,7 +317,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Sed do eiusmod tempor</span>
+                                <span class="text-gray-700">Konsultasi intensif dengan tim ahli</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -325,7 +325,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-gray-700">Ut labore et dolore magna</span>
+                                <span class="text-gray-700">Revisi dan penyesuaian tanpa batas</span>
                             </li>
                         </ul>
                         <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -343,7 +343,7 @@
     <div class="container mx-auto px-8">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-bold mb-4">Proses Mudah dan Cepat dengan Jasa Pengurusan PBG / IMB Kami</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami memastikan proses pengurusan PBG/IMB berjalan lancar dan efisien dengan tim yang berpengalaman dan sistem yang terstruktur.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -406,7 +406,7 @@
             </p>
             <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             <p class="text-lg text-gray-600 max-w-4xl mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Kami menyediakan layanan pengurusan surat PBG/IMB yang lengkap dan profesional. Tim kami akan membantu mengurus semua dokumen yang diperlukan, mulai dari persiapan hingga pengajuan dan pengambilan surat. Dengan pengalaman bertahun-tahun, kami memastikan proses berjalan lancar tanpa hambatan dan selesai sampai tuntas sesuai dengan ketentuan yang berlaku.
             </p>
         </div>
     </div>
@@ -457,7 +457,7 @@
 <!-- FAQ Section -->
 <section class="bg-black text-white py-20">
   <div class="container mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mx-30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       <!-- Kiri: Card putih -->
       <div>
         <div class="bg-white rounded-xl shadow p-10 max-w-md">
@@ -466,27 +466,120 @@
           <a href="#contact" class="inline-block border border-gray-800 text-gray-900 px-6 py-2 rounded hover:bg-gray-100 transition">Hubungi</a>
         </div>
       </div>
-      <!-- Kanan: FAQ List -->
-      <div class="space-y-6">
-        <div class="flex justify-between items-center py-6 border-b border-gray-700 cursor-pointer group">
-          <span class="text-xl font-bold">Berapa lama proses pengurusan IMB/PBG?</span>
-          <svg class="w-6 h-6 text-white group-hover:text-yellow-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      
+      <!-- Kanan: FAQ Accordion -->
+      <div class="space-y-4" id="faq-accordion-rab">
+        <!-- FAQ Item 1 -->
+        <div class="border border-gray-700 rounded-lg">
+          <button type="button" 
+                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                  data-faq="1">
+            <span class="text-xl">Berapa lama proses pengurusan IMB/PBG?</span>
+            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
+            <p class="mb-3">Proses pengurusan IMB/PBG biasanya memakan waktu 2-4 minggu, tergantung pada:</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Kelengkapan Dokumen:</strong> Semakin lengkap dokumen yang diserahkan, semakin cepat prosesnya</li>
+              <li><strong>Kompleksitas Bangunan:</strong> Bangunan sederhana lebih cepat diproses</li>
+              <li><strong>Lokasi Proyek:</strong> Beberapa daerah memiliki prosedur yang berbeda</li>
+              <li><strong>Volume Pengajuan:</strong> Waktu puncak bisa mempengaruhi kecepatan</li>
+            </ul>
+            <p class="mt-3">Tim kami akan memastikan semua dokumen lengkap dan sesuai standar untuk mempercepat proses pengurusan.</p>
+          </div>
         </div>
-        <div class="flex justify-between items-center py-6 border-b border-gray-700 cursor-pointer group">
-          <span class="text-xl font-bold">Apakah RAB yang dibuat sudah termasuk biaya material?</span>
-          <svg class="w-6 h-6 text-white group-hover:text-yellow-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+
+        <!-- FAQ Item 2 -->
+        <div class="border border-gray-700 rounded-lg">
+          <button type="button" 
+                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                  data-faq="2">
+            <span class="text-xl">Apakah RAB yang dibuat sudah termasuk biaya material?</span>
+            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
+            <p class="mb-3">Ya, RAB yang kami buat sudah mencakup semua komponen biaya secara lengkap:</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Biaya Material:</strong> Semua material dari pondasi hingga finishing</li>
+              <li><strong>Biaya Tenaga Kerja:</strong> Upah tukang, mandor, dan supervisor</li>
+              <li><strong>Biaya Peralatan:</strong> Sewa alat berat dan peralatan konstruksi</li>
+              <li><strong>Biaya Overhead:</strong> Administrasi, transportasi, dan keamanan</li>
+              <li><strong>Biaya Pajak:</strong> PPN dan pajak daerah yang berlaku</li>
+            </ul>
+            <p class="mt-3">Kami memberikan breakdown detail untuk setiap item sehingga Anda bisa memahami alokasi anggaran dengan jelas.</p>
+          </div>
         </div>
-        <div class="flex justify-between items-center py-6 border-b border-gray-700 cursor-pointer group">
-          <span class="text-xl font-bold">Bagaimana jika ada perubahan desain di tengah proses?</span>
-          <svg class="w-6 h-6 text-white group-hover:text-yellow-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+
+        <!-- FAQ Item 3 -->
+        <div class="border border-gray-700 rounded-lg">
+          <button type="button" 
+                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                  data-faq="3">
+            <span class="text-xl">Bagaimana jika ada perubahan desain di tengah proses?</span>
+            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
+            <p class="mb-3">Kami sangat fleksibel dalam menangani perubahan desain. Berikut kebijakan kami:</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Perubahan Minor:</strong> Perubahan kecil tidak dikenakan biaya tambahan</li>
+              <li><strong>Perubahan Mayor:</strong> Perubahan signifikan akan dihitung ulang RAB</li>
+              <li><strong>Timeline:</strong> Perubahan bisa mempengaruhi jadwal pengerjaan</li>
+              <li><strong>Komunikasi:</strong> Setiap perubahan akan didiskusikan terlebih dahulu</li>
+            </ul>
+            <p class="mt-3">Tim kami akan memberikan solusi terbaik untuk setiap perubahan yang Anda inginkan.</p>
+          </div>
         </div>
-        <div class="flex justify-between items-center py-6 border-b border-gray-700 cursor-pointer group">
-          <span class="text-xl font-bold">Apakah ada garansi untuk hasil pekerjaan?</span>
-          <svg class="w-6 h-6 text-white group-hover:text-yellow-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+
+        <!-- FAQ Item 4 -->
+        <div class="border border-gray-700 rounded-lg">
+          <button type="button" 
+                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                  data-faq="4">
+            <span class="text-xl">Apakah ada garansi untuk hasil pekerjaan?</span>
+            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
+            <p class="mb-3">Ya, kami memberikan garansi komprehensif untuk semua pekerjaan kami:</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Garansi Konstruksi:</strong> 5 tahun untuk struktur bangunan</li>
+              <li><strong>Garansi Finishing:</strong> 2 tahun untuk pekerjaan finishing</li>
+              <li><strong>Garansi Instalasi:</strong> 1 tahun untuk instalasi listrik dan air</li>
+              <li><strong>Garansi Material:</strong> Sesuai garansi pabrik material</li>
+              <li><strong>Layanan Purna Jual:</strong> Konsultasi dan perbaikan gratis</li>
+            </ul>
+            <p class="mt-3">Kami berkomitmen memberikan kualitas terbaik dan siap memperbaiki jika ada masalah dalam masa garansi.</p>
+          </div>
         </div>
-        <div class="flex justify-between items-center py-6 border-b border-gray-700 cursor-pointer group">
-          <span class="text-xl font-bold">Bagaimana cara memulai kerja sama dengan tim Anda?</span>
-          <svg class="w-6 h-6 text-white group-hover:text-yellow-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+
+        <!-- FAQ Item 5 -->
+        <div class="border border-gray-700 rounded-lg">
+          <button type="button" 
+                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                  data-faq="5">
+            <span class="text-xl">Bagaimana cara memulai kerja sama dengan tim Anda?</span>
+            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
+            <p class="mb-3">Memulai kerja sama dengan kami sangat mudah. Berikut langkah-langkahnya:</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Konsultasi Awal:</strong> Hubungi kami untuk diskusi kebutuhan proyek</li>
+              <li><strong>Survey Lokasi:</strong> Tim kami akan melihat lokasi proyek</li>
+              <li><strong>Penawaran:</strong> Kami akan memberikan penawaran detail</li>
+              <li><strong>Kesepakatan:</strong> Jika setuju, kami buat kontrak kerja</li>
+              <li><strong>Eksekusi:</strong> Proyek dimulai sesuai timeline yang disepakati</li>
+            </ul>
+            <p class="mt-3">Kami siap membantu Anda dari awal hingga akhir proyek dengan pelayanan profesional dan berkualitas.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -509,12 +602,12 @@
             <div class="space-y-8">
                 <div>
                     <h2 class="text-3xl lg:text-4xl font-normal text-white mb-4">
-                        LOREM IPSUM LOREM IPSUM LOREM IPS LOREM IPSUM
-                        <span class="text-yellow-400 font-semibold">LOREM IPSUM LOREM</span>
+                        Jasa Desain Interior & Eksterior
+                        <span class="text-yellow-400 font-semibold">Rumah Modern</span>
                     </h2>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
                         Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                        melalui proses desain, perencanaan anggaran, hingga.
+                        melalui proses desain, perencanaan anggaran, hingga eksekusi pembangunan yang sempurna.
                     </p>
                 </div>
 
@@ -561,41 +654,83 @@
                 </div>
             </div>
 
-            <!-- Right Content - Services -->
-            <div class="space-y-8">
-                <h2 class="text-3xl lg:text-4xl font-normal text-black">
-                    Layanan Lainnya dari Kami
-                </h2>
+                            <!-- Right Content - Services -->
+                <div class="space-y-8">
+                    <h2 class="text-3xl lg:text-4xl font-normal text-black">
+                        Layanan Lainnya dari Kami
+                    </h2>
 
-                <!-- Services Accordion -->
-                <div class="space-y-4">
-                    <div class="border-b border-gray-400 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
-                            <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                    </div>
+                    <!-- Services Accordion -->
+                    <div class="space-y-4" id="other-services-accordion">
+                        <!-- Service Item 1 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="1">
+                                <span class="text-lg">Apakah jasa RAB mencakup perhitungan material dan tenaga kerja?</span>
+                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Ya, RAB yang kami buat sangat komprehensif dan mencakup:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Material:</strong> Semua material dari pondasi hingga finishing</li>
+                                    <li><strong>Tenaga Kerja:</strong> Upah tukang, mandor, dan supervisor</li>
+                                    <li><strong>Peralatan:</strong> Sewa alat berat dan peralatan konstruksi</li>
+                                    <li><strong>Overhead:</strong> Administrasi, transportasi, dan keamanan</li>
+                                    <li><strong>Pajak:</strong> PPN dan pajak daerah yang berlaku</li>
+                                </ul>
+                                <p class="mt-3">Kami memberikan breakdown detail untuk setiap item sehingga Anda bisa memahami alokasi anggaran dengan jelas.</p>
+                            </div>
+                        </div>
 
-                    <div class="border-b border-gray-400 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
-                            <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                    </div>
+                        <!-- Service Item 2 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="2">
+                                <span class="text-lg">Bagaimana proses pengurusan PBG/IMB yang dilakukan?</span>
+                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Proses pengurusan PBG/IMB kami lakukan secara sistematis:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Persiapan Dokumen:</strong> KTP, Sertifikat tanah, PBB, dan dokumen pendukung</li>
+                                    <li><strong>Survey Lokasi:</strong> Tim kami akan melakukan survey dan pengukuran</li>
+                                    <li><strong>Pembuatan Gambar:</strong> Denah, tampak, dan potongan sesuai standar</li>
+                                    <li><strong>Pengajuan ke Dinas:</strong> Kami urus semua proses administrasi</li>
+                                    <li><strong>Follow Up:</strong> Monitoring progress hingga selesai</li>
+                                </ul>
+                                <p class="mt-3">Kami akan memberikan update progress secara berkala dan memastikan semua dokumen selesai tepat waktu.</p>
+                            </div>
+                        </div>
 
-                    <div class="border-b border-gray-400 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
-                            <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
+                        <!-- Service Item 3 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="3">
+                                <span class="text-lg">Apakah ada layanan konsultasi gratis sebelum memulai proyek?</span>
+                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Ya, kami menyediakan layanan konsultasi gratis untuk membantu Anda:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Konsultasi Awal:</strong> Diskusi kebutuhan dan konsep desain</li>
+                                    <li><strong>Survey Lokasi:</strong> Analisis kondisi tanah dan lingkungan</li>
+                                    <li><strong>Estimasi Budget:</strong> Perkiraan biaya awal proyek</li>
+                                    <li><strong>Timeline Proyek:</strong> Perkiraan waktu pengerjaan</li>
+                                    <li><strong>Rekomendasi Material:</strong> Saran material yang sesuai budget</li>
+                                </ul>
+                                <p class="mt-3">Konsultasi ini membantu Anda memahami scope pekerjaan dan membuat keputusan yang tepat sebelum memulai proyek.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
                 <!-- Contact Button -->
                 <div class="pt-6">
@@ -616,7 +751,7 @@
         </h2>
             <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
             Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-            melalui proses desain, perencanaan anggaran, hingga.
+            melalui proses desain, perencanaan anggaran, hingga eksekusi pembangunan yang sempurna.
         </p>
         <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
             Hubungi Kami
@@ -629,39 +764,63 @@
 </div>
 
 <script>
-// FAQ Accordion functionality
+// FAQ Accordion functionality for RAB/PBG page
 document.addEventListener('DOMContentLoaded', function() {
-    const accordionButtons = document.querySelectorAll('.faq-accordion-button');
+    const faqButtons = document.querySelectorAll('.faq-button-rab');
+    let currentlyOpen = null;
 
-    accordionButtons.forEach(button => {
+    faqButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('svg');
-
-            // Toggle active class
-            this.classList.toggle('active');
-
-            // Smooth toggle content visibility
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block';
-                content.style.opacity = '0';
-                content.style.transform = 'translateY(-10px)';
-
-                setTimeout(() => {
-                    content.style.opacity = '1';
-                    content.style.transform = 'translateY(0)';
-                }, 10);
-
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.style.opacity = '0';
-                content.style.transform = 'translateY(-10px)';
-
-                setTimeout(() => {
-                    content.style.display = 'none';
-                }, 300);
-
+            const faqItem = this.closest('.border');
+            const content = faqItem.querySelector('.faq-content-rab');
+            const icon = this.querySelector('.faq-icon-rab');
+            
+            // If clicking the same item that's already open, close it
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
                 icon.style.transform = 'rotate(0deg)';
+                currentlyOpen = null;
+            } else {
+                // Close currently open item if any
+                if (currentlyOpen) {
+                    currentlyOpen.style.display = 'none';
+                    currentlyOpen.closest('.border').querySelector('.faq-icon-rab').style.transform = 'rotate(0deg)';
+                }
+                
+                // Open clicked item
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+                currentlyOpen = content;
+            }
+        });
+    });
+
+    // Other Services Accordion functionality
+    const otherServiceButtons = document.querySelectorAll('.other-service-button');
+    let currentlyOpenService = null;
+
+    otherServiceButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const serviceItem = this.closest('.border');
+            const content = serviceItem.querySelector('.other-service-content');
+            const icon = this.querySelector('.other-service-icon');
+            
+            // If clicking the same item that's already open, close it
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+                currentlyOpenService = null;
+            } else {
+                // Close currently open item if any
+                if (currentlyOpenService) {
+                    currentlyOpenService.style.display = 'none';
+                    currentlyOpenService.closest('.border').querySelector('.other-service-icon').style.transform = 'rotate(0deg)';
+                }
+                
+                // Open clicked item
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+                currentlyOpenService = content;
             }
         });
     });

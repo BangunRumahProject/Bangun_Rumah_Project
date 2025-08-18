@@ -331,68 +331,201 @@
 </section>
 
 {{-- Section FAQ --}}
-<section class="bg-gradient-to-b from-gray-50 to-white py-12">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-        <div>
-            <div class="bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-lg p-8 mb-6 shadow-lg">
-                <h2 class="text-2xl font-bold text-yellow-400 mb-2">Frequently Ask<br><span class="text-white">Question</span></h2>
-                <p class="text-gray-300 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                <p class="text-gray-300 text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                <div class="text-center">
-                    <a href="#kontak" class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold">HUBUNGI KAMI</a>
+<section class="bg-gradient-to-b from-gray-50 to-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Temukan jawaban untuk pertanyaan-pertanyaan yang sering diajukan seputar jasa desain dan pembangunan rumah kami.</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="1">
+                        <span class="text-lg">Berapa biaya jasa desain rumah?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Biaya jasa desain rumah sangat bervariasi dan bergantung pada beberapa faktor utama:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Ukuran Bangunan:</strong> Luas area yang akan didesain (rumah kecil, sedang, atau besar)</li>
+                            <li><strong>Tingkat Kesulitan Desain:</strong> Kompleksitas arsitektur, jumlah lantai, dan detail khusus</li>
+                            <li><strong>Kebutuhan Klien:</strong> Fitur khusus, material premium, atau teknologi canggih</li>
+                            <li><strong>Lokasi Proyek:</strong> Aksesibilitas dan kondisi tanah</li>
+                        </ul>
+                        <p class="mt-3">Kami akan memberikan penawaran yang transparan dan detail setelah melakukan konsultasi awal untuk memahami kebutuhan dan budget Anda. Konsultasi awal kami berikan secara gratis untuk memastikan Anda mendapatkan solusi terbaik sesuai kemampuan finansial.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="2">
+                        <span class="text-lg">Apakah jasa mencakup pembangunan atau hanya desain saja?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Kami menyediakan layanan lengkap yang mencakup:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Desain Arsitektur:</strong> Perencanaan layout, denah, tampilan, dan detail konstruksi</li>
+                            <li><strong>Pembangunan Lengkap:</strong> Konstruksi dari pondasi hingga finishing dengan tim kontraktor profesional</li>
+                            <li><strong>Supervisi Proyek:</strong> Pengawasan ketat untuk memastikan kualitas sesuai standar</li>
+                            <li><strong>Manajemen Proyek:</strong> Koordinasi tim, material, dan jadwal pengerjaan</li>
+                        </ul>
+                        <p class="mt-3">Tim kami terdiri dari arsitek berpengalaman, insinyur struktur, dan kontraktor bersertifikat yang telah mengerjakan berbagai proyek. Kami juga bisa menyediakan layanan desain saja jika Anda ingin membangun sendiri atau menggunakan kontraktor lain.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="3">
+                        <span class="text-lg">Berapa lama waktu pengerjaan desain rumah?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Rata-rata waktu pengerjaan desain rumah memakan waktu 2–4 minggu, dengan rincian sebagai berikut:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Minggu 1:</strong> Konsultasi mendalam, survey lokasi, dan konsep awal</li>
+                            <li><strong>Minggu 2:</strong> Pengembangan desain detail, denah, dan tampilan</li>
+                            <li><strong>Minggu 3:</strong> Detail konstruksi, spesifikasi material, dan perhitungan RAB</li>
+                            <li><strong>Minggu 4:</strong> Revisi dan finalisasi desain sesuai feedback klien</li>
+                        </ul>
+                        <p class="mt-3">Waktu pengerjaan bisa lebih cepat atau lambat tergantung tingkat kerumitan desain, jumlah revisi yang diperlukan, dan ketersediaan klien untuk review. Untuk proyek sederhana, desain bisa selesai dalam 2 minggu, sedangkan proyek kompleks mungkin membutuhkan waktu hingga 6 minggu.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="4">
+                        <span class="text-lg">Apakah bisa menyesuaikan desain dengan budget klien?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Tentu saja! Menyesuaikan desain dengan budget klien adalah salah satu keunggulan utama kami. Kami selalu memprioritaskan:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Optimasi Anggaran:</strong> Merancang desain yang efisien tanpa mengorbankan estetika</li>
+                            <li><strong>Material Alternatif:</strong> Menawarkan pilihan material berkualitas dengan harga terjangkau</li>
+                            <li><strong>Efisiensi Ruang:</strong> Memaksimalkan fungsi setiap area untuk menghemat biaya konstruksi</li>
+                            <li><strong>Prioritas Kebutuhan:</strong> Fokus pada elemen yang paling penting bagi klien</li>
+                        </ul>
+                        <p class="mt-3">Kami akan memberikan beberapa alternatif desain dengan berbagai range budget, sehingga Anda bisa memilih yang paling sesuai. Tim kami ahli dalam menciptakan desain yang tetap terlihat mewah dan berkualitas meskipun dengan budget terbatas.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="5">
+                        <span class="text-lg">Apakah menerima desain rumah minimalis, modern, atau klasik?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Ya, kami melayani berbagai gaya desain sesuai keinginan dan kebutuhan klien. Tim arsitek kami berpengalaman dalam berbagai gaya arsitektur:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Minimalis:</strong> Desain bersih, sederhana, dan fungsional dengan fokus pada esensi</li>
+                            <li><strong>Modern:</strong> Gaya kontemporer dengan garis lurus, material modern, dan teknologi canggih</li>
+                            <li><strong>Industrial:</strong> Kombinasi material mentah, pipa ekspos, dan nuansa urban</li>
+                            <li><strong>Klasik:</strong> Desain tradisional dengan ornamen detail dan elemen dekoratif</li>
+                            <li><strong>Scandinavian:</strong> Gaya nordik yang hangat dengan material alami dan pencahayaan optimal</li>
+                            <li><strong>Fusion:</strong> Kombinasi berbagai gaya untuk menciptakan desain unik</li>
+                        </ul>
+                        <p class="mt-3">Kami juga bisa membantu Anda menentukan gaya yang paling sesuai dengan kepribadian, kebutuhan keluarga, dan kondisi lingkungan sekitar. Setiap desain akan disesuaikan dengan selera pribadi dan gaya hidup Anda.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="6">
+                        <span class="text-lg">Bagaimana sistem pembayaran jasa desain dan pembangunan?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Sistem pembayaran kami dirancang untuk memberikan kemudahan dan keamanan bagi klien. Pembayaran dilakukan secara bertahap sesuai progres pekerjaan:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>DP (Down Payment):</strong> 30% saat kontrak ditandatangani</li>
+                            <li><strong>Progress 1:</strong> 25% setelah pondasi dan struktur dasar selesai</li>
+                            <li><strong>Progress 2:</strong> 25% setelah dinding dan atap selesai</li>
+                            <li><strong>Progress 3:</strong> 15% setelah finishing dan instalasi selesai</li>
+                            <li><strong>Final:</strong> 5% setelah serah terima dan garansi</li>
+                        </ul>
+                        <p class="mt-3">Untuk jasa desain saja, pembayaran bisa dilakukan 50% di awal dan 50% setelah desain selesai. Kami juga menerima berbagai metode pembayaran termasuk transfer bank, cek, atau pembayaran melalui platform digital. Semua transaksi akan didokumentasikan dengan jelas dalam kontrak yang mengikat kedua belah pihak.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="7">
+                        <span class="text-lg">Apakah bisa revisi desain setelah jadi?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Kami memberikan kesempatan revisi desain sesuai dengan paket yang dipilih. Kebijakan revisi kami meliputi:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Paket Basic:</strong> 2x revisi minor (perubahan warna, material, atau detail kecil)</li>
+                            <li><strong>Paket Standard:</strong> 3x revisi minor + 1x revisi mayor (perubahan layout atau struktur)</li>
+                            <li><strong>Paket Premium:</strong> Revisi unlimited selama proses desain</li>
+                            <li><strong>Revisi Pasca Konstruksi:</strong> Konsultasi dan saran perbaikan jika diperlukan</li>
+                        </ul>
+                        <p class="mt-3">Kami memahami bahwa desain rumah adalah proses iteratif yang membutuhkan penyesuaian. Tim kami akan bekerja sama dengan Anda untuk memastikan hasil akhir sesuai ekspektasi. Revisi akan diproses dalam waktu 3-5 hari kerja tergantung kompleksitas perubahan yang diminta.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                    <button type="button" 
+                            class="faq-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-gray-800 hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            data-faq="8">
+                        <span class="text-lg">Apakah melayani konsultasi online?</span>
+                        <svg class="faq-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                        <p class="mb-3">Ya, kami menyediakan layanan konsultasi online yang komprehensif untuk memudahkan klien di luar kota atau yang memiliki keterbatasan waktu. Layanan konsultasi online kami meliputi:</p>
+                        <ul class="list-disc list-inside space-y-2 text-sm">
+                            <li><strong>Platform Meeting:</strong> Zoom, Google Meet, atau Microsoft Teams untuk konsultasi video</li>
+                            <li><strong>WhatsApp Business:</strong> Konsultasi cepat dan berbagi file desain</li>
+                            <li><strong>Email:</strong> Dokumen detail dan komunikasi formal</li>
+                            <li><strong>Video Call:</strong> Survey lokasi virtual dan presentasi desain</li>
+                            <li><strong>File Sharing:</strong> Berbagi gambar, video, dan dokumen desain</li>
+                        </ul>
+                        <p class="mt-3">Konsultasi online kami tetap memberikan kualitas yang sama dengan konsultasi tatap muka. Tim kami akan mempersiapkan presentasi visual yang detail dan siap menjawab semua pertanyaan Anda. Untuk proyek yang membutuhkan survey fisik, kami tetap bisa mengirim tim ke lokasi sesuai jadwal yang disepakati.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="max-w-2xl ml-auto">
-            <div x-data="{open:1}" class="space-y-3">
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 1 ? open = null : open = 1">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==1}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 1" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 2 ? open = null : open = 2">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==2}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 2" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 3 ? open = null : open = 3">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==3}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 3" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 4 ? open = null : open = 4">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==4}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 4" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 5 ? open = null : open = 5">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==5}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 5" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-
-                <div class="border border-gray-300 rounded">
-                    <button type="button" class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left focus:outline-none" @click="open === 6 ? open = null : open = 6">
-                        <span>lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                        <svg :class="{'rotate-180':open==6}" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </button>
-                    <div x-show="open === 6" x-collapse class="px-4 pb-3 text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</div>
-                </div>
-            </div>
+        
+        <div class="text-center mt-12">
+            <a href="#kontak" class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all duration-300 font-bold text-lg hover:scale-105 hover:shadow-xl">
+                KONSULTASI GRATIS SEKARANG
+            </a>
         </div>
     </div>
 </section>
@@ -407,13 +540,13 @@
                 <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Artikel" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
                 <div class="p-4">
                     <div class="font-bold mb-2">Pengaruh Penerimaan Bangunan pada Kamar Tidur</div>
-                    <div class="text-gray-500 text-sm mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="text-gray-500 text-sm mb-2">Tips dan panduan lengkap untuk membangun rumah impian Anda dengan budget yang terjangkau.</div>
                     <a href="#" class="text-yellow-400 font-semibold hover:underline">Baca Selengkapnya</a>
                 </div>
             </div>
             @endfor
         </div>
-        <a href="/artikel" class="absolute bottom-0 bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold">Lihat Artikel Lainnya</a>
+        <a href="/artikel" class="absolute bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4">Lihat Artikel Lainnya</a>
     </div>
 </section>
 
@@ -656,8 +789,49 @@ style.textContent = `
             padding-right: 3rem;
         }
     }
+
+    /* FAQ Accordion Styles */
+    .faq-content {
+        transition: all 0.3s ease;
+    }
+
+    .faq-icon {
+        transition: transform 0.3s ease;
+    }
 `;
 document.head.appendChild(style);
+
+// FAQ Accordion Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqButtons = document.querySelectorAll('.faq-button');
+    let currentlyOpen = null;
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const faqItem = this.closest('.border');
+            const content = faqItem.querySelector('.faq-content');
+            const icon = this.querySelector('.faq-icon');
+            
+            // If clicking the same item that's already open, close it
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+                currentlyOpen = null;
+            } else {
+                // Close currently open item if any
+                if (currentlyOpen) {
+                    currentlyOpen.style.display = 'none';
+                    currentlyOpen.closest('.border').querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+                }
+                
+                // Open clicked item
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+                currentlyOpen = content;
+            }
+        });
+    });
+});
 </script>
 @include('components.footer')
 @endsection

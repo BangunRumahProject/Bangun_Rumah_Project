@@ -559,7 +559,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
                             </p>
                         </div>
 
@@ -568,7 +568,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
                             <h3 class="text-black text-xl font-semibold">Akad</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
                             </p>
                         </div>
 
@@ -577,7 +577,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
                             </p>
                         </div>
 
@@ -586,7 +586,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
                             <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
                             </p>
                         </div>
                     </div>
@@ -664,7 +664,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
                             </p>
                         </div>
 
@@ -673,7 +673,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
                             <h3 class="text-black text-xl font-semibold">Akad</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
                             </p>
                         </div>
 
@@ -682,7 +682,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
                             </p>
                         </div>
 
@@ -691,7 +691,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
                             <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
                             </p>
                         </div>
                     </div>
@@ -701,6 +701,224 @@
     </section>
 
 
+    <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Content -->
+                <div class="space-y-8 fade-in">
+                    <!-- Main Title -->
+                    <div class="space-y-4">
+                        <h2 class="text-white text-2xl lg:text-3xl font-normal leading-tight">
+                            Apa yang Membuat Jasa Kami
+                        </h2>
+                        <h3 class="text-yellow-400 text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                            BERBEDA
+                        </h3>
+                        <p class="text-gray-400 text-sm lg:text-base leading-relaxed max-w-lg">
+                            Kami menawarkan layanan pembangunan rumah yang berkualitas tinggi dengan tim profesional, material premium, dan pelayanan yang memuaskan.
+                        </p>
+                    </div>
+
+                    <!-- House Image -->
+                    <div class="relative">
+                        <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Modern House Design" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Features Grid -->
+                <div class="grid grid-cols-2 gap-6 slide-in-right">
+                    <!-- Feature 1 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">TIM PROFESIONAL</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Tim ahli kami terdiri dari arsitek, insinyur, dan tukang berpengalaman yang telah mengerjakan berbagai proyek konstruksi berkualitas tinggi.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">MATERIAL PREMIUM</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Kami menggunakan material berkualitas tinggi dan terbaik untuk memastikan hasil konstruksi yang tahan lama dan memuaskan.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">DESAIN INOVATIF</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Tim desainer kami menghadirkan konsep dan desain yang inovatif, modern, dan sesuai dengan tren terkini dalam dunia arsitektur.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">PELAYANAN CEPAT</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Kami berkomitmen memberikan pelayanan yang cepat, responsif, dan sesuai dengan timeline yang telah disepakati bersama.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">HARGA TERJANGKAU</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Kami menawarkan harga yang kompetitif dan terjangkau tanpa mengorbankan kualitas hasil pekerjaan.
+                        </p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white text-lg font-semibold">GARANSI LENGKAP</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Kami memberikan garansi komprehensif untuk semua pekerjaan dan siap memperbaiki jika ada masalah dalam masa garansi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Content -->
+                <div class="space-y-8 fade-in">
+                    <!-- Main Title -->
+                    <div class="space-y-4">
+                        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                            Mengapa <span class="text-yellow-400">Memilih Kami</span>
+                        </h2>
+                        <p class="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl">
+                            Kami berkomitmen untuk menghadirkan layanan konstruksi terbaik dengan kualitas premium dan
+                            kepuasan klien yang maksimal.
+                        </p>
+                    </div>
+
+                    <!-- Advantages -->
+                    <div class="space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"></div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white mb-2">Tim Ahli Berpengalaman</h3>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Tim konstruksi kami terdiri dari ahli berpengalaman dengan sertifikasi resmi dan
+                                        track record yang teruji.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                    style="animation-delay: 0.5s;"></div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white mb-2">Material Berkualitas Premium</h3>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Kami hanya menggunakan material berkualitas tinggi dari supplier terpercaya
+                                        untuk hasil yang tahan lama.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                    style="animation-delay: 1s;"></div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white mb-2">Garansi Konstruksi</h3>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Setiap proyek kami dilengkapi dengan garansi konstruksi untuk memberikan
+                                        ketenangan pikiran klien.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                    style="animation-delay: 1.5s;"></div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-white mb-2">Harga Transparan</h3>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Kami memberikan penawaran harga yang transparan dan kompetitif tanpa biaya
+                                        tersembunyi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Image -->
+                <div class="relative slide-in-right">
+                    <div
+                        class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Tim Profesional" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-4 -left-4 w-8 h-8 border-t-4 border-l-4 border-yellow-400 floating">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-8 h-8 border-b-4 border-r-4 border-yellow-400 floating"
+                        style="animation-delay: 1s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
      <!-- Client Testimonials Section -->
      <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -757,12 +975,12 @@
                 <div class="space-y-8">
                     <div>
                         <h2 class="text-3xl lg:text-4xl font-normal text-white mb-4">
-                            LOREM IPSUM LOREM IPSUM LOREM IPS LOREM IPSUM
-                            <span class="text-yellow-400 font-semibold">LOREM IPSUM LOREM</span>
+                            Jasa Desain Interior & Eksterior
+                            <span class="text-yellow-400 font-semibold">Rumah Modern</span>
                         </h2>
                         <p class="text-gray-300 text-base leading-relaxed mb-8">
                             Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                            melalui proses desain, perencanaan anggaran, hingga.
+                            melalui proses desain, perencanaan anggaran, hingga eksekusi pembangunan yang sempurna.
                         </p>
                     </div>
 
@@ -816,32 +1034,72 @@
                     </h2>
 
                     <!-- Services Accordion -->
-                    <div class="space-y-4">
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    <div class="space-y-4" id="services-accordion-layanan1">
+                        <!-- Service Item 1 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="1">
+                                <span class="text-lg">Berapa lama waktu pengerjaan pembangunan rumah?</span>
+                                <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan1 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Waktu pengerjaan pembangunan rumah bervariasi tergantung:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Ukuran Bangunan:</strong> Rumah sederhana 3-6 bulan, rumah mewah 8-18 bulan</li>
+                                    <li><strong>Kompleksitas Desain:</strong> Desain custom membutuhkan waktu lebih lama</li>
+                                    <li><strong>Kondisi Tanah:</strong> Tanah lunak memerlukan pondasi khusus</li>
+                                    <li><strong>Cuaca:</strong> Musim hujan bisa memperlambat proses</li>
+                                </ul>
+                                <p class="mt-3">Tim kami akan memberikan timeline yang akurat setelah survey lokasi dan finalisasi desain.</p>
+                            </div>
                         </div>
 
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <!-- Service Item 2 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="2">
+                                <span class="text-lg">Apakah ada garansi untuk hasil pembangunan?</span>
+                                <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan1 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Ya, kami memberikan garansi komprehensif untuk semua pekerjaan:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Garansi Struktur:</strong> 10 tahun untuk pondasi dan struktur utama</li>
+                                    <li><strong>Garansi Finishing:</strong> 2 tahun untuk pekerjaan finishing</li>
+                                    <li><strong>Garansi Instalasi:</strong> 1 tahun untuk listrik, air, dan sanitasi</li>
+                                    <li><strong>Garansi Material:</strong> Sesuai garansi pabrik material</li>
+                                </ul>
+                                <p class="mt-3">Kami berkomitmen memberikan kualitas terbaik dan siap memperbaiki jika ada masalah dalam masa garansi.</p>
+                            </div>
                         </div>
 
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <!-- Service Item 3 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="3">
+                                <span class="text-lg">Bagaimana sistem pembayaran untuk pembangunan rumah?</span>
+                                <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan1 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Kami menerapkan sistem pembayaran bertahap yang transparan:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>DP Awal:</strong> 30% saat kontrak ditandatangani</li>
+                                    <li><strong>Pondasi:</strong> 20% setelah pondasi selesai</li>
+                                    <li><strong>Struktur:</strong> 25% setelah struktur utama selesai</li>
+                                    <li><strong>Finishing:</strong> 20% setelah finishing 80%</li>
+                                    <li><strong>Serah Terima:</strong> 5% setelah serah terima</li>
+                                </ul>
+                                <p class="mt-3">Setiap tahap pembayaran akan didokumentasikan dan disertai laporan progress yang detail.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -865,7 +1123,7 @@
             </h2>
             <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
                 Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                melalui proses desain, perencanaan anggaran, hingga.
+                melalui proses desain, perencanaan anggaran, hingga eksekusi pembangunan yang sempurna.
             </p>
             <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
                 Hubungi Kami
@@ -876,6 +1134,40 @@
 
     @include('components.footer')
     @include('components.scripts')
+
+    <script>
+    // Services Accordion functionality for Layanan1 page
+    document.addEventListener('DOMContentLoaded', function() {
+        const serviceButtons = document.querySelectorAll('.service-button-layanan1');
+        let currentlyOpen = null;
+
+        serviceButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const serviceItem = this.closest('.border');
+                const content = serviceItem.querySelector('.service-content-layanan1');
+                const icon = this.querySelector('.service-icon-layanan1');
+                
+                // If clicking the same item that's already open, close it
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                    currentlyOpen = null;
+                } else {
+                    // Close currently open item if any
+                    if (currentlyOpen) {
+                        currentlyOpen.style.display = 'none';
+                        currentlyOpen.closest('.border').querySelector('.service-icon-layanan1').style.transform = 'rotate(0deg)';
+                    }
+                    
+                    // Open clicked item
+                    content.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                    currentlyOpen = content;
+                }
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@
                         {{-- Section Lokasi --}}
                         <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Lokasi</h3>
-                            <p class="text-gray-200 mb-2">Perumahan Pns, Blok A7, RT.400/RW.003, Kendari, Kec. Senga Rimur, Kota bla bla, Sulawesi Tenggara - 12114</p>
+                            <p class="text-gray-200 mb-2">Bumi Punggolaka Indah, Blok B18, Lalodati, Kec. Puuwatu, Kota Kendari, Sulawesi Tenggara 93112</p>
                             <p class="text-gray-200">Jam Operasional: Sen-Sab 09:00-17:00 WIB</p>
                         </div>
 

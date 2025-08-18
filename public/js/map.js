@@ -55,6 +55,10 @@ export class MapManager {
             // Clear loading indicator and initialize map immediately
             mapContainer.innerHTML = '';
 
+            // Set map container z-index
+            mapContainer.style.zIndex = '1';
+            mapContainer.style.position = 'relative';
+
             // Initialize map
             this.map = L.map(mapId, {
                 zoomControl: true,
@@ -63,7 +67,9 @@ export class MapManager {
                 boxZoom: true,
                 keyboard: true,
                 dragging: true,
-                touchZoom: true
+                touchZoom: true,
+                minZoom: 12, // Batasi zoom out minimum
+                maxZoom: 18  // Batasi zoom in maksimum
             }).setView(coords, zoomLevel);
 
             // Add OpenStreetMap tile layer
@@ -96,6 +102,13 @@ export class MapManager {
             // Fit bounds to ensure marker is visible
             this.map.fitBounds(marker.getLatLng().toBounds(1000));
 
+            // Prevent zoom out below minimum level
+            this.map.on('zoomend', () => {
+                if (this.map.getZoom() < 12) {
+                    this.map.setZoom(12);
+                }
+            });
+
             // Mark as initialized
             this.initializedMaps.add(mapId);
             this.isInitializing = false;
@@ -124,7 +137,7 @@ export class MapManager {
         }
 
         const initMap = () => {
-            this.initializeMap('map', [-3.9557623, 122.4977225], 15, 'Bangun Rumah Project<br>Perumahan Pns, Blok A7, RT.400/RW.003, Kendari');
+            this.initializeMap('map', [-3.9557623, 122.4977225], 15, 'Bumi Punggolaka Indah, Blok B18, Lalodati, Kec. Puuwatu, Kota Kendari, Sulawesi Tenggara 93112');
         };
 
         if (document.readyState === 'loading') {

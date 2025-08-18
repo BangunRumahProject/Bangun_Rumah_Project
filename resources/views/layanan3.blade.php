@@ -328,7 +328,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
                             </p>
                         </div>
 
@@ -337,7 +337,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
                             <h3 class="text-black text-xl font-semibold">Akad</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
                             </p>
                         </div>
 
@@ -346,7 +346,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
                             <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
                             </p>
                         </div>
 
@@ -355,7 +355,7 @@
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
                             <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orn
+                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
                             </p>
                         </div>
                     </div>
@@ -404,8 +404,7 @@
                             BERBEDA
                         </h3>
                         <p class="text-gray-400 text-sm lg:text-base leading-relaxed max-w-lg">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut
+                            Kami menawarkan layanan renovasi rumah yang berkualitas tinggi dengan tim profesional, material premium, dan pelayanan yang memuaskan.
                         </p>
                     </div>
 
@@ -430,11 +429,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">TIM PROFESIONAL</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Tim ahli kami terdiri dari arsitek, insinyur, dan tukang berpengalaman yang telah mengerjakan berbagai proyek renovasi berkualitas tinggi.
                         </p>
                     </div>
 
@@ -448,11 +445,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">MATERIAL PREMIUM</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Kami menggunakan material berkualitas tinggi dan terbaik untuk memastikan hasil renovasi yang tahan lama dan memuaskan.
                         </p>
                     </div>
 
@@ -466,11 +461,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">DESAIN INOVATIF</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Tim desainer kami menghadirkan konsep dan desain renovasi yang inovatif, modern, dan sesuai dengan tren terkini.
                         </p>
                     </div>
 
@@ -484,11 +477,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">PELAYANAN CEPAT</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Kami berkomitmen memberikan pelayanan renovasi yang cepat, responsif, dan sesuai dengan timeline yang telah disepakati.
                         </p>
                     </div>
 
@@ -502,11 +493,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">HARGA TERJANGKAU</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Kami menawarkan harga yang kompetitif dan terjangkau tanpa mengorbankan kualitas hasil renovasi.
                         </p>
                     </div>
 
@@ -520,11 +509,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                        <h4 class="text-white text-lg font-semibold">GARANSI LENGKAP</h4>
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                            fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                            non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                            Kami memberikan garansi komprehensif untuk semua pekerjaan renovasi dan siap memperbaiki jika ada masalah dalam masa garansi.
                         </p>
                     </div>
                 </div>
@@ -700,12 +687,12 @@
                 <div class="space-y-8">
                     <div>
                         <h2 class="text-3xl lg:text-4xl font-normal text-white mb-4">
-                            LOREM IPSUM LOREM IPSUM LOREM IPS LOREM IPSUM
-                            <span class="text-yellow-400 font-semibold">LOREM IPSUM LOREM</span>
+                            Jasa Desain Interior & Eksterior
+                            <span class="text-yellow-400 font-semibold">Rumah Modern</span>
                         </h2>
                         <p class="text-gray-300 text-base leading-relaxed mb-8">
                             Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                            melalui proses desain, perencanaan anggaran, hingga.
+                            melalui proses desain, perencanaan anggaran, hingga eksekusi renovasi yang sempurna.
                         </p>
                     </div>
 
@@ -759,32 +746,72 @@
                     </h2>
 
                     <!-- Services Accordion -->
-                    <div class="space-y-4">
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    <div class="space-y-4" id="services-accordion-layanan3">
+                        <!-- Service Item 1 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="1">
+                                <span class="text-lg">Berapa biaya jasa desain interior dan eksterior?</span>
+                                <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan3 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Biaya jasa desain interior dan eksterior bervariasi tergantung:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Luas Area:</strong> Rp 150.000 - 300.000 per m²</li>
+                                    <li><strong>Kompleksitas Desain:</strong> Desain custom lebih mahal</li>
+                                    <li><strong>Jenis Layanan:</strong> 2D, 3D, atau rendering</li>
+                                    <li><strong>Material yang Digunakan:</strong> Material premium mempengaruhi harga</li>
+                                </ul>
+                                <p class="mt-3">Kami akan memberikan penawaran detail setelah konsultasi dan survey lokasi.</p>
+                            </div>
                         </div>
 
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <!-- Service Item 2 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="2">
+                                <span class="text-lg">Apakah desain bisa disesuaikan dengan budget klien?</span>
+                                <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan3 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Ya, kami selalu menyesuaikan desain dengan budget klien:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Paket Ekonomis:</strong> Desain sederhana dengan material terjangkau</li>
+                                    <li><strong>Paket Standard:</strong> Desain menengah dengan material berkualitas</li>
+                                    <li><strong>Paket Premium:</strong> Desain mewah dengan material terbaik</li>
+                                    <li><strong>Konsultasi Gratis:</strong> Untuk membantu menentukan pilihan</li>
+                                </ul>
+                                <p class="mt-3">Tim kami akan memberikan alternatif desain yang sesuai dengan anggaran Anda.</p>
+                            </div>
                         </div>
 
-                        <div class="border-b border-gray-400 pb-4">
-                            <button class="flex justify-between items-center w-full text-left">
-                                <span class="text-lg font-medium text-black">lorem Ipsum Bla Blas Lorem Ipsum?</span>
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        <!-- Service Item 3 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-service="3">
+                                <span class="text-lg">Berapa lama proses pengerjaan desain interior?</span>
+                                <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
+                            <div class="service-content-layanan3 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Proses pengerjaan desain interior meliputi:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Konsultasi & Survey:</strong> 1-2 hari</li>
+                                    <li><strong>Konsep Desain:</strong> 3-5 hari</li>
+                                    <li><strong>Desain Detail:</strong> 7-10 hari</li>
+                                    <li><strong>3D Rendering:</strong> 5-7 hari</li>
+                                    <li><strong>Revisi & Finalisasi:</strong> 3-5 hari</li>
+                                </ul>
+                                <p class="mt-3">Total waktu pengerjaan sekitar 2-4 minggu tergantung kompleksitas desain.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -807,7 +834,7 @@
             </h2>
             <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
                 Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                melalui proses desain, perencanaan anggaran, hingga.
+                melalui proses desain, perencanaan anggaran, hingga eksekusi renovasi yang sempurna.
             </p>
             <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
                 Hubungi Kami
@@ -820,6 +847,40 @@
 
     @include('components.footer')
     @include('components.scripts')
+
+    <script>
+    // Services Accordion functionality for layanan3 page
+    document.addEventListener('DOMContentLoaded', function() {
+        const serviceButtons = document.querySelectorAll('.service-button-layanan3');
+        let currentlyOpen = null;
+
+        serviceButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const serviceItem = this.closest('.border');
+                const content = serviceItem.querySelector('.service-content-layanan3');
+                const icon = this.querySelector('.service-icon-layanan3');
+                
+                // If clicking the same item that's already open, close it
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                    currentlyOpen = null;
+                } else {
+                    // Close currently open item if any
+                    if (currentlyOpen) {
+                        currentlyOpen.style.display = 'none';
+                        currentlyOpen.closest('.border').querySelector('.service-icon-layanan3').style.transform = 'rotate(0deg)';
+                    }
+                    
+                    // Open clicked item
+                    content.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                    currentlyOpen = content;
+                }
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
