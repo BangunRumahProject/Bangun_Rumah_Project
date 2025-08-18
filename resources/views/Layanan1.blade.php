@@ -175,8 +175,8 @@
                         BERBEDA
                     </h3>
                     <p class="text-gray-400 text-sm lg:text-base leading-relaxed max-w-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut
+                        Kami percaya bahwa setiap rumah memiliki cerita, dan tugas kami adalah membantu Anda mewujudkannya.
+                         Dengan pengalaman, inovasi, serta komitmen penuh pada kualitas, kami menghadirkan layanan yang membuat kami berbeda dari yang lain.
                     </p>
                 </div>
 
@@ -201,11 +201,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Kualitas Bahan Terbaik</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Kami hanya menggunakan material bangunan berkualitas tinggi yang tahan lama dan sesuai standar,
+                        sehingga rumah Anda kokoh, aman, dan bernilai investasi jangka panjang.
                     </p>
                 </div>
 
@@ -219,11 +218,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Desain Elegan & Modern</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Tim arsitek kami menghadirkan desain rumah yang tidak hanya indah, tetapi juga fungsional,
+                         menyesuaikan dengan kebutuhan dan gaya hidup Anda.
                     </p>
                 </div>
 
@@ -237,11 +235,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Inovasi & Kreativitas</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Setiap proyek dirancang dengan ide-ide inovatif,
+                        memadukan teknologi terbaru dengan konsep yang unik agar rumah Anda tampil berbeda dan istimewa.
                     </p>
                 </div>
 
@@ -255,11 +252,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Pengerjaan Tepat Waktu</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Kami mengutamakan ketepatan waktu dalam setiap pembangunan dan renovasi,
+                         tanpa mengurangi kualitas hasil akhir.
                     </p>
                 </div>
 
@@ -273,11 +269,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Harga Transparan & Terjangkau</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Memberikan penawaran harga yang jelas, detail,
+                        dan sesuai anggaran Anda, tanpa biaya tersembunyi.
                     </p>
                 </div>
 
@@ -291,11 +286,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Tim Profesional & Berpengalaman</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Dikerjakan oleh tenaga ahli berpengalaman di bidang konstruksi dan renovasi,
+                         yang siap mewujudkan rumah impian Anda dengan hasil maksimal.
                     </p>
                 </div>
             </div>
@@ -818,8 +812,8 @@
                     <div class="space-y-4" id="services-accordion-layanan1">
                         <!-- Service Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="1">
                                 <span class="text-lg">Berapa lama waktu pengerjaan pembangunan rumah?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -840,8 +834,8 @@
 
                         <!-- Service Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="2">
                                 <span class="text-lg">Apakah ada garansi untuk hasil pembangunan?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -862,8 +856,8 @@
 
                         <!-- Service Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="3">
                                 <span class="text-lg">Bagaimana sistem pembayaran untuk pembangunan rumah?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -923,7 +917,7 @@
                 const serviceItem = this.closest('.border');
                 const content = serviceItem.querySelector('.service-content-layanan1');
                 const icon = this.querySelector('.service-icon-layanan1');
-                
+
                 // If clicking the same item that's already open, close it
                 if (content.style.display === 'block') {
                     content.style.display = 'none';
@@ -935,7 +929,7 @@
                         currentlyOpen.style.display = 'none';
                         currentlyOpen.closest('.border').querySelector('.service-icon-layanan1').style.transform = 'rotate(0deg)';
                     }
-                    
+
                     // Open clicked item
                     content.style.display = 'block';
                     icon.style.transform = 'rotate(180deg)';
