@@ -845,9 +845,6 @@
     <!-- Why Choose Us Section -->
     <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
 
-    @include('components.footer')
-    @include('components.scripts')
-
     <script>
     // Services Accordion functionality for layanan3 page
     document.addEventListener('DOMContentLoaded', function() {

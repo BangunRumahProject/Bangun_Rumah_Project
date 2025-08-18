@@ -559,11 +559,6 @@
     </svg>
 </a>
 
-
-
-
-{{-- Footer --}}
-<x-footer />
 <script>
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
