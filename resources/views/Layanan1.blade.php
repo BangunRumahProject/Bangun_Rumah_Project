@@ -551,36 +551,36 @@
                         <!-- Step 1 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
+                            <h3 class="text-black text-xl font-semibold">Perencanaan & Desain</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
+                                Konsultasi kebutuhan dan pembuatan gambar kerja detail.
                             </p>
                         </div>
 
                         <!-- Step 2 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
-                            <h3 class="text-black text-xl font-semibold">Akad</h3>
+                            <h3 class="text-black text-xl font-semibold">Material Berkualitas</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
+                                Pemilihan material premium yang kokoh dan tahan lama.
                             </p>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
+                            <h3 class="text-black text-xl font-semibold">Pengerjaan Profesional</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
+                                Dikerjakan tim ahli dengan standar konstruksi terbaik.
                             </p>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
-                            <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
+                            <h3 class="text-black text-xl font-semibold">Serah Terima Tepat Waktu!</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
+                                Rumah siap huni sesuai kesepakatan awal.
                             </p>
                         </div>
                     </div>
@@ -647,7 +647,7 @@
                     <!-- Main Title -->
                     <div class="mb-16">
                         <h2 class="text-black text-3xl font-normal leading-relaxed">
-                            Tahap - tahap Menggunakan Jasa<br>Pembangunan Rumah
+                            Tahap - tahap Menggunakan Jasa<br>Renovasi Rumah
                         </h2>
                     </div>
 
@@ -656,36 +656,36 @@
                         <!-- Step 1 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
+                            <h3 class="text-black text-xl font-semibold">Survey & Analisa</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
+                                Mengecek kondisi bangunan untuk menentukan kebutuhan renovasi.
                             </p>
                         </div>
 
                         <!-- Step 2 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
-                            <h3 class="text-black text-xl font-semibold">Akad</h3>
+                            <h3 class="text-black text-xl font-semibold">Desain Ulang Modern</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
+                                Penyesuaian desain sesuai tren, fungsi, dan gaya hidup Anda.
                             </p>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
+                            <h3 class="text-black text-xl font-semibold">Perbaikan & Upgrade</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
+                                Penguatan struktur serta pembaruan interior & eksterior.
                             </p>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
-                            <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
+                            <h3 class="text-black text-xl font-semibold">Efisiensi & Tepat Waktu</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
+                                Renovasi sesuai anggaran dengan pengerjaan cepat dan rapi.
                             </p>
                         </div>
                     </div>

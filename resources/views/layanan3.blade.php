@@ -14,13 +14,13 @@
     <!-- Hero Section -->
     <section class="relative w-full min-h-screen bg-gray-900 overflow-hidden">
         <!-- Background Image dengan Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 pt-20"
             style="background-image: url('{{ asset('image/Profile-background.png') }}');">
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/30"></div>
 
         <!-- Main Content Container -->
-        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-4">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:py-12 pt-24">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[80vh]">
 
                 <!-- Left Content - Text Section -->
@@ -28,21 +28,21 @@
                     <!-- Main Title -->
                     <div class="space-y-4">
                         <h1
-                            class="text-6xl lg:text-7xl xl:text-6xl font-black text-yellow-400 leading-tight text-gradient">
-                            Pembangunan & Renovasi Rumah
+                            class="text-5xl lg:text-6xl xl:text-5xl text-yellow-400 font-bold leading-tight">
+                            Eksterior & Interior Rumah
                         </h1>
                     </div>
 
                     <!-- Description -->
                     <div class="space-y-8 max-w-xl">
-                        <p class="text-white text-xl lg:text-2xl leading-relaxed font-medium">
-                            Wujudkan hunian impian Anda dengan layanan pembangunan dan renovasi rumah yang profesional,
-                            berkualitas tinggi, dan sesuai dengan standar konstruksi terbaik.
+                        <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
+                            Wujudkan hunian yang indah, nyaman, dan fungsional dengan layanan desain
+                            eksterior dan interior dari kami.
                         </p>
 
-                        <p class="text-gray-200 text-lg lg:text-xl leading-relaxed">
-                            Dari pembangunan rumah baru hingga renovasi total, kami menghadirkan solusi konstruksi
-                            terpadu dengan tim ahli berpengalaman dan material berkualitas premium.
+                        <p class="text-gray-200 text-base lg:text-lg leading-relaxed">
+                            Kami menghadirkan konsep desain modern, elegan, dan sesuai dengan gaya hidup Anda. Setiap detail dirancang untuk
+                             memberikan kenyamanan maksimal sekaligus meningkatkan nilai estetika rumah.
                         </p>
                     </div>
 
@@ -61,7 +61,7 @@
                 </div>
 
                 <!-- Right Content - Image -->
-                <div class="relative slide-in-right">
+                <div class="relative slide-in-right mt-8">
                     <div
                         class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
                         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -749,8 +749,8 @@
                     <div class="space-y-4" id="services-accordion-layanan3">
                         <!-- Service Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="1">
                                 <span class="text-lg">Berapa biaya jasa desain interior dan eksterior?</span>
                                 <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -771,8 +771,8 @@
 
                         <!-- Service Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="2">
                                 <span class="text-lg">Apakah desain bisa disesuaikan dengan budget klien?</span>
                                 <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -793,8 +793,8 @@
 
                         <!-- Service Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="3">
                                 <span class="text-lg">Berapa lama proses pengerjaan desain interior?</span>
                                 <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -856,7 +856,7 @@
                 const serviceItem = this.closest('.border');
                 const content = serviceItem.querySelector('.service-content-layanan3');
                 const icon = this.querySelector('.service-icon-layanan3');
-                
+
                 // If clicking the same item that's already open, close it
                 if (content.style.display === 'block') {
                     content.style.display = 'none';
@@ -868,7 +868,7 @@
                         currentlyOpen.style.display = 'none';
                         currentlyOpen.closest('.border').querySelector('.service-icon-layanan3').style.transform = 'rotate(0deg)';
                     }
-                    
+
                     // Open clicked item
                     content.style.display = 'block';
                     icon.style.transform = 'rotate(180deg)';
