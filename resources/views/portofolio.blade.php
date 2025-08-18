@@ -9,8 +9,8 @@
 @section('content')
 @include('components.navbar')
     {{-- Hero Section --}}
-    <section class="pt-28 pb-16 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative min-h-[400px] flex items-end">
-        <div class="w-full px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left">
+    <section class="pt-28 pb-16 relative min-h-[420px] flex items-end bg-center bg-cover" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0, 0, 0, 0.52)), url('{{ asset('img/siang3.jpg') }}');">
+        <div class="w-full px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center pb-16">
                 <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
                     Portofolio
@@ -19,12 +19,7 @@
                     Dengan pengalaman lebih dari 10 tahun, kami telah sukses mengerjakan berbagai proyek bangun rumah,
                     renovasi, desain interior yang unik, modern, dan inovatif.
                 </p>
-                <div class="flex justify-end">
-                    <button
-                        class="border border-yellow-400 text-white px-6 py-3 rounded hover:bg-yellow-400 hover:text-black transition-all duration-300 font-semibold">
-                        LIHAT PORTOFOLIO LAINNYA
-                    </button>
-                </div>
+                
             </div>
         </div>
     </section>

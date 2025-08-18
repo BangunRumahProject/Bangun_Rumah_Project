@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - Bangun Rumah Project')
+@section('title', 'Layanan Bangun & Renovasi rumah')
 
 @section('styles')
 @include('components.styles')
