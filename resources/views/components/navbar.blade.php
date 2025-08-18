@@ -8,39 +8,52 @@
                 <img src="/img/logo-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300" id="logo-dark">
                 <img src="/img/logo-white-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-white">
             </div>
-            <span class="font-bold text-[8px] md:text-[11px] text-yellow-400 text-center leading-tight transition-colors duration-300" id="brand-text">Bangun Rumah Project</span>
+            <span class="font-bold text-[10px] md:text-[13px] text-yellow-400 text-center leading-tight transition-colors duration-300" id="brand-text">Bangun Rumah Project</span>
         </div>
 
         {{-- Desktop Menu --}}
         <ul class="hidden md:flex items-center space-x-3 lg:space-x-5 font-semibold text-sm lg:text-base desktop-menu">
             <li><a href="/"
-                    class="rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black nav-link {{ request()->is('/') ? 'active' : '' }}">HOME</a>
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('/') ? 'nav-active' : '' }}">
+                    <span>HOME</span>
+                    <div class="nav-indicator"></div>
+                </a>
             </li>
             <li><a href="/profile"
-                    class="rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black nav-link">PROFIL</a>
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('profile*') ? 'nav-active' : '' }}">
+                    <span>PROFIL</span>
+                    <div class="nav-indicator"></div>
+                </a>
             </li>
             <li><a href="/portfolio"
-                    class="rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black nav-link {{ request()->is('portfolio*') ? 'active' : '' }}">PORTOFOLIO</a>
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('portfolio*') ? 'nav-active' : '' }}">
+                    <span>PORTOFOLIO</span>
+                    <div class="nav-indicator"></div>
+                </a>
             </li>
             <li class="relative group" data-dropdown>
                 <a href="/layanan"
-                    class="rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black nav-link flex items-center gap-1 {{ request()->is('layanan*') ? 'active' : '' }}">
-                    LAYANAN
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black flex items-center gap-1 relative {{ request()->is('layanan*') || request()->is('services*') ? 'nav-active' : '' }}">
+                    <span>LAYANAN</span>
                     <svg class="w-3 h-3 lg:w-4 lg:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
+                    <div class="nav-indicator"></div>
                 </a>
                 <ul class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded shadow-lg py-2 z-50 min-w-max hidden">
-                    <li><a href="/services1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100">Layanan
+                    <li><a href="/services1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
                             Bangun & Renovasi Rumah</a></li>
-                    <li><a href="/services2" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100">Layanan
+                    <li><a href="/services2" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
                             Buat RAB & PBG/IMB</a></li>
-                    <li><a href="/services3" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100">Layanan
+                    <li><a href="/services3" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
                             Desain Eksterior / Interior</a></li>
                 </ul>
             </li>
             <li><a href="/contact"
-                    class="rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black nav-link {{ request()->is('contact*') ? 'active' : '' }}">KONTAK</a>
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('contact*') ? 'nav-active' : '' }}">
+                    <span>KONTAK</span>
+                    <div class="nav-indicator"></div>
+                </a>
             </li>
         </ul>
     </div>
@@ -77,7 +90,7 @@
             <ul class="p-6 space-y-4">
                 <li>
                     <a href="/"
-                        class="block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                        class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('/') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -89,8 +102,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                    <a href="/profile"
+                        class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('profile*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -102,13 +115,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                    <a href="/portfolio"
+                        class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('portfolio*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                             </svg>
                             <span>PORTOFOLIO</span>
                         </div>
@@ -116,7 +129,7 @@
                 </li>
                 <li class="relative" data-dropdown>
                     <a href="#"
-                        class="block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                        class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('layanan*') || request()->is('services*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center w-full place-content-between">
                             <div class="flex items-center">
                                 <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
@@ -136,7 +149,7 @@
                     <ul class="hidden pl-8 space-y-2 mt-2">
                         <li>
                             <a href="/services1"
-                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('services1*') ? 'bg-gray-800 text-yellow-400 border-l-4 border-yellow-400' : '' }}">
                                 <div class="flex items-center">
                                     <svg class="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
@@ -149,7 +162,7 @@
                         </li>
                         <li>
                             <a href="/services2"
-                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('services2*') ? 'bg-gray-800 text-yellow-400 border-l-4 border-yellow-400' : '' }}">
                                 <div class="flex items-center">
                                     <svg class="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
@@ -161,8 +174,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="services3"
-                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center">
+                            <a href="/services3"
+                                class="block px-4 py-3 text-gray-300 hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('services3*') ? 'bg-gray-800 text-yellow-400 border-l-4 border-yellow-400' : '' }}">
                                 <div class="flex items-center">
                                     <svg class="w-4 h-4 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
@@ -177,7 +190,7 @@
                 </li>
                 <li>
                     <a href="/contact"
-                        class="block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('contact*') ? 'bg-gray-800 border-l-4 border-yellow-400' : '' }}">
+                        class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('contact*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
