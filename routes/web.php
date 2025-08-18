@@ -58,10 +58,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
 });
 
 // Public Portfolio Route (akan dibuat nanti)
-Route::get('/portfolio', function () {
+Route::get('/portofolio', function () {
     $portfolios = \App\Models\Portfolio::active()->orderBy('sort_order')->orderBy('created_at', 'desc')->get();
-    return view('portfolio', compact('portfolios'));
-})->name('portfolio');
+    return view('portofolio', compact('portfolios'));
+})->name('portofolio');
 
 // API Route for Portfolio Details
 Route::get('/api/portfolios/{id}', function ($id) {

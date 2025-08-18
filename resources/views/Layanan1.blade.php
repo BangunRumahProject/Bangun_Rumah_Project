@@ -175,8 +175,8 @@
                         BERBEDA
                     </h3>
                     <p class="text-gray-400 text-sm lg:text-base leading-relaxed max-w-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut
+                        Kami percaya bahwa setiap rumah memiliki cerita, dan tugas kami adalah membantu Anda mewujudkannya.
+                         Dengan pengalaman, inovasi, serta komitmen penuh pada kualitas, kami menghadirkan layanan yang membuat kami berbeda dari yang lain.
                     </p>
                 </div>
 
@@ -201,11 +201,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Kualitas Bahan Terbaik</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Kami hanya menggunakan material bangunan berkualitas tinggi yang tahan lama dan sesuai standar,
+                        sehingga rumah Anda kokoh, aman, dan bernilai investasi jangka panjang.
                     </p>
                 </div>
 
@@ -219,11 +218,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Desain Elegan & Modern</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Tim arsitek kami menghadirkan desain rumah yang tidak hanya indah, tetapi juga fungsional,
+                         menyesuaikan dengan kebutuhan dan gaya hidup Anda.
                     </p>
                 </div>
 
@@ -237,11 +235,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Inovasi & Kreativitas</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Setiap proyek dirancang dengan ide-ide inovatif,
+                        memadukan teknologi terbaru dengan konsep yang unik agar rumah Anda tampil berbeda dan istimewa.
                     </p>
                 </div>
 
@@ -255,11 +252,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Pengerjaan Tepat Waktu</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Kami mengutamakan ketepatan waktu dalam setiap pembangunan dan renovasi,
+                         tanpa mengurangi kualitas hasil akhir.
                     </p>
                 </div>
 
@@ -273,11 +269,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Harga Transparan & Terjangkau</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Memberikan penawaran harga yang jelas, detail,
+                        dan sesuai anggaran Anda, tanpa biaya tersembunyi.
                     </p>
                 </div>
 
@@ -291,11 +286,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h4 class="text-white text-lg font-semibold">LOREM IPSUM</h4>
+                    <h4 class="text-white text-lg font-semibold">Tim Profesional & Berpengalaman</h4>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare eget lectus ut
-                        fermentum. Ut malesuada mattis ante, venenatis id porta tellus eque tincidunt et ut quod
-                        non. Ante sed vitae vitae quodlorem. Phasellus pulvinar laciem pharetra dui molestie.
+                        Dikerjakan oleh tenaga ahli berpengalaman di bidang konstruksi dan renovasi,
+                         yang siap mewujudkan rumah impian Anda dengan hasil maksimal.
                     </p>
                 </div>
             </div>
@@ -557,36 +551,36 @@
                         <!-- Step 1 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
+                            <h3 class="text-black text-xl font-semibold">Perencanaan & Desain</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
+                                Konsultasi kebutuhan dan pembuatan gambar kerja detail.
                             </p>
                         </div>
 
                         <!-- Step 2 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
-                            <h3 class="text-black text-xl font-semibold">Akad</h3>
+                            <h3 class="text-black text-xl font-semibold">Material Berkualitas</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
+                                Pemilihan material premium yang kokoh dan tahan lama.
                             </p>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
+                            <h3 class="text-black text-xl font-semibold">Pengerjaan Profesional</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
+                                Dikerjakan tim ahli dengan standar konstruksi terbaik.
                             </p>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
-                            <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
+                            <h3 class="text-black text-xl font-semibold">Serah Terima Tepat Waktu!</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
+                                Rumah siap huni sesuai kesepakatan awal.
                             </p>
                         </div>
                     </div>
@@ -653,7 +647,7 @@
                     <!-- Main Title -->
                     <div class="mb-16">
                         <h2 class="text-black text-3xl font-normal leading-relaxed">
-                            Tahap - tahap Menggunakan Jasa<br>Pembangunan Rumah
+                            Tahap - tahap Menggunakan Jasa<br>Renovasi Rumah
                         </h2>
                     </div>
 
@@ -662,36 +656,36 @@
                         <!-- Step 1 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">01</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Desain</h3>
+                            <h3 class="text-black text-xl font-semibold">Survey & Analisa</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Konsultasi desain, pembuatan gambar kerja, dan perencanaan detail sesuai kebutuhan dan budget klien.
+                                Mengecek kondisi bangunan untuk menentukan kebutuhan renovasi.
                             </p>
                         </div>
 
                         <!-- Step 2 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">02</span>
-                            <h3 class="text-black text-xl font-semibold">Akad</h3>
+                            <h3 class="text-black text-xl font-semibold">Desain Ulang Modern</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Kesepakatan kontrak kerja, timeline pengerjaan, dan pembayaran yang transparan dan jelas.
+                                Penyesuaian desain sesuai tren, fungsi, dan gaya hidup Anda.
                             </p>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">03</span>
-                            <h3 class="text-black text-xl font-semibold">Tahap Bangun</h3>
+                            <h3 class="text-black text-xl font-semibold">Perbaikan & Upgrade</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Pelaksanaan pembangunan dengan tim profesional dan material berkualitas sesuai standar.
+                                Penguatan struktur serta pembaruan interior & eksterior.
                             </p>
                         </div>
 
                         <!-- Step 4 -->
                         <div class="space-y-4">
                             <span class="text-yellow-400 text-7xl font-bold leading-none">04</span>
-                            <h3 class="text-black text-xl font-semibold">Serah Terima!</h3>
+                            <h3 class="text-black text-xl font-semibold">Efisiensi & Tepat Waktu</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
-                                Penyerahan hasil pekerjaan yang sudah selesai dan sesuai dengan kesepakatan awal.
+                                Renovasi sesuai anggaran dengan pengerjaan cepat dan rapi.
                             </p>
                         </div>
                     </div>
@@ -818,8 +812,8 @@
                     <div class="space-y-4" id="services-accordion-layanan1">
                         <!-- Service Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="1">
                                 <span class="text-lg">Berapa lama waktu pengerjaan pembangunan rumah?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -840,8 +834,8 @@
 
                         <!-- Service Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="2">
                                 <span class="text-lg">Apakah ada garansi untuk hasil pembangunan?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -862,8 +856,8 @@
 
                         <!-- Service Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
-                            <button type="button" 
-                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
                                     data-service="3">
                                 <span class="text-lg">Bagaimana sistem pembayaran untuk pembangunan rumah?</span>
                                 <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -923,7 +917,7 @@
                 const serviceItem = this.closest('.border');
                 const content = serviceItem.querySelector('.service-content-layanan1');
                 const icon = this.querySelector('.service-icon-layanan1');
-                
+
                 // If clicking the same item that's already open, close it
                 if (content.style.display === 'block') {
                     content.style.display = 'none';
@@ -935,7 +929,7 @@
                         currentlyOpen.style.display = 'none';
                         currentlyOpen.closest('.border').querySelector('.service-icon-layanan1').style.transform = 'rotate(0deg)';
                     }
-                    
+
                     // Open clicked item
                     content.style.display = 'block';
                     icon.style.transform = 'rotate(180deg)';
@@ -945,6 +939,14 @@
         });
     });
     </script>
+<a href="https://wa.me/6285333353609?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20rancang%20bangun%20rumah"
+   target="_blank"
+   class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50"
+   title="Chat via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8 fill-current">
+        <path d="M16 0C7.163 0 0 6.92 0 15.44c0 2.72.775 5.37 2.237 7.68L0 32l9.13-2.388A15.9 15.9 0 0016 30.88c8.837 0 16-6.92 16-15.44S24.837 0 16 0zm0 28.48a12.48 12.48 0 01-6.46-1.76l-.463-.275-5.42 1.417 1.45-5.18-.3-.5A12.13 12.13 0 013.52 15.44c0-6.657 5.77-12.08 12.88-12.08 3.44 0 6.677 1.315 9.107 3.702a12.42 12.42 0 013.773 8.378c0 6.657-5.77 12.08-12.88 12.08zm7.057-8.807c-.387-.193-2.283-1.127-2.636-1.253-.353-.127-.61-.193-.867.193-.257.386-.993 1.253-1.217 1.507-.223.257-.45.29-.837.097-.387-.193-1.633-.598-3.11-1.905-1.148-1.015-1.922-2.27-2.145-2.656-.223-.386-.023-.594.17-.787.175-.174.387-.45.58-.676.193-.226.257-.386.387-.644.127-.257.064-.48-.032-.674-.096-.193-.867-2.086-1.19-2.857-.314-.754-.634-.65-.867-.66l-.74-.013c-.257 0-.674.096-1.03.48-.353.386-1.354 1.322-1.354 3.223 0 1.902 1.385 3.737 1.58 3.993.193.257 2.728 4.17 6.606 5.847.925.4 1.645.639 2.205.816.926.295 1.77.253 2.435.154.743-.111 2.283-.932 2.605-1.83.322-.898.322-1.667.225-1.83-.096-.161-.353-.257-.74-.45z"/>
+    </svg>
+</a>
 </body>
 
 </html>
