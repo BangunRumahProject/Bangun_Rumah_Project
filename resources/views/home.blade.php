@@ -63,12 +63,6 @@
                     <p class="leading-relaxed">Kami adalah partner terpercaya untuk mewujudkan hunian berkualitas dengan standar konstruksi tertinggi. Dengan pengalaman lebih dari 15 tahun, tim ahli kami siap menghadirkan rumah impian yang sempurna sesuai budget dan keinginan Anda.</p>
                     <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan dengan presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap proyek yang dikerjakan.</p>
                 </div>
-
-                <div class="mb-8 text-center lg:text-left animate-fade-in-right delay-400">
-                    <a href="#kontak" class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all duration-300 font-bold text-base hover:scale-105 hover:shadow-xl">
-                        KONSULTASI GRATIS SEKARANG
-                    </a>
-                </div>
             </div>
 
             <!-- Poin-poin dengan logo bulat kuning - Layout yang diperbaiki -->
@@ -303,7 +297,7 @@
                 <div class="text-white font-bold text-xl mb-4">WUJUDKAN RUMAH IMPIAN ANDA BERSAMA KAMI</div>
                 <div class="text-gray-300">Dari desain hingga pembangunan, kami menghadirkan hunian yang memadukan estetika, kenyamanan, dan kualitas terbaik. Tim profesional kami siap membimbing setiap langkah-mulai dari perencanaan anggaran dan pemilihan material berkualitas terbaik. Tim kami juga akan memberikan hasil akhir yang memukau.</div>
             </div>
-            <a href="#" class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4 md:mt-0">Lihat Portfolio</a>
+            <a href="/portofolio" class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4 md:mt-0">Lihat Portofolio</a>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-2/3 mx-auto">
             {{-- Portfolio Item 1 - Large --}}
@@ -524,7 +518,7 @@
         
         <div class="text-center mt-12">
             <a href="#kontak" class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-500 transition-all duration-300 font-bold text-lg hover:scale-105 hover:shadow-xl">
-                KONSULTASI GRATIS SEKARANG
+              HUBUNGI KAMI
             </a>
         </div>
     </div>
@@ -535,16 +529,30 @@
     <div class="max-w-6xl mx-auto px-4 relative pb-8">
         <h2 class="text-2xl font-bold mb-6">ARTIKEL</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            @for($i=0;$i<3;$i++)
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition animate-fade-in-up">
-                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Artikel" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" alt="Artikel 1" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
                 <div class="p-4">
-                    <div class="font-bold mb-2">Pengaruh Penerimaan Bangunan pada Kamar Tidur</div>
-                    <div class="text-gray-500 text-sm mb-2">Tips dan panduan lengkap untuk membangun rumah impian Anda dengan budget yang terjangkau.</div>
-                    <a href="#" class="text-yellow-400 font-semibold hover:underline">Baca Selengkapnya</a>
+                    <div class="font-bold mb-2">Panduan Lengkap Memahami Proses Pembangunan Rumah (www.btnproperti.co.id)</div>
+                    <div class="text-gray-500 text-sm mb-2">Langkah praktis menyusun RAB yang efisien tanpa mengorbankan kualitas.</div>
+                    <a href="https://www.btnproperti.co.id/blog/proses-pembangunan-rumah" class="text-yellow-400 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
                 </div>
             </div>
-            @endfor
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition animate-fade-in-up">
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Artikel 2" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                <div class="p-4">
+                    <div class="font-bold mb-2">Tren Desain Rumah Minimalis 2025</div>
+                    <div class="text-gray-500 text-sm mb-2">Inspirasi layout, warna, dan material untuk tampilan minimalis yang modern.</div>
+                    <a href="https://www.btnproperti.co.id/blog/proses-pembangunan-rumah" class="text-yellow-400 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition animate-fade-in-up">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=400&q=80" alt="Artikel 3" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                <div class="p-4">
+                    <div class="font-bold mb-2">Memilih Material Bangunan yang Tepat</div>
+                    <div class="text-gray-500 text-sm mb-2">Perbandingan material umum beserta kelebihan dan kekurangannya.</div>
+                    <a href="/artikel" class="text-yellow-400 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
+                </div>
+            </div>
         </div>
         <a href="/artikel" class="absolute bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4">Lihat Artikel Lainnya</a>
     </div>

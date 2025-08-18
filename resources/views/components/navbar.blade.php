@@ -25,7 +25,7 @@
                     <div class="nav-indicator"></div>
                 </a>
             </li>
-            <li><a href="/portfolio"
+            <li><a href="/portofolio"
                     class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('portfolio*') ? 'nav-active' : '' }}">
                     <span>PORTOFOLIO</span>
                     <div class="nav-indicator"></div>
@@ -115,7 +115,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/portfolio"
+                    <a href="/portofolio"
                         class="mobile-nav-link block px-4 py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('portfolio*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
