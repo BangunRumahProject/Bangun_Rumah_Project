@@ -774,20 +774,19 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition animate-fade-in-up">
-                    <img src="https://aob.co.id/blog/wp-content/uploads/2023/09/Artikel-5-min-scaled.jpg"
-                        alt="Artikel 3" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                    <img src="https://aob.co.id/blog/wp-content/uploads/2023/09/Artikel-5-min-scaled.jpg" alt="Artikel 3"
+                        class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
                     <div class="p-4">
                         <div class="font-bold mb-2">Rencana Anggaran Biaya: Arti, Contoh, dan Cara Membuatnya</div>
-                        <div class="text-gray-500 text-sm mb-2">Rencana Anggaran Biaya (RAB) merupakan alat yang sangat penting untuk 
+                        <div class="text-gray-500 text-sm mb-2">Rencana Anggaran Biaya (RAB) merupakan alat yang sangat
+                            penting untuk
                             memastikan pengelolaan keuangan yang efisien dalam berbagai aspek bisnis.</div>
-                        <a href="https://bridgenr.com/id/blog/rencana-anggaran-biaya/" class="text-yellow-400 font-semibold hover:underline" target="_blank"
+                        <a href="https://bridgenr.com/id/blog/rencana-anggaran-biaya/"
+                            class="text-yellow-400 font-semibold hover:underline" target="_blank"
                             rel="noopener noreferrer">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-            <a href="/artikel"
-                class="absolute bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4">Lihat
-                Artikel Lainnya</a>
         </div>
     </section>
 
