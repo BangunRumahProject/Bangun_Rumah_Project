@@ -206,14 +206,6 @@
                     Kepercayaan klien menjadi bukti komitmen kami dalam mewujudkan hunian yang nyaman, fungsional, dan berkelas.
                     </p>
                 </div>
-
-                <!-- CTA Button -->
-                <div class="pt-4 sm:pt-6">
-                    <a href="/portofolio"
-                        class="inline-block px-6 sm:px-8 py-3 sm:py-4 border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold text-base sm:text-lg rounded-none transition-all duration-300 btn-hover magnetic">
-                        Lihat Portfolio Kami
-                    </a>
-                </div>
             </div>
         </div>
     </div>

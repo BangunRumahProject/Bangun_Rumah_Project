@@ -115,9 +115,6 @@
     </div>
 </section>
 
-{{-- Include Footer Component --}}
-<x-footer />
-
 {{-- Alpine.js --}}
 <script src="https://unpkg.com/alpinejs" defer></script>
 

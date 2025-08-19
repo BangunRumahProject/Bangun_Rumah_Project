@@ -24,7 +24,7 @@
             <!-- Right Column - Services Buttons -->
             <div class="text-right">
                 <h3 class="text-white text-lg font-bold mb-4">Layanan Kami</h3>
-                <div class="space-y-3">
+                <div class="space-y-3 flex flex-col gap-2">
                     <a href="/services1" 
                        class="inline-block text-white font-semibold text-sm hover:text-yellow-400 transition-all duration-300 transform hover:scale-105 group cursor-pointer">
                         <div class="flex items-center justify-end gap-2">
