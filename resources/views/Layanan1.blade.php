@@ -427,7 +427,7 @@
                     </ul>
                 </div>
 
-                <!-- Service 4: Interior Design -->
+                <!-- Service 4: Interior & Exterior Design -->
                 <div class="bg-gray-900 rounded-2xl p-8 hover:bg-gray-800 transition-all duration-300 slide-in-right"
                     data-delay="0.4">
                     <div class="flex items-center mb-6">
@@ -440,28 +440,28 @@
                                     d="M8 5a2 2 0 012-2h4a2 2 0 012 2v6H8V5z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold text-yellow-400">Desain Interior</h3>
+                        <h3 class="text-2xl font-bold text-yellow-400">Desain Interior & Eksterior</h3>
                     </div>
                     <p class="text-gray-300 leading-relaxed mb-6">
-                        Layanan desain interior yang mengubah ruangan Anda menjadi ruang yang nyaman, fungsional, dan
-                        sesuai dengan kepribadian penghuninya.
+                        Layanan desain interior dan eksterior yang komprehensif untuk menciptakan hunian yang harmonis, 
+                        nyaman, dan memiliki nilai estetika tinggi baik dari dalam maupun luar rumah.
                     </p>
                     <ul class="space-y-3 text-gray-300">
                         <li class="flex items-center">
                             <div class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                            Layout ruangan optimal
+                            Layout ruangan optimal & fasad eksterior
                         </li>
                         <li class="flex items-center">
                             <div class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                            Pemilihan furniture & material
+                            Pemilihan furniture, material & finishing eksterior
                         </li>
                         <li class="flex items-center">
                             <div class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                            Lighting design
+                            Lighting design interior & landscape
                         </li>
                         <li class="flex items-center">
                             <div class="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                            Color scheme & styling
+                            Color scheme & styling terpadu
                         </li>
                     </ul>
                 </div>
@@ -805,12 +805,12 @@
                 <!-- Right Content - Services -->
                 <div class="space-y-8">
                     <h2 class="text-3xl lg:text-4xl font-normal text-black">
-                        Layanan Lainnya dari Kami
+                    Pertanyaan Seputar Bangun dan Renovasi Rumah
                     </h2>
 
                     <!-- Services Accordion -->
                     <div class="space-y-4" id="services-accordion-layanan1">
-                        <!-- Service Item 1 -->
+                        <!-- FAQ Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -832,7 +832,7 @@
                             </div>
                         </div>
 
-                        <!-- Service Item 2 -->
+                        <!-- FAQ Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -854,7 +854,7 @@
                             </div>
                         </div>
 
-                        <!-- Service Item 3 -->
+                        <!-- FAQ Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -874,6 +874,52 @@
                                     <li><strong>Serah Terima:</strong> 5% setelah serah terima</li>
                                 </ul>
                                 <p class="mt-3">Setiap tahap pembayaran akan didokumentasikan dan disertai laporan progress yang detail.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
+                                    data-service="4">
+                                <span class="text-lg">Apakah tim konstruksi memiliki sertifikasi dan pengalaman?</span>
+                                <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="service-content-layanan1 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Ya, tim konstruksi kami sangat berkualitas dan berpengalaman:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Sertifikasi:</strong> Semua tukang memiliki sertifikat keahlian</li>
+                                    <li><strong>Pengalaman:</strong> Minimal 5 tahun di bidang konstruksi</li>
+                                    <li><strong>Pelatihan:</strong> Training berkala tentang standar keamanan</li>
+                                    <li><strong>Supervisi:</strong> Mandor berpengalaman mengawasi setiap tahap</li>
+                                    <li><strong>Kualitas Kerja:</strong> Standar SNI dan standar internasional</li>
+                                </ul>
+                                <p class="mt-3">Kami memastikan setiap anggota tim memiliki kompetensi yang sesuai dengan standar industri konstruksi.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button"
+                                    class="service-button-layanan1 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
+                                    data-service="5">
+                                <span class="text-lg">Bagaimana jika ada masalah selama proses konstruksi?</span>
+                                <svg class="service-icon-layanan1 w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="service-content-layanan1 px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Kami memiliki sistem penanganan masalah yang terstruktur:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Komunikasi Langsung:</strong> Laporan masalah dalam 24 jam</li>
+                                    <li><strong>Tim Solusi:</strong> Tim ahli akan segera ditugaskan</li>
+                                    <li><strong>Update Berkala:</strong> Informasi progress penanganan</li>
+                                    <li><strong>Dokumentasi:</strong> Semua masalah dan solusi terdokumentasi</li>
+                                    <li><strong>Pencegahan:</strong> Analisis untuk mencegah masalah serupa</li>
+                                </ul>
+                                <p class="mt-3">Kami berkomitmen menyelesaikan setiap masalah dengan cepat dan profesional untuk memastikan proyek tetap berjalan lancar.</p>
                             </div>
                         </div>
                     </div>

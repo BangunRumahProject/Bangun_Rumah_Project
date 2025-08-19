@@ -752,12 +752,12 @@
                     <!-- Right Content - Services -->
                     <div class="space-y-8">
                         <h2 class="text-3xl lg:text-4xl font-normal text-black">
-                            Layanan Lainnya dari Kami
+                        Pertanyaan Seputar Desain Interior & Eksterior
                         </h2>
 
                     <!-- Services Accordion -->
                     <div class="space-y-4" id="services-accordion-layanan3">
-                        <!-- Service Item 1 -->
+                        <!-- FAQ Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -784,7 +784,7 @@
                                 </div>
                             </div>
 
-                        <!-- Service Item 2 -->
+                        <!-- FAQ Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -812,7 +812,7 @@
                                 </div>
                             </div>
 
-                        <!-- Service Item 3 -->
+                        <!-- FAQ Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button"
                                     class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
@@ -836,6 +836,58 @@
                                     </ul>
                                     <p class="mt-3">Total waktu pengerjaan sekitar 2-4 minggu tergantung kompleksitas
                                         desain.</p>
+                                </div>
+                            </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button"
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
+                                    data-service="4">
+                                    <span class="text-lg">Apakah desain eksterior juga termasuk landscape dan taman?</span>
+                                    <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="service-content-layanan3 px-6 pb-4 text-gray-600 leading-relaxed"
+                                    style="display: none;">
+                                    <p class="mb-3">Ya, desain eksterior kami mencakup semua aspek luar rumah:</p>
+                                    <ul class="list-disc list-inside space-y-2 text-sm">
+                                        <li><strong>Fasad Bangunan:</strong> Desain tampak depan, samping, dan belakang</li>
+                                        <li><strong>Landscape:</strong> Penataan taman dan tanaman hias</li>
+                                        <li><strong>Hardscape:</strong> Jalan setapak, teras, dan area outdoor</li>
+                                        <li><strong>Lighting:</strong> Pencahayaan eksterior dan taman</li>
+                                        <li><strong>Material Eksterior:</strong> Batu alam, kayu, dan finishing</li>
+                                    </ul>
+                                    <p class="mt-3">Kami akan menciptakan desain eksterior yang harmonis dengan lingkungan sekitar.</p>
+                                </div>
+                            </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button"
+                                    class="service-button-layanan3 w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200"
+                                    data-service="5">
+                                    <span class="text-lg">Berapa kali revisi yang diperbolehkan dalam desain?</span>
+                                    <svg class="service-icon-layanan3 w-6 h-6 transform transition-transform duration-300 text-yellow-600"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="service-content-layanan3 px-6 pb-4 text-gray-600 leading-relaxed"
+                                    style="display: none;">
+                                    <p class="mb-3">Kami memberikan kebebasan revisi yang fleksibel:</p>
+                                    <ul class="list-disc list-inside space-y-2 text-sm">
+                                        <li><strong>Revisi Gratis:</strong> 3 kali revisi untuk setiap tahap desain</li>
+                                        <li><strong>Revisi Tambahan:</strong> Biaya minimal untuk revisi selanjutnya</li>
+                                        <li><strong>Konsultasi Revisi:</strong> Diskusi langsung untuk memahami perubahan</li>
+                                        <li><strong>Timeline Revisi:</strong> 2-3 hari untuk setiap revisi</li>
+                                        <li><strong>Kepuasan Klien:</strong> Kami berkomitmen hingga klien puas</li>
+                                    </ul>
+                                    <p class="mt-3">Tim kami akan bekerja keras memastikan desain sesuai dengan visi dan kebutuhan Anda.</p>
                                 </div>
                             </div>
                         </div>

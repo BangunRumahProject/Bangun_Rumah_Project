@@ -46,141 +46,232 @@
   </div>
 </section>
 
-<!-- Why Choose Us Section -->
-<section class="bg-black text-white py-20">
-    <div class="container mx-auto px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Left Image -->
-            <div class="relative">
-                <img src="/img/image-contact.jpg" alt="Modern House Complex" class="w-full h-auto rounded-lg shadow-lg">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
-            </div>
+ <!-- Why Choose Us Section -->
+ <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <!-- Right Content -->
-            <div class="space-y-8">
-                <h2 class="text-4xl font-bold text-white">Mengapa Memilih kami?</h2>
+            <!-- Left Content -->
+            <div class="space-y-8 fade-in">
+                <!-- Main Title -->
+                <div class="space-y-4">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                        Mengapa <span class="text-yellow-400">Memilih Kami</span>
+                    </h2>
+                    <p class="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl">
+                        Kami berkomitmen untuk menghadirkan layanan konstruksi terbaik dengan kualitas premium dan
+                        kepuasan klien yang maksimal.
+                    </p>
+                </div>
+
+                <!-- Advantages -->
                 <div class="space-y-6">
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <h3 class="text-xl font-bold mb-3 text-white">Tim Profesional</h3>
-                        <p class="text-gray-300 leading-relaxed">Tim kami terdiri dari arsitek dan kontraktor berpengalaman yang siap membantu mewujudkan impian rumah Anda. Dengan pengalaman bertahun-tahun di bidang konstruksi dan desain, kami memahami setiap detail yang diperlukan untuk menciptakan rumah yang sempurna sesuai dengan visi dan kebutuhan Anda.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Tim Ahli Berpengalaman</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Tim konstruksi kami terdiri dari ahli berpengalaman dengan sertifikasi resmi dan
+                                    track record yang teruji.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                style="animation-delay: 0.5s;"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Material Berkualitas Premium</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Kami hanya menggunakan material berkualitas tinggi dari supplier terpercaya
+                                    untuk hasil yang tahan lama.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                style="animation-delay: 1s;"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Garansi Konstruksi</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Setiap proyek kami dilengkapi dengan garansi konstruksi untuk memberikan
+                                    ketenangan pikiran klien.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0 pulse-dot"
+                                style="animation-delay: 1.5s;"></div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Harga Transparan</h3>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Kami memberikan penawaran harga yang transparan dan kompetitif tanpa biaya
+                                    tersembunyi.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <h3 class="text-xl font-bold mb-3 text-white">Kualitas Terjamin</h3>
-                        <p class="text-gray-300 leading-relaxed">Kami menggunakan material berkualitas tinggi dan mengikuti standar konstruksi yang berlaku. Setiap tahap pembangunan diawasi dengan ketat untuk memastikan hasil yang maksimal dan tahan lama. Komitmen kami terhadap kualitas tidak pernah berkompromi.</p>
+                </div>
+            </div>
+
+            <!-- Right Content - Image -->
+            <div class="relative slide-in-right">
+                <div
+                    class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tim Profesional" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Decorative elements -->
+                <div class="absolute -top-4 -left-4 w-8 h-8 border-t-4 border-l-4 border-yellow-400 floating">
+                </div>
+                <div class="absolute -bottom-4 -right-4 w-8 h-8 border-b-4 border-r-4 border-yellow-400 floating"
+                    style="animation-delay: 1s;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            <!-- Left Content -->
+            <div class="space-y-8 fade-in">
+                <!-- Main Title -->
+                <div class="space-y-4">
+                    <h2 class="text-white text-2xl lg:text-3xl font-normal leading-tight">
+                        Apa yang Membuat Jasa Kami
+                    </h2>
+                    <h3 class="text-yellow-400 text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                        BERBEDA
+                    </h3>
+                    <p class="text-gray-400 text-sm lg:text-base leading-relaxed max-w-lg">
+                        Kami percaya bahwa setiap rumah memiliki cerita, dan tugas kami adalah membantu Anda mewujudkannya.
+                         Dengan pengalaman, inovasi, serta komitmen penuh pada kualitas, kami menghadirkan layanan yang membuat kami berbeda dari yang lain.
+                    </p>
+                </div>
+
+                <!-- House Image -->
+                <div class="relative">
+                    <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Modern House Design" class="w-full h-full object-cover">
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <h3 class="text-xl font-bold mb-3 text-white">Tepat Waktu</h3>
-                        <p class="text-gray-300 leading-relaxed">Kami berkomitmen menyelesaikan proyek sesuai jadwal yang telah disepakati. Dengan manajemen proyek yang terstruktur dan tim yang terlatih, kami memastikan setiap tahap pembangunan selesai tepat waktu tanpa mengorbankan kualitas hasil akhir.</p>
+                </div>
+            </div>
+
+            <!-- Right Content - Features Grid -->
+            <div class="grid grid-cols-2 gap-6 slide-in-right">
+                <!-- Feature 1 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
                     </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <h3 class="text-xl font-bold mb-3 text-white">Pelayanan 24/7</h3>
-                        <p class="text-gray-300 leading-relaxed">Kami siap melayani konsultasi dan pertanyaan Anda kapan saja. Tim customer service kami tersedia 24/7 untuk memberikan informasi, menjawab pertanyaan, dan memberikan solusi terbaik untuk setiap kebutuhan Anda dalam proses pembangunan rumah impian.</p>
+                    <h4 class="text-white text-lg font-semibold">Kualitas Bahan Terbaik</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Kami hanya menggunakan material bangunan berkualitas tinggi yang tahan lama dan sesuai standar,
+                        sehingga rumah Anda kokoh, aman, dan bernilai investasi jangka panjang.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                            </path>
+                        </svg>
                     </div>
+                    <h4 class="text-white text-lg font-semibold">Desain Elegan & Modern</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Tim arsitek kami menghadirkan desain rumah yang tidak hanya indah, tetapi juga fungsional,
+                         menyesuaikan dengan kebutuhan dan gaya hidup Anda.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-white text-lg font-semibold">Inovasi & Kreativitas</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Setiap proyek dirancang dengan ide-ide inovatif,
+                        memadukan teknologi terbaru dengan konsep yang unik agar rumah Anda tampil berbeda dan istimewa.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-white text-lg font-semibold">Pengerjaan Tepat Waktu</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Kami mengutamakan ketepatan waktu dalam setiap pembangunan dan renovasi,
+                         tanpa mengurangi kualitas hasil akhir.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-white text-lg font-semibold">Harga Transparan & Terjangkau</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Memberikan penawaran harga yang jelas, detail,
+                        dan sesuai anggaran Anda, tanpa biaya tersembunyi.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-white text-lg font-semibold">Tim Profesional & Berpengalaman</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Dikerjakan oleh tenaga ahli berpengalaman di bidang konstruksi dan renovasi,
+                         yang siap mewujudkan rumah impian Anda dengan hasil maksimal.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- What Makes Us Different Section -->
-<section class="bg-black text-white py-20">
-    <div class="container mx-auto px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Left Image -->
-            <div>
-                <img src="/img/image-contact.jpg" alt="Modern Three-Story House" class="w-full h-auto rounded-lg">
-            </div>
-
-            <!-- Right Content -->
-            <div class="space-y-8">
-                <h2 class="text-4xl font-bold">
-                    Apa yang Membuat Jasa Kami
-                    <span class="text-yellow-400">BERBEDA</span>
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Desain Custom</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Setiap desain dibuat khusus sesuai kebutuhan dan keinginan klien.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Perencanaan Akurat</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Tim ahli kami melakukan perhitungan yang teliti dan akurat untuk setiap komponen pembangunan rumah.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Pelayanan Cepat</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Kami berkomitmen memberikan pelayanan yang cepat dan responsif sesuai timeline yang disepakati.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Tim Profesional</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Dibantu oleh tim ahli yang berpengalaman dan tersertifikasi dalam bidang konstruksi dan perencanaan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Analisis Mendalam</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Melakukan analisis komprehensif terhadap setiap aspek pembangunan untuk hasil yang optimal.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold mb-2 text-white">Konsultasi Gratis</h3>
-                                <p class="text-gray-300 text-sm leading-relaxed">Konsultasi awal gratis untuk memahami kebutuhan dan memberikan solusi terbaik.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Before Using RAB Service Section -->
 <section class="bg-white text-gray-900 py-20">
@@ -456,56 +547,90 @@
 
 <
 
-<!-- Other Services Section -->
+<!-- Featured Projects Section -->
 <section class="relative w-full bg-black text-white py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Left Content -->
+        <!-- Section Header -->
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+                Project <span class="text-yellow-400">Unggulan</span>
+            </h2>
+            <p class="text-gray-300 text-lg lg:text-xl max-w-3xl mx-auto">
+                Hasil karya terbaik kami yang telah berhasil mewujudkan impian klien dalam memiliki hunian idaman
+                dengan kualitas premium dan desain yang memukau.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Content - Featured Project Showcase -->
             <div class="space-y-8">
-                <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="Modern Interior" class="w-full h-full object-cover">
+                <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                         alt="Rumah Modern Minimalis" class="w-full h-full object-cover">
                 </div>
             </div>
-
-            <!-- Right Content -->
-            <div class="space-y-8">
+                
+            <!-- Right Content - Project Highlights -->
+            <div class="space-y-4">
                 <div>
-                    <h2 class="text-3xl lg:text-4xl font-normal text-white mb-4">
-                        Jasa Desain Interior & Eksterior
-                        <span class="text-yellow-400 font-semibold">Rumah Modern</span>
-                    </h2>
+                    <h3 class="text-3xl lg:text-4xl font-normal text-white mb-4">
+                        Keunggulan <span class="text-yellow-400 font-semibold">Project Kami</span>
+                    </h3>
                     <p class="text-gray-300 text-base leading-relaxed mb-8">
-                        Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu
-                        melalui proses desain, perencanaan anggaran, hingga eksekusi pembangunan yang sempurna.
+                        Setiap project yang kami kerjakan selalu mengutamakan kualitas, ketepatan waktu, dan kepuasan klien. 
+                        Berikut adalah beberapa project unggulan yang telah berhasil kami selesaikan dengan sempurna.
                     </p>
                 </div>
 
-                <!-- Portfolio Grid -->
+                <!-- Project Highlights Grid -->
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                             alt="Modern House 1" class="w-full h-full object-cover">
+                    <div class="bg-gray-900 rounded-lg p-4 text-center hover:bg-gray-800 transition-all duration-300">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white font-semibold mb-2">100% Selesai</h4>
+                        <p class="text-gray-400 text-xs">Tepat waktu sesuai jadwal</p>
                     </div>
-                    <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                             alt="Modern House 2" class="w-full h-full object-cover">
+                    
+                    <div class="bg-gray-900 rounded-lg p-4 text-center hover:bg-gray-800 transition-all duration-300">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white font-semibold mb-2">Kualitas Premium</h4>
+                        <p class="text-gray-400 text-xs">Material terbaik & pengerjaan rapi</p>
                     </div>
-                    <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                             alt="Modern House 3" class="w-full h-full object-cover">
+                    
+                    <div class="bg-gray-900 rounded-lg p-4 text-center hover:bg-gray-800 transition-all duration-300">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white font-semibold mb-2">Klien Puas</h4>
+                        <p class="text-gray-400 text-xs">Testimoni positif 100%</p>
                     </div>
-                    <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                             alt="Modern House 4" class="w-full h-full object-cover">
+                    
+                    <div class="bg-gray-900 rounded-lg p-4 text-center hover:bg-gray-800 transition-all duration-300">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-white font-semibold mb-2">Garansi Lengkap</h4>
+                        <p class="text-gray-400 text-xs">Jaminan kualitas & ketahanan</p>
                     </div>
                 </div>
 
                 <!-- CTA Button -->
                 <div class="pt-4">
-                    <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-                        Lihat Portofolio
-                    </button>
+                    <a href="/portofolio" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+                        Lihat Semua Project
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -531,18 +656,18 @@
                     </h2>
 
                     <!-- Services Accordion -->
-                    <div class="space-y-4" id="other-services-accordion">
-                        <!-- Service Item 1 -->
+                    <div class="space-y-4" id="rab-pbg-accordion">
+                        <!-- FAQ Item 1 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button" 
-                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                                    data-service="1">
+                                    class="rab-pbg-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-faq="1">
                                 <span class="text-lg">Apakah jasa RAB mencakup perhitungan material dan tenaga kerja?</span>
-                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="rab-pbg-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                            <div class="rab-pbg-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
                                 <p class="mb-3">Ya, RAB yang kami buat sangat komprehensif dan mencakup:</p>
                                 <ul class="list-disc list-inside space-y-2 text-sm">
                                     <li><strong>Material:</strong> Semua material dari pondasi hingga finishing</li>
@@ -555,17 +680,17 @@
                             </div>
                         </div>
 
-                        <!-- Service Item 2 -->
+                        <!-- FAQ Item 2 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button" 
-                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                                    data-service="2">
+                                    class="rab-pbg-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-faq="2">
                                 <span class="text-lg">Bagaimana proses pengurusan PBG/IMB yang dilakukan?</span>
-                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="rab-pbg-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                            <div class="rab-pbg-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
                                 <p class="mb-3">Proses pengurusan PBG/IMB kami lakukan secara sistematis:</p>
                                 <ul class="list-disc list-inside space-y-2 text-sm">
                                     <li><strong>Persiapan Dokumen:</strong> KTP, Sertifikat tanah, PBB, dan dokumen pendukung</li>
@@ -578,17 +703,40 @@
                             </div>
                         </div>
 
-                        <!-- Service Item 3 -->
+                        <!-- FAQ Item 3 -->
                         <div class="border border-gray-300 rounded-lg">
                             <button type="button" 
-                                    class="other-service-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                                    data-service="3">
-                                <span class="text-lg">Apakah ada layanan konsultasi gratis sebelum memulai proyek?</span>
-                                <svg class="other-service-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    class="rab-pbg-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-faq="3">
+                                <span class="text-lg">Berapa lama waktu pengurusan PBG/IMB hingga selesai?</span>
+                                <svg class="rab-pbg-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            <div class="other-service-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                            <div class="rab-pbg-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Waktu pengurusan PBG/IMB bervariasi tergantung kompleksitas:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Rumah Sederhana:</strong> 2-4 minggu</li>
+                                    <li><strong>Rumah Menengah:</strong> 4-6 minggu</li>
+                                    <li><strong>Rumah Mewah:</strong> 6-8 minggu</li>
+                                    <li><strong>Faktor Penentu:</strong> Kelengkapan dokumen dan lokasi</li>
+                                    <li><strong>Proses Dinas:</strong> Tergantung kebijakan pemerintah setempat</li>
+                                </ul>
+                                <p class="mt-3">Tim kami akan memberikan estimasi waktu yang akurat setelah analisis dokumen dan survey lokasi.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="rab-pbg-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-faq="4">
+                                <span class="text-lg">Apakah ada layanan konsultasi gratis sebelum memulai proyek?</span>
+                                <svg class="rab-pbg-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="rab-pbg-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
                                 <p class="mb-3">Ya, kami menyediakan layanan konsultasi gratis untuk membantu Anda:</p>
                                 <ul class="list-disc list-inside space-y-2 text-sm">
                                     <li><strong>Konsultasi Awal:</strong> Diskusi kebutuhan dan konsep desain</li>
@@ -598,6 +746,29 @@
                                     <li><strong>Rekomendasi Material:</strong> Saran material yang sesuai budget</li>
                                 </ul>
                                 <p class="mt-3">Konsultasi ini membantu Anda memahami scope pekerjaan dan membuat keputusan yang tepat sebelum memulai proyek.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="border border-gray-300 rounded-lg">
+                            <button type="button" 
+                                    class="rab-pbg-button w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-black hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
+                                    data-faq="5">
+                                <span class="text-lg">Bagaimana jika ada perubahan desain setelah RAB dibuat?</span>
+                                <svg class="rab-pbg-icon w-6 h-6 transform transition-transform duration-300 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="rab-pbg-content px-6 pb-4 text-gray-600 leading-relaxed" style="display: none;">
+                                <p class="mb-3">Kami fleksibel dalam menangani perubahan desain:</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><strong>Revisi RAB:</strong> Update perhitungan sesuai perubahan</li>
+                                    <li><strong>Biaya Revisi:</strong> Minimal atau gratis untuk perubahan kecil</li>
+                                    <li><strong>Timeline Update:</strong> Penyesuaian jadwal pengerjaan</li>
+                                    <li><strong>Komunikasi:</strong> Update berkala tentang perubahan</li>
+                                    <li><strong>Dokumentasi:</strong> Semua perubahan terdokumentasi dengan baik</li>
+                                </ul>
+                                <p class="mt-3">Tim kami akan membantu menyesuaikan RAB dan timeline agar tetap sesuai dengan kebutuhan Anda.</p>
                             </div>
                         </div>
                     </div>
@@ -629,8 +800,6 @@
     </div>
 </section>
 
-
-@include('components.footer')
 </div>
 <a href="https://wa.me/6285333353609?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20rancang%20bangun%20rumah"
    target="_blank"
@@ -644,14 +813,14 @@
 <script>
 // FAQ Accordion functionality for RAB/PBG page
 document.addEventListener('DOMContentLoaded', function() {
-    const faqButtons = document.querySelectorAll('.faq-button-rab');
+    const rabPbgButtons = document.querySelectorAll('.rab-pbg-button');
     let currentlyOpen = null;
 
-    faqButtons.forEach(button => {
+    rabPbgButtons.forEach(button => {
         button.addEventListener('click', function() {
             const faqItem = this.closest('.border');
-            const content = faqItem.querySelector('.faq-content-rab');
-            const icon = this.querySelector('.faq-icon-rab');
+            const content = faqItem.querySelector('.rab-pbg-content');
+            const icon = this.querySelector('.rab-pbg-icon');
             
             // If clicking the same item that's already open, close it
             if (content.style.display === 'block') {
@@ -662,43 +831,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Close currently open item if any
                 if (currentlyOpen) {
                     currentlyOpen.style.display = 'none';
-                    currentlyOpen.closest('.border').querySelector('.faq-icon-rab').style.transform = 'rotate(0deg)';
+                    currentlyOpen.closest('.border').querySelector('.rab-pbg-icon').style.transform = 'rotate(0deg)';
                 }
                 
                 // Open clicked item
                 content.style.display = 'block';
                 icon.style.transform = 'rotate(180deg)';
                 currentlyOpen = content;
-            }
-        });
-    });
-
-    // Other Services Accordion functionality
-    const otherServiceButtons = document.querySelectorAll('.other-service-button');
-    let currentlyOpenService = null;
-
-    otherServiceButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const serviceItem = this.closest('.border');
-            const content = serviceItem.querySelector('.other-service-content');
-            const icon = this.querySelector('.other-service-icon');
-            
-            // If clicking the same item that's already open, close it
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-                icon.style.transform = 'rotate(0deg)';
-                currentlyOpenService = null;
-            } else {
-                // Close currently open item if any
-                if (currentlyOpenService) {
-                    currentlyOpenService.style.display = 'none';
-                    currentlyOpenService.closest('.border').querySelector('.other-service-icon').style.transform = 'rotate(0deg)';
-                }
-                
-                // Open clicked item
-                content.style.display = 'block';
-                icon.style.transform = 'rotate(180deg)';
-                currentlyOpenService = content;
             }
         });
     });
