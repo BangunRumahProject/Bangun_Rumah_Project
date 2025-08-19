@@ -28,16 +28,89 @@
 {{-- Gradient Divider --}}
 <div class="gradient-divider"></div>
 
-{{-- Section Project --}}
-<section id="profil" class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-12">
-    <div class="max-w-3xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-        <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=600&q=80" alt="Project" class="rounded-lg shadow-lg w-full max-w-xs hover:scale-110 transition-all duration-500 parallax-img animate-fade-in-left">
-        <div class="flex flex-col items-center md:items-start">
-            <div class="text-5xl font-bold text-gray-900 mb-2 flex items-end animate-fade-in-up">
-                <span id="project-count" class="counter">0</span><span class="text-black-400 text-3xl ml-1">+</span>
+{{-- Section Pengalaman --}}
+<section id="pengalaman" class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 relative overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-yellow-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-yellow-400 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up">
+                Pengalaman <span class="text-yellow-400">Membangun Kepercayaan</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+                Meski baru berdiri, kami telah membuktikan komitmen dalam menghadirkan 
+                rumah impian dengan kualitas terbaik dan pelayanan profesional
+            </p>
+        </div>
+        
+        <!-- Main Experience Counter -->
+        <div class="flex justify-center mb-16">
+            <div class="relative group">
+                <!-- Large counter display -->
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-12 md:p-16 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in-up delay-300">
+                    <div class="text-center">
+                        <div class="text-6xl md:text-8xl font-bold text-white mb-4 drop-shadow-lg">
+                            <span id="tahun-pengalaman" class="counter">3</span>
+                        </div>
+                        <div class="text-2xl md:text-3xl font-semibold text-white mb-2">Tahun</div>
+                        <div class="text-lg text-yellow-100">Membangun Kepercayaan</div>
+                    </div>
+                </div>
+                
+                <!-- Floating elements around the counter -->
+                <div class="absolute -top-4 -left-4 w-8 h-8 bg-yellow-300 rounded-full opacity-80 animate-bounce"></div>
+                <div class="absolute -bottom-4 -right-4 w-6 h-6 bg-yellow-300 rounded-full opacity-60 animate-bounce delay-100"></div>
+                <div class="absolute top-1/2 -right-6 w-4 h-4 bg-yellow-300 rounded-full opacity-70 animate-pulse"></div>
+                <div class="absolute top-1/2 -left-6 w-5 h-5 bg-yellow-300 rounded-full opacity-50 animate-pulse delay-200"></div>
             </div>
-            <div class="text-lg font-semibold text-gray-700 mb-2 animate-fade-in-up delay-200">Project Kami</div>
-            <div class="text-gray-500 text-center md:text-left animate-fade-in-up delay-300">Bangun dan desain rumah modern, minimalis, dan profesional.</div>
+        </div>
+        
+        <!-- Supporting information -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fade-in-up delay-500">
+            <div class="text-center group">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Inovasi Desain</h3>
+                <p class="text-gray-600 text-sm">Konsep modern dan kreatif untuk masa kini</p>
+            </div>
+            
+            <div class="text-center group">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Kualitas Muda</h3>
+                <p class="text-gray-600 text-sm">Semangat baru dengan standar tinggi</p>
+            </div>
+            
+            <div class="text-center group">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Pelayanan Prima</h3>
+                <p class="text-gray-600 text-sm">Komitmen penuh untuk kepuasan klien</p>
+            </div>
+        </div>
+        
+        <!-- Bottom description -->
+        <div class="text-center mt-16 animate-fade-in-up delay-600">
+            <p class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">
+                Dalam 3 tahun perjalanan, kami telah membuktikan bahwa usia bukan penghalang untuk 
+                <span class="font-semibold text-yellow-600">menghadirkan kualitas terbaik</span>. 
+                Semangat muda dan inovasi menjadi kekuatan kami dalam 
+                <span class="font-semibold text-yellow-600">mewujudkan rumah impian</span> 
+                dengan standar profesional yang tinggi.
+            </p>
         </div>
     </div>
 </section>
@@ -533,7 +606,7 @@
                 <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" alt="Artikel 1" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
                 <div class="p-4">
                     <div class="font-bold mb-2">Panduan Lengkap Memahami Proses Pembangunan Rumah (www.btnproperti.co.id)</div>
-                    <div class="text-gray-500 text-sm mb-2">Langkah praktis menyusun RAB yang efisien tanpa mengorbankan kualitas.</div>
+                    <div class="text-gray-500 text-sm mb-2">Rumah adalah tempat hunian yang perlu dijaga kenyamanan serta keamanannya.</div>
                     <a href="https://www.btnproperti.co.id/blog/proses-pembangunan-rumah" class="text-yellow-400 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
                 </div>
             </div>

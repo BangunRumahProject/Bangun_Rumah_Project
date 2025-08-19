@@ -189,6 +189,59 @@
                     </div>
                 </div>
 
+                <!-- Additional Images Section -->
+                <div class="bg-white shadow sm:rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Gambar Tambahan Portfolio</h3>
+                        @if ($portfolio->images && $portfolio->images->count() > 0)
+                            <div class="mb-6">
+                                <p class="text-sm text-gray-600 mb-2">Gambar tambahan saat ini (bisa edit/hapus):</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    @foreach ($portfolio->images as $img)
+                                        <div class="border rounded-lg bg-gray-50 p-4">
+                                            <div class="flex items-start gap-4">
+                                                <img src="{{ Storage::url($img->image) }}" alt="{{ $img->title ?? 'Additional Image' }}" class="w-28 h-28 object-cover rounded border">
+                                                <div class="flex-1 grid grid-cols-1 gap-3">
+                                                    <div>
+                                                        <label class="block text-xs font-medium text-gray-700">Ganti File (opsional)</label>
+                                                        <input type="file" name="existing_images_files[{{ $img->id }}]" accept="image/*" class="mt-1 block w-full text-xs text-gray-600">
+                                                    </div>
+                                                    <div>
+                                                        <label class="block text-xs font-medium text-gray-700">Judul</label>
+                                                        <input type="text" name="existing_images[{{ $img->id }}][title]" value="{{ old('existing_images.' . $img->id . '.title', $img->title) }}" maxlength="255" class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 text-sm">
+                                                    </div>
+                                                    <div>
+                                                        <label class="block text-xs font-medium text-gray-700">Deskripsi</label>
+                                                        <textarea name="existing_images[{{ $img->id }}][description]" rows="2" maxlength="1000" class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 text-sm">{{ old('existing_images.' . $img->id . '.description', $img->description) }}</textarea>
+                                                    </div>
+                                                    <div>
+                                                        <label class="block text-xs font-medium text-gray-700">Urutan</label>
+                                                        <input type="number" name="existing_images[{{ $img->id }}][sort_order]" value="{{ old('existing_images.' . $img->id . '.sort_order', $img->sort_order) }}" class="mt-1 block w-28 rounded border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 text-sm">
+                                                    </div>
+                                                    <div class="flex items-center gap-2">
+                                                        <input id="del-{{ $img->id }}" type="checkbox" name="existing_images_delete[]" value="{{ $img->id }}" class="h-4 w-4 text-red-600 border-gray-300 rounded">
+                                                        <label for="del-{{ $img->id }}" class="text-xs text-red-600">Hapus gambar ini</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <p class="mt-2 text-xs text-gray-500">Catatan: Gambar tambahan yang Anda unggah akan ditambahkan tanpa menghapus gambar yang sudah ada.</p>
+                            </div>
+                        @endif
+
+                        <div id="additional-images-container" class="space-y-4"></div>
+                        <button type="button" onclick="addImageField()"
+                            class="mt-4 inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            </svg>
+                            Tambah Gambar
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Features Section -->
                 <div class="bg-white shadow sm:rounded-lg">
                     <div class="px-4 py-5 sm:p-6">
@@ -314,6 +367,56 @@
     </div>
 
     <script>
+        let imageFieldCount = 0;
+
+        function addImageField() {
+            const container = document.getElementById('additional-images-container');
+            const fieldId = `image-field-${imageFieldCount}`;
+
+            const fieldHtml = `
+                <div id="${fieldId}" class="border border-gray-200 rounded-lg p-4 bg-gray-50">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="text-sm font-medium text-gray-900">Gambar ${imageFieldCount + 1}</h4>
+                        <button type="button" onclick=\"removeImageField('${fieldId}')\" class="text-red-600 hover:text-red-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">File Gambar</label>
+                            <input type="file" name="additional_images[]" accept="image/*" 
+                                class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                            <p class="mt-1 text-xs text-gray-500">Format: JPEG, PNG, JPG, GIF, WebP. Maksimal 10MB</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Judul Gambar</label>
+                            <input type="text" name="image_titles[]" maxlength="255" minlength="2"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 sm:text-sm"
+                                placeholder="Judul gambar">
+                            <p class="mt-1 text-xs text-gray-500">Minimal 2 karakter, maksimal 255 karakter</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Deskripsi Gambar</label>
+                            <textarea name="image_descriptions[]" rows="3" maxlength="1000"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 sm:text-sm"
+                                placeholder="Deskripsi gambar"></textarea>
+                            <p class="mt-1 text-xs text-gray-500">Maksimal 1000 karakter</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            container.insertAdjacentHTML('beforeend', fieldHtml);
+            imageFieldCount++;
+        }
+
+        function removeImageField(fieldId) {
+            const el = document.getElementById(fieldId);
+            if (el) el.remove();
+        }
+
         // Add feature field
         function addFeature() {
             const container = document.getElementById('features-container');

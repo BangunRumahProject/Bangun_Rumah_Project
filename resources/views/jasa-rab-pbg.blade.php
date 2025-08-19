@@ -454,137 +454,7 @@
 <!-- Customer Reviews Section -->
 
 
-<!-- FAQ Section -->
-<section class="bg-black text-white py-20">
-  <div class="container mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-      <!-- Kiri: Card putih -->
-      <div>
-        <div class="bg-white rounded-xl shadow p-10 max-w-md">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Pertanyaan Umum</h2>
-          <p class="text-gray-600 mb-6">Kami siap membantu menjawab pertanyaan Anda seputar layanan kami. Jika pertanyaan Anda belum terjawab, silakan hubungi kami langsung.</p>
-          <a href="#contact" class="inline-block border border-gray-800 text-gray-900 px-6 py-2 rounded hover:bg-gray-100 transition">Hubungi</a>
-        </div>
-      </div>
-      
-      <!-- Kanan: FAQ Accordion -->
-      <div class="space-y-4" id="faq-accordion-rab">
-        <!-- FAQ Item 1 -->
-        <div class="border border-gray-700 rounded-lg">
-          <button type="button" 
-                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                  data-faq="1">
-            <span class="text-xl">Berapa lama proses pengurusan IMB/PBG?</span>
-            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
-            <p class="mb-3">Proses pengurusan IMB/PBG biasanya memakan waktu 2-4 minggu, tergantung pada:</p>
-            <ul class="list-disc list-inside space-y-2 text-sm">
-              <li><strong>Kelengkapan Dokumen:</strong> Semakin lengkap dokumen yang diserahkan, semakin cepat prosesnya</li>
-              <li><strong>Kompleksitas Bangunan:</strong> Bangunan sederhana lebih cepat diproses</li>
-              <li><strong>Lokasi Proyek:</strong> Beberapa daerah memiliki prosedur yang berbeda</li>
-              <li><strong>Volume Pengajuan:</strong> Waktu puncak bisa mempengaruhi kecepatan</li>
-            </ul>
-            <p class="mt-3">Tim kami akan memastikan semua dokumen lengkap dan sesuai standar untuk mempercepat proses pengurusan.</p>
-          </div>
-        </div>
-
-        <!-- FAQ Item 2 -->
-        <div class="border border-gray-700 rounded-lg">
-          <button type="button" 
-                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                  data-faq="2">
-            <span class="text-xl">Apakah RAB yang dibuat sudah termasuk biaya material?</span>
-            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
-            <p class="mb-3">Ya, RAB yang kami buat sudah mencakup semua komponen biaya secara lengkap:</p>
-            <ul class="list-disc list-inside space-y-2 text-sm">
-              <li><strong>Biaya Material:</strong> Semua material dari pondasi hingga finishing</li>
-              <li><strong>Biaya Tenaga Kerja:</strong> Upah tukang, mandor, dan supervisor</li>
-              <li><strong>Biaya Peralatan:</strong> Sewa alat berat dan peralatan konstruksi</li>
-              <li><strong>Biaya Overhead:</strong> Administrasi, transportasi, dan keamanan</li>
-              <li><strong>Biaya Pajak:</strong> PPN dan pajak daerah yang berlaku</li>
-            </ul>
-            <p class="mt-3">Kami memberikan breakdown detail untuk setiap item sehingga Anda bisa memahami alokasi anggaran dengan jelas.</p>
-          </div>
-        </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="border border-gray-700 rounded-lg">
-          <button type="button" 
-                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                  data-faq="3">
-            <span class="text-xl">Bagaimana jika ada perubahan desain di tengah proses?</span>
-            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
-            <p class="mb-3">Kami sangat fleksibel dalam menangani perubahan desain. Berikut kebijakan kami:</p>
-            <ul class="list-disc list-inside space-y-2 text-sm">
-              <li><strong>Perubahan Minor:</strong> Perubahan kecil tidak dikenakan biaya tambahan</li>
-              <li><strong>Perubahan Mayor:</strong> Perubahan signifikan akan dihitung ulang RAB</li>
-              <li><strong>Timeline:</strong> Perubahan bisa mempengaruhi jadwal pengerjaan</li>
-              <li><strong>Komunikasi:</strong> Setiap perubahan akan didiskusikan terlebih dahulu</li>
-            </ul>
-            <p class="mt-3">Tim kami akan memberikan solusi terbaik untuk setiap perubahan yang Anda inginkan.</p>
-          </div>
-        </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="border border-gray-700 rounded-lg">
-          <button type="button" 
-                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                  data-faq="4">
-            <span class="text-xl">Apakah ada garansi untuk hasil pekerjaan?</span>
-            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
-            <p class="mb-3">Ya, kami memberikan garansi komprehensif untuk semua pekerjaan kami:</p>
-            <ul class="list-disc list-inside space-y-2 text-sm">
-              <li><strong>Garansi Konstruksi:</strong> 5 tahun untuk struktur bangunan</li>
-              <li><strong>Garansi Finishing:</strong> 2 tahun untuk pekerjaan finishing</li>
-              <li><strong>Garansi Instalasi:</strong> 1 tahun untuk instalasi listrik dan air</li>
-              <li><strong>Garansi Material:</strong> Sesuai garansi pabrik material</li>
-              <li><strong>Layanan Purna Jual:</strong> Konsultasi dan perbaikan gratis</li>
-            </ul>
-            <p class="mt-3">Kami berkomitmen memberikan kualitas terbaik dan siap memperbaiki jika ada masalah dalam masa garansi.</p>
-          </div>
-        </div>
-
-        <!-- FAQ Item 5 -->
-        <div class="border border-gray-700 rounded-lg">
-          <button type="button" 
-                  class="faq-button-rab w-full flex justify-between items-center px-6 py-4 font-bold text-left text-white hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors duration-200" 
-                  data-faq="5">
-            <span class="text-xl">Bagaimana cara memulai kerja sama dengan tim Anda?</span>
-            <svg class="faq-icon-rab w-6 h-6 transform transition-transform duration-300 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="faq-content-rab px-6 pb-4 text-gray-300 leading-relaxed" style="display: none;">
-            <p class="mb-3">Memulai kerja sama dengan kami sangat mudah. Berikut langkah-langkahnya:</p>
-            <ul class="list-disc list-inside space-y-2 text-sm">
-              <li><strong>Konsultasi Awal:</strong> Hubungi kami untuk diskusi kebutuhan proyek</li>
-              <li><strong>Survey Lokasi:</strong> Tim kami akan melihat lokasi proyek</li>
-              <li><strong>Penawaran:</strong> Kami akan memberikan penawaran detail</li>
-              <li><strong>Kesepakatan:</strong> Jika setuju, kami buat kontrak kerja</li>
-              <li><strong>Eksekusi:</strong> Proyek dimulai sesuai timeline yang disepakati</li>
-            </ul>
-            <p class="mt-3">Kami siap membantu Anda dari awal hingga akhir proyek dengan pelayanan profesional dan berkualitas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<
 
 <!-- Other Services Section -->
 <section class="relative w-full bg-black text-white py-16 lg:py-20">
@@ -657,7 +527,7 @@
                             <!-- Right Content - Services -->
                 <div class="space-y-8">
                     <h2 class="text-3xl lg:text-4xl font-normal text-black">
-                        Layanan Lainnya dari Kami
+                        Pertanyaan Seputar RAB & PBG/IMB
                     </h2>
 
                     <!-- Services Accordion -->

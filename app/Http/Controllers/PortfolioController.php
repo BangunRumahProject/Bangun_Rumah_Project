@@ -162,6 +162,15 @@ class PortfolioController extends Controller
                 'image_titles.*' => 'nullable|string|min:2|max:255',
                 'image_descriptions' => 'nullable|array',
                 'image_descriptions.*' => 'nullable|string|max:1000',
+                // Existing images edit/delete
+                'existing_images' => 'nullable|array',
+                'existing_images.*.title' => 'nullable|string|min:2|max:255',
+                'existing_images.*.description' => 'nullable|string|max:1000',
+                'existing_images.*.sort_order' => 'nullable|integer|max:999',
+                'existing_images_files' => 'nullable|array',
+                'existing_images_files.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+                'existing_images_delete' => 'nullable|array',
+                'existing_images_delete.*' => 'integer',
             ], [
                 'title.required' => 'Judul portfolio wajib diisi',
                 'title.min' => 'Judul portfolio minimal 3 karakter',
@@ -212,15 +221,50 @@ class PortfolioController extends Controller
 
             $portfolio->update($validated);
 
-            // Handle additional images
-            if ($request->hasFile('additional_images')) {
-                // Delete existing additional images
-                foreach ($portfolio->images as $image) {
-                    Storage::disk('public')->delete($image->image);
-                    $image->delete();
+            // Delete selected existing additional images
+            $deleteIds = $request->input('existing_images_delete', []);
+            if (is_array($deleteIds) && count($deleteIds) > 0) {
+                $imagesToDelete = $portfolio->images()->whereIn('id', $deleteIds)->get();
+                foreach ($imagesToDelete as $img) {
+                    Storage::disk('public')->delete($img->image);
+                    $img->delete();
                 }
+            }
 
-                // Add new additional images
+            // Update existing images meta and optionally replace files
+            $existingMeta = $request->input('existing_images', []);
+            if (is_array($existingMeta) && count($existingMeta) > 0) {
+                foreach ($existingMeta as $imageId => $data) {
+                    $imageModel = $portfolio->images()->where('id', $imageId)->first();
+                    if (!$imageModel) {
+                        continue;
+                    }
+
+                    $imageModel->title = $data['title'] ?? null;
+                    $imageModel->description = $data['description'] ?? null;
+                    if (isset($data['sort_order'])) {
+                        $imageModel->sort_order = (int) $data['sort_order'];
+                    }
+
+                    if ($request->hasFile("existing_images_files.$imageId")) {
+                        $file = $request->file("existing_images_files.$imageId");
+                        if ($file && $file->isValid()) {
+                            // delete old and replace
+                            Storage::disk('public')->delete($imageModel->image);
+                            $newPath = $file->store('portfolios', 'public');
+                            $imageModel->image = $newPath;
+                        }
+                    }
+
+                    $imageModel->save();
+                }
+            }
+
+            // Handle additional images (append without deleting existing)
+            if ($request->hasFile('additional_images')) {
+                $startOrder = (int) $portfolio->images()->max('sort_order');
+                $startOrder = is_null($startOrder) ? 0 : $startOrder + 1;
+
                 foreach ($request->file('additional_images') as $index => $image) {
                     if ($image && $image->isValid()) {
                         $imagePath = $image->store('portfolios', 'public');
@@ -230,7 +274,7 @@ class PortfolioController extends Controller
                             'image' => $imagePath,
                             'title' => $request->input('image_titles.' . $index),
                             'description' => $request->input('image_descriptions.' . $index),
-                            'sort_order' => $index
+                            'sort_order' => $startOrder + $index
                         ]);
                     }
                 }
