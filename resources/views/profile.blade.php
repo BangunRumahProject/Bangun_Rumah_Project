@@ -76,21 +76,21 @@
                         <!-- Image 1 - Large rectangular -->
                         <div
                             class="aspect-[4/3] bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/45ab47b1-71b8-4203-8cd2-fa72b28e65c7.jpg') }}" alt="Modern House Design 1"
+                            <img src="{{ asset('img/profil1.jpg') }}" alt="Modern House Design 1"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
 
                         <!-- Image 2 - Square -->
                         <div
                             class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/69fef66e-929c-4bf9-b1f1-67678a6726aa.jpg') }}" alt="Modern House Design 2"
+                            <img src="{{ asset('img/profil2.png') }}" alt="Modern House Design 2"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
 
                         <!-- Image 3 - Square -->
                         <div
                             class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/95f1baeb-9961-4d57-bda6-0baa36a9ce53.jpg') }}" alt="Modern House Design 3"
+                            <img src="{{ asset('img/profil3.png') }}" alt="Modern House Design 3"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
                     </div>
@@ -100,21 +100,21 @@
                         <!-- Image 4 - Square -->
                         <div
                             class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/2740527b-ee68-4197-abc5-b73893e2ee1f.jpg') }}" alt="Modern House Design 4"
+                            <img src="{{ asset('img/profil4.png') }}" alt="Modern House Design 4"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
 
                         <!-- Image 5 - Square -->
                         <div
                             class="aspect-square bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/rumah2.jpg') }}" alt="Modern House Design 5"
+                            <img src="{{ asset('img/profil5.png') }}" alt="Modern House Design 5"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
 
                         <!-- Image 6 - Tall rectangular -->
                         <div
                             class="aspect-[3/4] bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 image-hover">
-                            <img src="{{ asset('img/f24c142a-50e3-4f8d-bf8e-866d49e9d684.jpg') }}" alt="Modern House Design 6"
+                            <img src="{{ asset('img/profil6.jpg') }}" alt="Modern House Design 6"
                                 class="w-full h-full object-cover hover:opacity-90 transition-opacity duration-300">
                         </div>
                     </div>
