@@ -627,7 +627,6 @@
                 </div>
             </div>
         </div>
-        <a href="/artikel" class="absolute bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4">Lihat Artikel Lainnya</a>
     </div>
 </section>
 
