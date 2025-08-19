@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - Bangun Rumah Project')
+@section('title', 'Layanan Desain Interior/Eksterior')
 
 @section('styles')
     @include('components.styles')
@@ -661,8 +661,8 @@
                             class="font-normal">Kenyataan.</span>
                     </h2>
                     <p class="text-black text-lg mb-12 max-w-3xl mx-auto">
-                        Tenang, kami bantu dari awal! Cukup isi form ini, dan tim ahli kami akan membimbingmu melalui proses
-                        desain, perencanaan anggaran, hingga.
+                    Dengan dukungan teknologi modern, setiap proses desain interior dapat divisualisasikan terlebih dahulu sebelum dieksekusi. 
+                    Hal ini memudahkan pengerjaan sekaligus memastikan konsep yang dihasilkan sesuai dengan harapan klien.
                     </p>
 
                     <!-- Design Images -->
