@@ -61,12 +61,12 @@
                                     <select name="category" id="category" required
                                         class="block w-full rounded-lg border-2 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 sm:text-sm @error('category') border-red-500 @enderror px-4 py-3 transition-all duration-200">
                                         <option value="">Pilih kategori</option>
-                                        <option value="rumah" {{ old('category') == 'rumah' ? 'selected' : '' }}>Rumah
-                                        </option>
                                         <option value="interior" {{ old('category') == 'interior' ? 'selected' : '' }}>
                                             Interior</option>
                                         <option value="eksterior" {{ old('category') == 'eksterior' ? 'selected' : '' }}>
                                             Eksterior</option>
+                                        <option value="landscape" {{ old('category') == 'landscape' ? 'selected' : '' }}>
+                                            Landscape</option>
                                     </select>
                                 </div>
                                 @error('category')

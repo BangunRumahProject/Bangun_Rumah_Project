@@ -3,13 +3,14 @@
 @section('title', 'Portofolio - Bangun Rumah Project')
 
 @section('styles')
-@include('components.styles')
+    @include('components.styles')
 @endsection
 
 @section('content')
-@include('components.navbar')
+    @include('components.navbar')
     {{-- Hero Section --}}
-    <section class="pt-28 pb-16 relative min-h-[420px] flex items-end bg-center bg-cover" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0, 0, 0, 0.52)), url('{{ asset('img/siang3.jpg') }}');">
+    <section class="pt-28 pb-16 relative min-h-[420px] flex items-end bg-center bg-cover"
+        style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0, 0, 0, 0.52)), url('{{ asset('img/siang3.jpg') }}');">
         <div class="w-full px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center pb-16">
                 <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
@@ -19,7 +20,7 @@
                     Dengan pengalaman lebih dari 10 tahun, kami telah sukses mengerjakan berbagai proyek bangun rumah,
                     renovasi, desain interior yang unik, modern, dan inovatif.
                 </p>
-                
+
             </div>
         </div>
     </section>
@@ -47,7 +48,7 @@
                         <!-- Portfolio Image Container -->
                         <div class="relative overflow-hidden group">
                             <img src="{{ Storage::url($portfolio->image) }}" alt="{{ $portfolio->title }}"
-                                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 protect-image">
 
                             <!-- Overlay with Portfolio Info -->
                             <div
@@ -61,6 +62,9 @@
                                     <p class="text-xs mt-2 text-yellow-400 font-semibold text-shadow">Klik untuk detail</p>
                                 </div>
                             </div>
+
+                            <!-- Anti save transparent overlay -->
+                            <div class="anti-save-overlay absolute inset-0"></div>
 
                             <!-- Status Badge -->
                             <div class="absolute top-3 right-3">
@@ -134,11 +138,6 @@
                     </button>
                     <button
                         class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all duration-300 shadow-lg"
-                        data-category="rumah">
-                        Rumah
-                    </button>
-                    <button
-                        class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all duration-300 shadow-lg"
                         data-category="interior">
                         Interior
                     </button>
@@ -146,6 +145,11 @@
                         class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all duration-300 shadow-lg"
                         data-category="eksterior">
                         Eksterior
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-3 rounded-full bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all duration-300 shadow-lg"
+                        data-category="landscape">
+                        Landscape
                     </button>
                 </div>
             </div>
@@ -207,7 +211,11 @@
 
                     // Filter items
                     portfolioItems.forEach(item => {
-                        if (category === 'all' || item.dataset.category === category) {
+                        const itemCategory = item.dataset.category;
+                        const isLandscapeMatch = category === 'landscape' && (
+                            itemCategory === 'landscape' || itemCategory === 'rumah');
+                        if (category === 'all' || itemCategory === category ||
+                            isLandscapeMatch) {
                             item.style.display = 'block';
                             item.style.animation = 'fadeIn 0.5s ease-in-out';
                         } else {
@@ -273,29 +281,44 @@
                 ${portfolio.images && portfolio.images.length > 0 ? 
                     portfolio.images.map((img) => {
                         return `
-                            <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
-                                <img src="/storage/${img.image}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image">
-                                <div class="image-hover-overlay">
-                                    <div class="text-center text-white font-semibold">
-                                        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                                        </svg>
-                                        <p class="text-sm font-semibold">Klik untuk detail</p>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
+                                        <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
+                                            <img src="/storage/${img.image}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image">
+                                            <div class="anti-save-overlay absolute inset-0"></div>
+                                            <div class="image-hover-overlay">
+                                                <div class="text-center text-white font-semibold">
+                                                    <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                                                    </svg>
+                                                    <p class="text-sm font-semibold">Klik untuk detail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
                     }).join('') :
-                    Array.from({ length: 9 }, (_, i) => `
-                        <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl h-48 flex items-center justify-center shadow-lg">
-                            <div class="text-center text-gray-500">
-                                <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                </svg>
-                                <p class="text-xs">Image ${i + 1}</p>
-                            </div>
-                        </div>
-                    `).join('')
+                    Array.from({ length: 9 }, (_, i) => ` <
+                div class =
+                "bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl h-48 flex items-center justify-center shadow-lg" >
+                <
+                div class = "text-center text-gray-500" >
+                <
+                svg class = "w-12 h-12 mx-auto mb-2"
+            fill = "none"
+            stroke = "currentColor"
+            viewBox = "0 0 24 24" >
+                <
+                path stroke - linecap = "round"
+            stroke - linejoin = "round"
+            stroke - width = "2"
+            d = "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /
+                >
+                <
+                /svg> <
+            p class = "text-xs" > Image $ {
+                i + 1
+            } < /p> < /
+            div > <
+                /div>
+            `).join('')
                 }
             </div>
         </div>
@@ -332,26 +355,26 @@
                         <div class="space-y-3">
                             ${portfolio.features && portfolio.features.length > 0 ? 
                                 portfolio.features.map(feature => `
-                                            <div class="flex items-start">
-                                                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                <span class="text-gray-700 font-medium">${feature}</span>
-                                            </div>
-                                        `).join('') :
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">${feature}</span>
+                                                        </div>
+                                                    `).join('') :
                                 // Fallback jika tidak ada fitur
                                 `
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Konsep modern minimalis yang ceria dan menyegarkan</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Kombinasi warna yang harmonis dan elegan</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Material berkualitas tinggi dan tahan lama</span>
-                                        </div>
-                                        `
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Konsep modern minimalis yang ceria dan menyegarkan</span>
+                                                    </div>
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Kombinasi warna yang harmonis dan elegan</span>
+                                                    </div>
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Material berkualitas tinggi dan tahan lama</span>
+                                                    </div>
+                                                    `
                             }
                         </div>
                     </div>
@@ -366,26 +389,26 @@
                         <div class="space-y-3">
                             ${portfolio.advantages && portfolio.advantages.length > 0 ? 
                                 portfolio.advantages.map(advantage => `
-                                            <div class="flex items-start">
-                                                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                <span class="text-gray-700 font-medium">${advantage}</span>
-                                            </div>
-                                        `).join('') :
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">${advantage}</span>
+                                                        </div>
+                                                    `).join('') :
                                 // Fallback jika tidak ada keunggulan
                                 `
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Pengerjaan profesional dan teliti</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Garansi kualitas dan kepuasan</span>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                            <span class="text-gray-700 font-medium">Tim ahli berpengalaman</span>
-                                        </div>
-                                        `
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Pengerjaan profesional dan teliti</span>
+                                                    </div>
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Garansi kualitas dan kepuasan</span>
+                                                    </div>
+                                                    <div class="flex items-start">
+                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                        <span class="text-gray-700 font-medium">Tim ahli berpengalaman</span>
+                                                    </div>
+                                                    `
                             }
                         </div>
                     </div>
@@ -437,33 +460,33 @@
         </div>
 
         ${portfolio.location ? `
-                                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                        <div class="flex items-center mb-4">
-                                            <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
-                                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                                </svg>
-                                            </div>
-                                            <h4 class="font-bold text-gray-900 text-lg">Lokasi</h4>
-                                        </div>
-                                        <p class="text-gray-900 font-semibold text-lg">${portfolio.location}</p>
-                                    </div>
-                                ` : ''}
+                                                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                                    <div class="flex items-center mb-4">
+                                                        <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                                                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <h4 class="font-bold text-gray-900 text-lg">Lokasi</h4>
+                                                    </div>
+                                                    <p class="text-gray-900 font-semibold text-lg">${portfolio.location}</p>
+                                                </div>
+                                            ` : ''}
 
         ${portfolio.area ? `
-                                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                        <div class="flex items-center mb-4">
-                                            <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
-                                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
-                                                </svg>
-                                            </div>
-                                            <h4 class="font-bold text-gray-900 text-lg">Luas Area</h4>
-                                        </div>
-                                        <p class="text-gray-900 font-semibold text-lg">${portfolio.area} m²</p>
-                                    </div>
-                                ` : ''}
+                                                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                                    <div class="flex items-center mb-4">
+                                                        <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                                                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                                                            </svg>
+                                                        </div>
+                                                        <h4 class="font-bold text-gray-900 text-lg">Luas Area</h4>
+                                                    </div>
+                                                    <p class="text-gray-900 font-semibold text-lg">${portfolio.area} m²</p>
+                                                </div>
+                                            ` : ''}
     `;
 
             document.getElementById('modal-content').innerHTML = content;
@@ -492,7 +515,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
-            <img src="/storage/${imagePath}" alt="${title || 'Portfolio Image'}" class="w-full h-auto max-h-[70vh] object-contain rounded-xl shadow-lg" onerror="this.onerror=null; this.src='/img/placeholder-image.jpg'; console.error('Failed to load image:', imagePath);">
+            <img src="/storage/${imagePath}" alt="${title || 'Portfolio Image'}" class="w-full h-auto max-h-[70vh] object-contain rounded-xl shadow-lg protect-image" onerror="this.onerror=null; this.src='/img/placeholder-image.jpg'; console.error('Failed to load image:', imagePath);">
             ${title ? `<h3 class="text-black text-2xl font-bold mt-6 text-center">${title}</h3>` : ''}
             ${description ? `<p class="text-black text-center mt-3 text-lg">${description}</p>` : ''}
         </div>
@@ -554,14 +577,53 @@
             }
         });
     </script>
-<a href="https://wa.me/6285333353609?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20rancang%20bangun%20rumah"
-   target="_blank"
-   class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50"
-   title="Chat via WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8 fill-current">
-        <path d="M16 0C7.163 0 0 6.92 0 15.44c0 2.72.775 5.37 2.237 7.68L0 32l9.13-2.388A15.9 15.9 0 0016 30.88c8.837 0 16-6.92 16-15.44S24.837 0 16 0zm0 28.48a12.48 12.48 0 01-6.46-1.76l-.463-.275-5.42 1.417 1.45-5.18-.3-.5A12.13 12.13 0 013.52 15.44c0-6.657 5.77-12.08 12.88-12.08 3.44 0 6.677 1.315 9.107 3.702a12.42 12.42 0 013.773 8.378c0 6.657-5.77 12.08-12.88 12.08zm7.057-8.807c-.387-.193-2.283-1.127-2.636-1.253-.353-.127-.61-.193-.867.193-.257.386-.993 1.253-1.217 1.507-.223.257-.45.29-.837.097-.387-.193-1.633-.598-3.11-1.905-1.148-1.015-1.922-2.27-2.145-2.656-.223-.386-.023-.594.17-.787.175-.174.387-.45.58-.676.193-.226.257-.386.387-.644.127-.257.064-.48-.032-.674-.096-.193-.867-2.086-1.19-2.857-.314-.754-.634-.65-.867-.66l-.74-.013c-.257 0-.674.096-1.03.48-.353.386-1.354 1.322-1.354 3.223 0 1.902 1.385 3.737 1.58 3.993.193.257 2.728 4.17 6.606 5.847.925.4 1.645.639 2.205.816.926.295 1.77.253 2.435.154.743-.111 2.283-.932 2.605-1.83.322-.898.322-1.667.225-1.83-.096-.161-.353-.257-.74-.45z"/>
-    </svg>
-</a>
+    <script>
+        // Scoped anti-download protections for portfolio page
+        (function() {
+            // Disable context menu globally on this page section
+            document.addEventListener('contextmenu', function(e) {
+                // Allow inputs/textareas if needed
+                const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+                if (tag === 'input' || tag === 'textarea') return;
+                e.preventDefault();
+            });
+
+            // Prevent drag on protected images
+            document.addEventListener('dragstart', function(e) {
+                if (e.target && e.target.classList && e.target.classList.contains('protect-image')) {
+                    e.preventDefault();
+                }
+            });
+
+            // Block common save/view shortcuts
+            document.addEventListener('keydown', function(e) {
+                if ((e.ctrlKey || e.metaKey) && ['s', 'u', 'p', 'Shift', 'i'].includes(e.key.toLowerCase())) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                // F12
+                if (e.key === 'F12') {
+                    e.preventDefault();
+                }
+            });
+
+            // Ensure overlays exist for static grid images
+            document.querySelectorAll('.anti-save-overlay').forEach(function(overlay) {
+                overlay.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                });
+            });
+        })();
+    </script>
+    <a href="https://wa.me/6285333353609?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20rancang%20bangun%20rumah"
+        target="_blank"
+        class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50"
+        title="Chat via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8 fill-current">
+            <path
+                d="M16 0C7.163 0 0 6.92 0 15.44c0 2.72.775 5.37 2.237 7.68L0 32l9.13-2.388A15.9 15.9 0 0016 30.88c8.837 0 16-6.92 16-15.44S24.837 0 16 0zm0 28.48a12.48 12.48 0 01-6.46-1.76l-.463-.275-5.42 1.417 1.45-5.18-.3-.5A12.13 12.13 0 013.52 15.44c0-6.657 5.77-12.08 12.88-12.08 3.44 0 6.677 1.315 9.107 3.702a12.42 12.42 0 013.773 8.378c0 6.657-5.77 12.08-12.88 12.08zm7.057-8.807c-.387-.193-2.283-1.127-2.636-1.253-.353-.127-.61-.193-.867.193-.257.386-.993 1.253-1.217 1.507-.223.257-.45.29-.837.097-.387-.193-1.633-.598-3.11-1.905-1.148-1.015-1.922-2.27-2.145-2.656-.223-.386-.023-.594.17-.787.175-.174.387-.45.58-.676.193-.226.257-.386.387-.644.127-.257.064-.48-.032-.674-.096-.193-.867-2.086-1.19-2.857-.314-.754-.634-.65-.867-.66l-.74-.013c-.257 0-.674.096-1.03.48-.353.386-1.354 1.322-1.354 3.223 0 1.902 1.385 3.737 1.58 3.993.193.257 2.728 4.17 6.606 5.847.925.4 1.645.639 2.205.816.926.295 1.77.253 2.435.154.743-.111 2.283-.932 2.605-1.83.322-.898.322-1.667.225-1.83-.096-.161-.353-.257-.74-.45z" />
+        </svg>
+    </a>
 
     <style>
         .portfolio-item {
@@ -740,11 +802,28 @@
             pointer-events: none;
             z-index: 6;
         }
+
+        /* Anti-download: transparent overlay and image rules */
+        .anti-save-overlay {
+            position: absolute;
+            inset: 0;
+            background: transparent;
+            z-index: 5;
+        }
+
+        .protect-image {
+            -webkit-user-drag: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
     </style>
-@include('components.footer')
+    @include('components.footer')
 @endsection
 
 @section('scripts')
-@include('components.scripts')
+    @include('components.scripts')
 @endsection
-
