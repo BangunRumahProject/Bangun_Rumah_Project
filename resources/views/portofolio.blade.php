@@ -34,7 +34,7 @@
                     Koleksi Portfolio Kami
                 </h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Jelajahi berbagai project bangun rumah, renovasi, dan desain interior yang telah kami kerjakan dengan
+                    Jelajahi berbagai project bangun rumah, renovasi, dan desain interior/Eksterior yang telah kami kerjakan dengan
                     dedikasi dan keahlian tinggi.
                 </p>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full"></div>
