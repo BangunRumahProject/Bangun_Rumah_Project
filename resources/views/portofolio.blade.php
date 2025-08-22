@@ -17,7 +17,7 @@
                     Portofolio
                 </h1>
                 <p class="text-white max-w-2xl mb-6 drop-shadow text-lg leading-relaxed animate-fade-in-up delay-200">
-                    Dengan pengalaman lebih dari 10 tahun, kami telah sukses mengerjakan berbagai proyek bangun rumah,
+                    Dengan pengalaman lebih dari 3 tahun, kami telah sukses mengerjakan berbagai proyek bangun rumah,
                     renovasi, desain interior yang unik, modern, dan inovatif.
                 </p>
 
@@ -69,7 +69,7 @@
                             <!-- Status Badge -->
                             <div class="absolute top-3 right-3">
                                 <span
-                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium 
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium
                             {{ $portfolio->status === 'completed'
                                 ? 'bg-green-500 text-white'
                                 : ($portfolio->status === 'ongoing'
@@ -278,7 +278,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-6 mb-6">
-                ${portfolio.images && portfolio.images.length > 0 ? 
+                ${portfolio.images && portfolio.images.length > 0 ?
                     portfolio.images.map((img) => {
                         return `
                                         <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
@@ -336,14 +336,14 @@
                     <p class="text-gray-500 text-sm font-medium">Detail lengkap tentang project ini</p>
                 </div>
             </div>
-            
+
             <div class="prose prose-lg max-w-none">
                 <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-8">
                     <p class="text-gray-700 leading-relaxed text-lg font-medium">
                         ${portfolio.description}
                     </p>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="space-y-4">
                         <h4 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
@@ -353,7 +353,7 @@
                             Fitur Utama
                         </h4>
                         <div class="space-y-3">
-                            ${portfolio.features && portfolio.features.length > 0 ? 
+                            ${portfolio.features && portfolio.features.length > 0 ?
                                 portfolio.features.map(feature => `
                                                         <div class="flex items-start">
                                                             <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
@@ -378,7 +378,7 @@
                             }
                         </div>
                     </div>
-                    
+
                     <div class="space-y-4">
                         <h4 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -387,7 +387,7 @@
                             Keunggulan
                         </h4>
                         <div class="space-y-3">
-                            ${portfolio.advantages && portfolio.advantages.length > 0 ? 
+                            ${portfolio.advantages && portfolio.advantages.length > 0 ?
                                 portfolio.advantages.map(advantage => `
                                                         <div class="flex items-start">
                                                             <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
@@ -431,7 +431,7 @@
                     ${portfolio.category.charAt(0).toUpperCase() + portfolio.category.slice(1)}
                 </span>
             </div>
-            
+
             <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
                 <div class="flex items-center mb-4">
                     <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
@@ -445,7 +445,7 @@
                     ${portfolio.status.charAt(0).toUpperCase() + portfolio.status.slice(1)}
                 </span>
             </div>
-            
+
             <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
                 <div class="flex items-center mb-4">
                     <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">

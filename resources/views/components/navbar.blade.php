@@ -2,13 +2,17 @@
 <nav id="main-navbar"
     class="flex items-center justify-between px-4 md:px-8 py-3 bg-transparent fixed w-full z-20 transition duration-300">
     <div class="flex items-center">
-        <div class="flex flex-col items-center mr-4 md:mr-8">
+        <div class="flex items-center mr-4 md:mr-8">
             {{-- Logo that changes based on scroll state --}}
-            <div class="relative">
-                <img src="/img/logo-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300" id="logo-dark">
-                <img src="/img/logo-white-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-white">
+            <div class="relative -ml-1 md:-ml-2 mr-2">
+                <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300" id="logo-dark">
+                <img src="/img/logo-white-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-white">
             </div>
-            <span class="font-bold text-[10px] md:text-[13px] text-yellow-400 text-center leading-tight transition-colors duration-300" id="brand-text">Bangun Rumah Project</span>
+            <div class="font-bold text-[10px] md:text-[13px] text-yellow-400 leading-tight transition-colors duration-300 text-left" id="brand-text">
+                <span class="block">Bangun</span>
+                <span class="block">Rumah</span>
+                <span class="block">Project</span>
+            </div>
         </div>
 
         {{-- Desktop Menu --}}
