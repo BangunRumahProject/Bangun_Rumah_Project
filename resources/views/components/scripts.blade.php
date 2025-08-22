@@ -115,7 +115,7 @@
         // Enhanced navbar scroll effect with smooth transitions
         // NOTE: Navbar functionality is now handled by navbar.js module
         // This section has been disabled to prevent conflicts
-        
+
         /*
         let lastScrollY = window.scrollY;
         const navbar = document.getElementById('navbar');
@@ -418,6 +418,46 @@
         scroll-behavior: smooth;
     }
 `;
-document.head.appendChild(style);
+    document.head.appendChild(style);
+</script>
+<script>
+    // Site-wide basic image anti-download deterrents
+    (function() {
+        // Disable right-click on images only
+        document.addEventListener('contextmenu', function(e) {
+            var target = e.target;
+            if (target && target.tagName && target.tagName.toLowerCase() === 'img') {
+                e.preventDefault();
+            }
+        }, {
+            capture: true
+        });
 
+        // Prevent dragging images
+        document.addEventListener('dragstart', function(e) {
+            var target = e.target;
+            if (target && target.tagName && target.tagName.toLowerCase() === 'img') {
+                e.preventDefault();
+            }
+        }, {
+            capture: true
+        });
+
+        // Add a small CSS to reduce easy image actions
+        try {
+            var antiStyle = document.createElement('style');
+            antiStyle.textContent = `
+            img { 
+                -webkit-user-drag: none; 
+                -webkit-touch-callout: none; 
+                -webkit-user-select: none; 
+                -moz-user-select: none; 
+                -ms-user-select: none; 
+                user-select: none; 
+            }
+        `;
+            document.head.appendChild(antiStyle);
+        } catch (err) {
+            /* noop */ }
+    })();
 </script>
