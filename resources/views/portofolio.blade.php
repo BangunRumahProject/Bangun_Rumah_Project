@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Portofolio - Bangun Rumah Project')
+@section('title', 'Portofolio')
 
 @section('styles')
     @include('components.styles')

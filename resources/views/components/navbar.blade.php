@@ -41,11 +41,11 @@
                     <div class="nav-indicator"></div>
                 </a>
                 <ul class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded shadow-lg py-2 z-50 min-w-max hidden">
-                    <li><a href="/services1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    <li><a href="/services1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Bangun & Renovasi Rumah</a></li>
-                    <li><a href="/services2" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    <li><a href="/services2" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Buat RAB & PBG/IMB</a></li>
-                    <li><a href="/services3" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    <li><a href="/services3" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">   
                             Desain Eksterior / Interior</a></li>
                 </ul>
             </li>
