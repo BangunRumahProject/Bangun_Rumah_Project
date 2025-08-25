@@ -58,7 +58,7 @@
         <!-- Why Choose Us Section -->
         <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
                     <!-- Left Content -->
                     <div class="space-y-8 fade-in">
@@ -146,7 +146,7 @@
 
         <section class="relative w-full min-h-screen bg-black text-white py-16 lg:py-24">
             <div class="max-w-5xl mx-auto px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
                     <!-- Left Content -->
                     <div class="space-y-8 fade-in">
@@ -284,7 +284,7 @@
 
 
         <!-- Before Using RAB Service Section -->
-        <section class="bg-white text-gray-900 py-20">
+        <section class="bg-white text-gray-900 py-20 ml-10">
             <div class="container mx-auto px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
@@ -308,8 +308,8 @@
                                     </svg>
                                 </div>
                                 <h3 class="text-xl font-semibold">Desain Arsitektur Rumah</h3>
-                                <p class="text-gray-600">Desain lengkap rumah dengan denah, tampilan, dan detail arsitektur
-                                    yang jelas untuk perhitungan volume yang akurat.</p>
+                                <p class="text-gray-600">Dokumen desain lengkap yang mencakup denah, tampilan fasad, serta detail arsitektur. 
+                                    Informasi ini sangat penting agar perhitungan volume pekerjaan dapat dilakukan dengan lebih akurat.</p>
                             </div>
 
                             <div class="space-y-4">
@@ -320,9 +320,9 @@
                                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold">Gambar Kerja Berkul</h3>
-                                <p class="text-gray-600">Gambar kerja detail yang mencakup spesifikasi material, dimensi,
-                                    dan metode pelaksanaan untuk perhitungan biaya yang tepat.</p>
+                                <h3 class="text-xl font-semibold">Gambar Kerja Lengkap</h3>
+                                <p class="text-gray-600">Gambar teknis detail yang berisi spesifikasi material, dimensi konstruksi, serta metode pelaksanaan. 
+                                    Dokumen ini menjadi acuan utama dalam menghitung estimasi biaya pembangunan secara tepat dan transparan.</p>
                             </div>
                         </div>
                     </div>

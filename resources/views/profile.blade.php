@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Profile - Bangun Rumah Project')
+@section('title', 'Profile')
 
 @section('styles')
 @include('components.styles')
@@ -213,7 +213,7 @@
 
 <section class="relative w-full min-h-screen bg-black text-white py-8 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 fade-in">

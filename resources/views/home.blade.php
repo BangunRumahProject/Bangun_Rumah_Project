@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home - Bangun Rumah Project')
+@section('title', 'Home')
 
 @section('styles')
     @include('components.styles')
@@ -373,10 +373,11 @@
                                 <select name="kategori"
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300"
                                     required>
-                                    <option value="Jasa Bangun Rumah">Jasa Bangun Rumah</option>
-                                    <option value="Jasa Renovasi Rumah">Jasa Renovasi Rumah</option>
-                                    <option value="Jasa Desain Interior">Jasa Desain Interior</option>
-                                    <option value="Jasa Pembuatan RAB & PBG/IMB">Jasa Pembuatan RAB & PBG/IMB</option>
+                                    <option value="Jasa Bangun Rumah">Bangun Rumah</option>
+                                    <option value="Jasa Renovasi Rumah">Renovasi Rumah</option>
+                                    <option value="Jasa Desain Interior">Desain Interior/Eksterior</option>
+                                    <option value="Jasa Pembuatan RAB & PBG/IMB">Pembuatan RAB & PBG/IMB</option>
+                                    <option value="Bangunan Lainnya">Bangunan Lainnya</option>
                                 </select>
                             </div>
 
@@ -479,7 +480,7 @@
     <section class="bg-gradient-to-b from-gray-50 to-white py-16">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Pertanyaan yang sering diajukan</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">Temukan jawaban untuk pertanyaan-pertanyaan yang sering
                     diajukan seputar jasa desain dan pembangunan rumah kami.</p>
             </div>
