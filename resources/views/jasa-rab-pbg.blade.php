@@ -12,7 +12,7 @@
         <!-- Hero Section -->
         <section
             class="relative bg-black text-white min-h-screen flex items-center bg-fixed bg-center bg-no-repeat bg-cover pt-24"
-            style="background-image: url('/img/bg02.jpg');">
+            style="background-image: url('/img/profil2.png');">
             <!-- Overlay gradient atas -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50 z-0"></div>
             <!-- Overlay gradient bawah untuk smooth transition -->
@@ -623,7 +623,7 @@
                         <!-- Left Content - Featured Project Showcase -->
                         <div class="space-y-8">
                             <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                <img src="{{ asset('img/desain1.jpg') }}"
                                     alt="Rumah Modern Minimalis" class="w-full h-full object-cover">
                             </div>
                         </div>
@@ -723,7 +723,7 @@
                 <!-- Left Content - House Image -->
                 <div class="space-y-8">
                     <div class="aspect-[4/5] bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        <img src="{{ asset('img/profil5.png') }}"
                             alt="Modern House Exterior" class="w-full h-full object-cover">
                     </div>
                 </div>
