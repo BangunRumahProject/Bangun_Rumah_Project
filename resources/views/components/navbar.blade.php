@@ -4,28 +4,19 @@
     <div class="flex items-center">
         <div class="flex items-center mr-4 md:mr-8">
             {{-- Logo that changes based on scroll state --}}
-<<<<<<< Updated upstream
             <div class="relative -ml-1 md:-ml-2 mr-2">
-                <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300" id="logo-dark">
-                <img src="/img/logo-white-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0" id="logo-white">
+                <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300"
+                    id="logo-dark">
+                <img src="/img/logo-white-brp.png" alt="Logo"
+                    class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0"
+                    id="logo-white">
             </div>
-            <div class="font-bold text-[10px] md:text-[13px] text-yellow-400 leading-tight transition-colors duration-300 text-left" id="brand-text">
+            <div class="font-bold text-[10px] md:text-[13px] text-yellow-400 leading-tight transition-colors duration-300 text-left"
+                id="brand-text">
                 <span class="block">Bangun</span>
                 <span class="block">Rumah</span>
                 <span class="block">Project</span>
             </div>
-=======
-            <div class="relative">
-                <img src="/img/logo-brp.png" alt="Logo" class="h-6 md:h-7 w-auto transition-opacity duration-300"
-                    id="logo-dark">
-                <img src="/img/logo-white-brp.png" alt="Logo"
-                    class="h-6 md:h-7 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0"
-                    id="logo-white">
-            </div>
-            <span
-                class="font-bold text-[10px] md:text-[13px] text-yellow-400 text-center leading-tight transition-colors duration-300"
-                id="brand-text">Bangun Rumah Project</span>
->>>>>>> Stashed changes
         </div>
 
         {{-- Desktop Menu --}}
@@ -58,31 +49,34 @@
                     <div class="nav-indicator"></div>
                 </a>
                 <ul class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded shadow-lg py-2 z-50 min-w-max hidden">
-<<<<<<< Updated upstream
-                    <li><a href="/services1" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
-                            Bangun & Renovasi Rumah</a></li>
-                    <li><a href="/services2" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
-                            Buat RAB & PBG/IMB</a></li>
-                    <li><a href="/services3" class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">   
-=======
-                    <li><a href="/services1"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
-                            Bangun & Renovasi Rumah</a></li>
-                    <li><a href="/services2"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
-                            Buat RAB & PBG/IMB</a></li>
-                    <li><a href="/services3"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
->>>>>>> Stashed changes
-                            Desain Eksterior / Interior</a></li>
-                </ul>
+                    <<<<<<< Updated upstream <li><a href="/services1"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            Bangun & Renovasi Rumah</a>
             </li>
-            <li><a href="/contact"
-                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('contact*') ? 'nav-active' : '' }}">
-                    <span>KONTAK</span>
-                    <div class="nav-indicator"></div>
-                </a>
-            </li>
+            <li><a href="/services2"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                    Buat RAB & PBG/IMB</a></li>
+            <li><a href="/services3"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                    =======
+            <li><a href="/services1"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    Bangun & Renovasi Rumah</a></li>
+            <li><a href="/services2"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    Buat RAB & PBG/IMB</a></li>
+            <li><a href="/services3"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">Layanan
+                    >>>>>>> Stashed changes
+                    Desain Eksterior / Interior</a></li>
+        </ul>
+        </li>
+        <li><a href="/contact"
+                class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('contact*') ? 'nav-active' : '' }}">
+                <span>KONTAK</span>
+                <div class="nav-indicator"></div>
+            </a>
+        </li>
         </ul>
     </div>
 
@@ -147,8 +141,8 @@
                     <a href="/portofolio"
                         class="mobile-nav-link block px-3 sm:px-4 py-3 sm:py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('portfolio*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
-                            <svg class="w-4 sm:w-5 h-4 sm:h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-4 sm:w-5 h-4 sm:h-5 mr-3 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                             </svg>

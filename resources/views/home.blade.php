@@ -134,21 +134,11 @@
     <section class="py-12 bg-black relative min-h-screen overflow-visible">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row items-center relative">
             <!-- Gambar di kiri, portrait, overlap ke bawah -->
-<<<<<<< Updated upstream
             <div class="w-full lg:w-1/3 flex-shrink-0 mb-12 lg:mb-0 lg:mr-12 relative">
                 <div class="absolute left-0 top-1/2 lg:top-1/2 transform translate-y-16 lg:translate-y-24">
-                    <img src="{{ asset('img/homepage2.jpeg') }}"
-                        alt="Modern House"
+                    <img src="{{ asset('img/homepage2.jpeg') }}" alt="Modern House"
                         class="w-[200px] h-[320px] md:w-[300px] md:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
                         data-src="{{ asset('img/homepage2.jpeg') }}">
-=======
-            <div class="w-full lg:w-1/3 flex-shrink-0 mb-8 lg:mb-0 lg:mr-12 relative">
-                <div class="relative lg:absolute lg:left-0 lg:top-1/2 transform lg:translate-y-24">
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80"
-                        alt="Modern House"
-                        class="mx-auto w-[200px] h-[300px] md:w-[260px] md:h-[420px] lg:w-[300px] lg:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
-                        data-src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80">
->>>>>>> Stashed changes
                 </div>
             </div>
 
@@ -162,11 +152,14 @@
                 <div class="flex flex-col">
                     <div
                         class="text-base md:text-lg text-gray-300 mb-6 md:mb-8 text-justify lg:text-left max-w-2xl mx-auto lg:mx-0 animate-fade-in-right delay-300">
-                        <p class="leading-relaxed">Kami adalah partner terpercaya untuk mewujudkan hunian berkualitas dengan
+                        <p class="leading-relaxed">Kami adalah partner terpercaya untuk mewujudkan hunian
+                            berkualitas dengan
                             standar konstruksi tertinggi. Dengan pengalaman lebih dari 15 tahun, tim ahli kami siap
                             hadirkan rumah impian yang sempurna sesuai budget dan keinginan Anda.</p>
-                        <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan dengan
-                            presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap proyek yang
+                        <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan
+                            dengan
+                            presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap
+                            proyek yang
                             dikerjakan.</p>
                     </div>
                 </div>
@@ -185,8 +178,10 @@
                             </span>
                             <div class="flex-1">
                                 <h4 class="text-white font-semibold mb-2">Desain Arsitektur Modern</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">Tim arsitek berpengalaman siap merancang
-                                    hunian sesuai gaya hidup dan kebutuhan keluarga Anda dengan konsep yang inovatif.</p>
+                                <p class="text-sm text-gray-400 leading-relaxed">Tim arsitek berpengalaman siap
+                                    merancang
+                                    hunian sesuai gaya hidup dan kebutuhan keluarga Anda dengan konsep yang
+                                    inovatif.</p>
                             </div>
                         </div>
 
@@ -202,7 +197,8 @@
                             </span>
                             <div class="flex-1">
                                 <h4 class="text-white font-semibold mb-2">Konstruksi Berkualitas SNI</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">Material premium dan teknik konstruksi
+                                <p class="text-sm text-gray-400 leading-relaxed">Material premium dan teknik
+                                    konstruksi
                                     berstandar SNI menjamin kekuatan dan daya tahan bangunan jangka panjang.</p>
                             </div>
                         </div>
@@ -221,7 +217,8 @@
                             </span>
                             <div class="flex-1">
                                 <h4 class="text-white font-semibold mb-2">Harga Transparan & Terjangkau</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">RAB detail dan transparan tanpa biaya
+                                <p class="text-sm text-gray-400 leading-relaxed">RAB detail dan transparan tanpa
+                                    biaya
                                     tersembunyi. Dapatkan rumah berkualitas dengan investasi yang tepat.</p>
                             </div>
                         </div>
@@ -238,7 +235,8 @@
                             </span>
                             <div class="flex-1">
                                 <h4 class="text-white font-semibold mb-2">Garansi & Layanan Purna Jual</h4>
-                                <p class="text-sm text-gray-400 leading-relaxed">Komitmen penuh dengan garansi konstruksi
+                                <p class="text-sm text-gray-400 leading-relaxed">Komitmen penuh dengan garansi
+                                    konstruksi
                                     dan layanan maintenance berkala untuk kepuasan jangka panjang.</p>
                             </div>
                         </div>
@@ -412,8 +410,7 @@
     <section class="bg-gradient-to-b from-white to-gray-50 py-12">
         <div class="max-w-6xl mx-auto px-8">
             <div class="text-center mb-12">
-                <img src="{{ asset('img/homepage3.jpeg') }}"
-                    alt="Modern Living Room"
+                <img src="{{ asset('img/homepage3.jpeg') }}" alt="Modern Living Room"
                     class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl mb-8 hover:scale-105 transition parallax-img">
             </div>
 
@@ -458,8 +455,8 @@
                 {{-- Portfolio Item 1 - Large --}}
                 <div
                     class="md:col-span-2 md:row-span-2 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="{{ asset('img/homepage4.jpeg') }}"
-                        alt="Portfolio" class="w-full h-full object-cover hover:scale-105 transition parallax-img">
+                    <img src="{{ asset('img/homepage4.jpeg') }}" alt="Portfolio"
+                        class="w-full h-full object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 2 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
