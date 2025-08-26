@@ -134,10 +134,10 @@
     <section class="py-12 bg-black relative min-h-screen overflow-visible">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row items-center relative">
             <!-- Gambar di kiri, portrait, overlap ke bawah -->
-            <div class="w-full lg:w-1/3 flex-shrink-0 mb-12 lg:mb-0 lg:mr-12 relative">
-                <div class="absolute left-0 top-1/2 lg:top-1/2 transform translate-y-16 lg:translate-y-24">
+            <div class="w-full lg:w-1/3 flex-shrink-0 mb-8 lg:mb-0 lg:mr-12 relative">
+                <div class="relative lg:absolute lg:left-0 lg:top-1/2 lg:translate-y-24">
                     <img src="{{ asset('img/homepage2.jpeg') }}" alt="Modern House"
-                        class="w-[200px] h-[320px] md:w-[300px] md:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
+                        class="mx-auto w-48 h-72 sm:w-56 sm:h-[22rem] md:w-72 md:h-[28rem] lg:w-[300px] lg:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
                         data-src="{{ asset('img/homepage2.jpeg') }}">
                 </div>
             </div>
@@ -439,7 +439,7 @@
     {{-- Section Portfolio --}}
     <section id="portofolio" class="bg-black py-12">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
                 <div class="w-full md:w-2/3">
                     <div class="text-white font-bold text-xl mb-4">WUJUDKAN RUMAH IMPIAN ANDA BERSAMA KAMI</div>
                     <div class="text-gray-300">Dari desain hingga pembangunan, kami menghadirkan hunian yang memadukan
@@ -448,35 +448,35 @@
                         akan memberikan hasil akhir yang memukau.</div>
                 </div>
                 <a href="/portofolio"
-                    class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4 md:mt-0">Lihat
+                    class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-2 md:mt-0 w-full md:w-auto text-center">Lihat
                     Portofolio</a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full md:w-2/3 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full md:w-2/3 mx-auto">
                 {{-- Portfolio Item 1 - Large --}}
                 <div
                     class="md:col-span-2 md:row-span-2 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
                     <img src="{{ asset('img/homepage4.jpeg') }}" alt="Portfolio"
-                        class="w-full h-full object-cover hover:scale-105 transition parallax-img">
+                        class="w-full h-48 sm:h-56 md:h-full object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 2 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
                     <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80"
-                        alt="Portfolio" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 3 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
                     <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80"
-                        alt="Portfolio" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 4 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
                     <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80"
-                        alt="Portfolio" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 5 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
                     <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
-                        alt="Portfolio" class="w-full h-40 object-cover hover:scale-105 transition parallax-img">
+                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
             </div>
         </div>
