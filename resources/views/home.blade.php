@@ -460,22 +460,22 @@
                 </div>
                 {{-- Portfolio Item 2 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80"
+                    <img src="{{ asset('img/profil5.png') }}"
                         alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 3 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80"
+                    <img src="{{ asset('img/desain4.jpg') }}"
                         alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 4 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80"
+                    <img src="{{ asset('img/profil5.jpg') }}"
                         alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 5 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+                    <img src="{{ asset('img/image gallery 4.jpg') }}"
                         alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
             </div>
