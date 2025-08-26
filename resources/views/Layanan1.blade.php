@@ -596,20 +596,20 @@
                         <div class="grid grid-cols-2 gap-3">
                             <!-- Top Left Image - Square -->
                             <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                <img src="{{ asset('img/image interior 2.jpg') }}"
                                     alt="Modern House Exterior" class="w-full h-full object-cover">
                             </div>
 
                             <!-- Top Right Image - Tall Rectangle -->
                             <div class="aspect-[3/4] bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                <img src="{{ asset('img/Gbr1.jpg') }}"
                                     alt="Modern Kitchen Interior" class="w-full h-full object-cover">
                             </div>
                         </div>
 
                         <!-- Bottom Image - Wide Rectangle -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image interior 1.jpg') }}"
                                 alt="Modern Bedroom Interior" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -628,20 +628,20 @@
                         <div class="grid grid-cols-2 gap-3">
                             <!-- Top Left Image - Square -->
                             <div class="aspect-square bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                <img src="{{ asset('img/image gallery 4.jpg') }}"
                                     alt="Modern House Exterior" class="w-full h-full object-cover">
                             </div>
 
                             <!-- Top Right Image - Tall Rectangle -->
                             <div class="aspect-[3/4] bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                <img src="{{ asset('img/Gbr2.jpg') }}"
                                     alt="Modern Kitchen Interior" class="w-full h-full object-cover">
                             </div>
                         </div>
 
                         <!-- Bottom Image - Wide Rectangle -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/profil4.jpg') }}"
                                 alt="Modern Bedroom Interior" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -756,7 +756,7 @@
                     <!-- Left Content - Featured Project Showcase -->
                     <div class="space-y-8">
                         <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            <img src="{{ asset('img/profil2.png') }}"
                                 alt="Rumah Modern Minimalis" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -856,7 +856,7 @@
                     <!-- Left Content - House Image -->
                     <div class="space-y-8">
                         <div class="aspect-[4/5] bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            <img src="{{ asset('img/image(2).png') }}"
                                 alt="Modern House Exterior" class="w-full h-full object-cover">
                         </div>
                     </div>

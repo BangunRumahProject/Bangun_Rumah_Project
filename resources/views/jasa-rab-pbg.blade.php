@@ -130,7 +130,7 @@
                     <div class="relative slide-in-right">
                         <div
                             class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/bg02.jpg') }}"
                                 alt="Tim Profesional" class="w-full h-full object-cover">
                         </div>
 
@@ -169,7 +169,7 @@
                         <!-- House Image -->
                         <div class="relative">
                             <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                <img src="{{ asset('img/image gallery 1.jpg') }}"
                                     alt="Modern House Design" class="w-full h-full object-cover">
                             </div>
                         </div>
@@ -329,7 +329,7 @@
 
                     <!-- Right Image -->
                     <div>
-                        <img src="/img/image-contact.jpg" alt="Calculator and Documents"
+                        <img src="{{ asset('img/rab.jpg') }}"
                             class="w-full h-auto rounded-lg shadow-lg">
                     </div>
                 </div>
