@@ -75,6 +75,18 @@
                             </div>
 
                             <div class="sm:col-span-3">
+                                <label for="build_duration" class="block text-sm font-medium text-gray-700 mb-2">Jangka
+                                    Waktu Pembangunan</label>
+                                <input type="text" name="build_duration" id="build_duration"
+                                    value="{{ old('build_duration', $portfolio->build_duration) }}"
+                                    placeholder="cth: 3 bulan, 12 minggu"
+                                    class="block w-full rounded-lg border-2 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 sm:text-sm px-4 py-3 transition-all duration-200">
+                                @error('build_duration')
+                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
+                                @enderror
+                            </div>
+
+                            <div class="sm:col-span-3">
                                 <label for="status" class="block text-sm font-medium text-gray-700 mb-2">Status *</label>
                                 <div class="mt-1">
                                     <select name="status" id="status" required
@@ -136,7 +148,8 @@
                             </div>
 
                             <div class="sm:col-span-3">
-                                <label for="sort_order" class="block text-sm font-medium text-gray-700 mb-2">Urutan</label>
+                                <label for="sort_order"
+                                    class="block text-sm font-medium text-gray-700 mb-2">Urutan</label>
                                 <div class="mt-1">
                                     <input type="number" name="sort_order" id="sort_order"
                                         value="{{ old('sort_order', $portfolio->sort_order) }}" min="0"

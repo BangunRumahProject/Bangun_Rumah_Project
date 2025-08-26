@@ -45,6 +45,7 @@ class PortfolioController extends Controller
                 'image_titles.*' => 'nullable|string|min:2|max:255',
                 'image_descriptions' => 'nullable|array',
                 'image_descriptions.*' => 'nullable|string|max:1000',
+                'build_duration' => 'nullable|string|min:2|max:100',
             ], [
                 'title.required' => 'Judul portfolio wajib diisi',
                 'title.min' => 'Judul portfolio minimal 3 karakter',
@@ -80,6 +81,8 @@ class PortfolioController extends Controller
                 'image_titles.*.min' => 'Judul gambar minimal 2 karakter',
                 'image_titles.*.max' => 'Judul gambar maksimal 255 karakter',
                 'image_descriptions.*.max' => 'Deskripsi gambar maksimal 1000 karakter',
+                'build_duration.min' => 'Jangka waktu minimal 2 karakter',
+                'build_duration.max' => 'Jangka waktu maksimal 100 karakter',
             ]);
 
             if ($request->hasFile('image')) {
@@ -89,6 +92,7 @@ class PortfolioController extends Controller
 
             $validated['is_featured'] = $request->has('is_featured');
             $validated['sort_order'] = $validated['sort_order'] ?? Portfolio::max('sort_order') + 1;
+            $validated['build_duration'] = $request->input('build_duration');
 
             $portfolio = Portfolio::create($validated);
 
@@ -162,6 +166,7 @@ class PortfolioController extends Controller
                 'image_titles.*' => 'nullable|string|min:2|max:255',
                 'image_descriptions' => 'nullable|array',
                 'image_descriptions.*' => 'nullable|string|max:1000',
+                'build_duration' => 'nullable|string|min:2|max:100',
                 // Existing images edit/delete
                 'existing_images' => 'nullable|array',
                 'existing_images.*.title' => 'nullable|string|min:2|max:255',
@@ -205,6 +210,8 @@ class PortfolioController extends Controller
                 'image_titles.*.min' => 'Judul gambar minimal 2 karakter',
                 'image_titles.*.max' => 'Judul gambar maksimal 255 karakter',
                 'image_descriptions.*.max' => 'Deskripsi gambar maksimal 1000 karakter',
+                'build_duration.min' => 'Jangka waktu minimal 2 karakter',
+                'build_duration.max' => 'Jangka waktu maksimal 100 karakter',
             ]);
 
             if ($request->hasFile('image')) {
@@ -218,6 +225,7 @@ class PortfolioController extends Controller
 
             $validated['is_featured'] = $request->has('is_featured');
             $validated['sort_order'] = $validated['sort_order'] ?? $portfolio->sort_order;
+            $validated['build_duration'] = $request->input('build_duration');
 
             $portfolio->update($validated);
 

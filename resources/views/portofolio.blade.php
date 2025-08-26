@@ -281,19 +281,19 @@
                 ${portfolio.images && portfolio.images.length > 0 ?
                     portfolio.images.map((img) => {
                         return `
-                                        <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
-                                            <img src="/storage/${img.image}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image">
-                                            <div class="anti-save-overlay absolute inset-0"></div>
-                                            <div class="image-hover-overlay">
-                                                <div class="text-center text-white font-semibold">
-                                                    <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                                                    </svg>
-                                                    <p class="text-sm font-semibold">Klik untuk detail</p>
+                                            <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
+                                                <img src="/storage/${img.image}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image">
+                                                <div class="anti-save-overlay absolute inset-0"></div>
+                                                <div class="image-hover-overlay">
+                                                    <div class="text-center text-white font-semibold">
+                                                        <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                                                        </svg>
+                                                        <p class="text-sm font-semibold">Klik untuk detail</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    `;
+                                        `;
                     }).join('') :
                     Array.from({ length: 9 }, (_, i) => ` <
                 div class =
@@ -355,26 +355,26 @@
                         <div class="space-y-3">
                             ${portfolio.features && portfolio.features.length > 0 ?
                                 portfolio.features.map(feature => `
-                                                        <div class="flex items-start">
-                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                            <span class="text-gray-700 font-medium">${feature}</span>
-                                                        </div>
-                                                    `).join('') :
+                                                            <div class="flex items-start">
+                                                                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                                <span class="text-gray-700 font-medium">${feature}</span>
+                                                            </div>
+                                                        `).join('') :
                                 // Fallback jika tidak ada fitur
                                 `
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Konsep modern minimalis yang ceria dan menyegarkan</span>
-                                                    </div>
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Kombinasi warna yang harmonis dan elegan</span>
-                                                    </div>
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Material berkualitas tinggi dan tahan lama</span>
-                                                    </div>
-                                                    `
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Konsep modern minimalis yang ceria dan menyegarkan</span>
+                                                        </div>
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Kombinasi warna yang harmonis dan elegan</span>
+                                                        </div>
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Material berkualitas tinggi dan tahan lama</span>
+                                                        </div>
+                                                        `
                             }
                         </div>
                     </div>
@@ -389,26 +389,26 @@
                         <div class="space-y-3">
                             ${portfolio.advantages && portfolio.advantages.length > 0 ?
                                 portfolio.advantages.map(advantage => `
-                                                        <div class="flex items-start">
-                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                            <span class="text-gray-700 font-medium">${advantage}</span>
-                                                        </div>
-                                                    `).join('') :
+                                                            <div class="flex items-start">
+                                                                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                                <span class="text-gray-700 font-medium">${advantage}</span>
+                                                            </div>
+                                                        `).join('') :
                                 // Fallback jika tidak ada keunggulan
                                 `
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Pengerjaan profesional dan teliti</span>
-                                                    </div>
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Garansi kualitas dan kepuasan</span>
-                                                    </div>
-                                                    <div class="flex items-start">
-                                                        <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
-                                                        <span class="text-gray-700 font-medium">Tim ahli berpengalaman</span>
-                                                    </div>
-                                                    `
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Pengerjaan profesional dan teliti</span>
+                                                        </div>
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Garansi kualitas dan kepuasan</span>
+                                                        </div>
+                                                        <div class="flex items-start">
+                                                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 mt-2 flex-shrink-0 shadow-sm"></div>
+                                                            <span class="text-gray-700 font-medium">Tim ahli berpengalaman</span>
+                                                        </div>
+                                                        `
                             }
                         </div>
                     </div>
@@ -459,34 +459,48 @@
             </div>
         </div>
 
+        ${portfolio.build_duration ? `
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 mt-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 text-lg">Jangka Waktu Pembangunan</h4>
+                    </div>
+                    <p class="text-gray-900 font-semibold text-lg">${portfolio.build_duration}</p>
+                </div>
+            ` : ''}
+
         ${portfolio.location ? `
-                                                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                                    <div class="flex items-center mb-4">
-                                                        <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
-                                                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                                            </svg>
+                                                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                                                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <h4 class="font-bold text-gray-900 text-lg">Lokasi</h4>
                                                         </div>
-                                                        <h4 class="font-bold text-gray-900 text-lg">Lokasi</h4>
+                                                        <p class="text-gray-900 font-semibold text-lg">${portfolio.location}</p>
                                                     </div>
-                                                    <p class="text-gray-900 font-semibold text-lg">${portfolio.location}</p>
-                                                </div>
-                                            ` : ''}
+                                                ` : ''}
 
         ${portfolio.area ? `
-                                                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                                                    <div class="flex items-center mb-4">
-                                                        <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
-                                                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
-                                                            </svg>
+                                                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                                                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                                                                </svg>
+                                                            </div>
+                                                            <h4 class="font-bold text-gray-900 text-lg">Luas Area</h4>
                                                         </div>
-                                                        <h4 class="font-bold text-gray-900 text-lg">Luas Area</h4>
+                                                        <p class="text-gray-900 font-semibold text-lg">${portfolio.area} m²</p>
                                                     </div>
-                                                    <p class="text-gray-900 font-semibold text-lg">${portfolio.area} m²</p>
-                                                </div>
-                                            ` : ''}
+                                                ` : ''}
     `;
 
             document.getElementById('modal-content').innerHTML = content;

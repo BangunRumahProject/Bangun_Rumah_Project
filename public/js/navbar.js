@@ -90,7 +90,7 @@ export class NavbarManager {
     // Stabilize navbar position
     stabilizeNavbar() {
         if (!this.navbar) return;
-        
+
         // Ensure navbar is fixed at top
         this.navbar.style.position = 'fixed';
         this.navbar.style.top = '0';
@@ -98,7 +98,7 @@ export class NavbarManager {
         this.navbar.style.right = '0';
         this.navbar.style.transform = 'none';
         this.navbar.style.zIndex = '50';
-        
+
         console.log('Navbar position stabilized');
     }
 
@@ -106,11 +106,11 @@ export class NavbarManager {
     setupDropdowns() {
         // Find all dropdown containers
         const dropdownContainers = document.querySelectorAll('.group[data-dropdown]');
-        
+
         dropdownContainers.forEach(container => {
             const dropdown = container.querySelector('ul');
             const trigger = container.querySelector('a');
-            
+
             if (dropdown && trigger) {
                 // Store reference
                 this.dropdowns.push({
@@ -182,7 +182,7 @@ export class NavbarManager {
     // Handle clicks outside dropdowns
     handleOutsideClick(e) {
         let clickedInside = false;
-        
+
         this.dropdowns.forEach(dropdownData => {
             if (dropdownData.container.contains(e.target)) {
                 clickedInside = true;
@@ -228,8 +228,8 @@ export class NavbarManager {
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (this.isMobileMenuOpen && 
-                !this.mobileMenu.contains(e.target) && 
+            if (this.isMobileMenuOpen &&
+                !this.mobileMenu.contains(e.target) &&
                 !this.mainBurgerBtn.contains(e.target)) {
                 this.closeMobileMenu();
             }
@@ -253,19 +253,19 @@ export class NavbarManager {
     // Setup mobile dropdowns specifically
     setupMobileDropdowns() {
         const mobileDropdowns = this.mobileMenu.querySelectorAll('[data-dropdown]');
-        
+
         mobileDropdowns.forEach(container => {
             const trigger = container.querySelector('a');
             const dropdown = container.querySelector('ul');
             const arrow = trigger.querySelector('svg:last-child');
-            
+
             if (trigger && dropdown && arrow) {
                 trigger.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    
+
                     const isOpen = !dropdown.classList.contains('hidden');
-                    
+
                     // Close all other dropdowns
                     mobileDropdowns.forEach(otherContainer => {
                         const otherDropdown = otherContainer.querySelector('ul');
@@ -277,7 +277,7 @@ export class NavbarManager {
                             }
                         }
                     });
-                    
+
                     // Toggle current dropdown
                     if (isOpen) {
                         dropdown.classList.add('hidden');
@@ -510,21 +510,19 @@ export class NavbarManager {
 
                 /* Mobile menu content positioning - FIXED */
                 .mobile-menu-content {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    position: relative;
                     width: 100%;
                     height: 100%;
                     background-color: black;
-                    transition: transform 0.4s ease-in-out;
-                    transform: translateX(-100%);
+                    transition: opacity 0.3s ease-in-out;
+                    opacity: 0;
                     z-index: 45;
                     display: flex;
                     flex-direction: column;
                 }
 
                 .mobile-menu:not(.hidden) .mobile-menu-content {
-                    transform: translateX(0);
+                    opacity: 1;
                 }
 
                 /* Burger menu animation */
@@ -616,9 +614,15 @@ export class NavbarManager {
 
                 /* Ensure mobile menu button is always visible */
                 #main-burger-btn {
-                    z-index: 50;
+                    z-index: 20;
                     position: relative;
                 }
+
+                /* Hide burger and navbar branding when menu is open */
+                body.mobile-menu-open #main-burger-btn { display: none !important; }
+                body.mobile-menu-open #logo-dark,
+                body.mobile-menu-open #logo-white,
+                body.mobile-menu-open #brand-text { opacity: 0; visibility: hidden; }
 
                 /* Mobile close button styles */
                 .mobile-close-btn {
@@ -627,7 +631,7 @@ export class NavbarManager {
 
                 /* Mobile menu overlay z-index */
                 .mobile-menu {
-                    z-index: 40;
+                    z-index: 60;
                 }
 
                 /* Ensure mobile menu content is visible */
@@ -737,21 +741,21 @@ export class NavbarManager {
             // Scrolled - show white logo and black navbar
             this.logoWhite.style.opacity = '1';
             this.logoDark.style.opacity = '0';
-            
+
             // Add scrolled class to navbar
             this.navbar.classList.add('navbar-scrolled');
             this.navbar.classList.remove('bg-transparent');
-            
+
             // Force black background with inline style
             this.navbar.style.backgroundColor = 'black';
             this.navbar.style.background = 'black';
-            
+
             // Ensure navbar stays in position
             this.navbar.style.transform = 'none';
             this.navbar.style.top = '0';
-            
+
             console.log('Navbar scrolled - background set to black');
-            
+
             // Update nav links to white
             this.navLinks.forEach(link => {
                 link.classList.remove('text-yellow-400');
@@ -767,21 +771,21 @@ export class NavbarManager {
             // Not scrolled - show dark logo and transparent navbar
             this.logoWhite.style.opacity = '0';
             this.logoDark.style.opacity = '1';
-            
+
             // Remove scrolled class from navbar
             this.navbar.classList.remove('navbar-scrolled');
             this.navbar.classList.add('bg-transparent');
-            
+
             // Force transparent background with inline style
             this.navbar.style.backgroundColor = 'transparent';
             this.navbar.style.background = 'transparent';
-            
+
             // Ensure navbar stays in position
             this.navbar.style.transform = 'none';
             this.navbar.style.top = '0';
-            
+
             console.log('Navbar not scrolled - background set to transparent');
-            
+
             // Update nav links to yellow
             this.navLinks.forEach(link => {
                 link.classList.remove('text-white');
@@ -818,22 +822,22 @@ export class NavbarManager {
         }
 
         console.log('Opening mobile menu');
-        
+
         // Show mobile menu
         this.mobileMenu.classList.remove('hidden');
-        
+
         // Add active class to burger button
         this.mainBurgerBtn.classList.add('burger-active');
-        
+
         // Prevent body scroll
         document.body.classList.add('mobile-menu-open');
-        
+
         // Set state
         this.isMobileMenuOpen = true;
-        
+
         // Add backdrop blur effect
         document.body.style.backdropFilter = 'blur(5px)';
-        
+
         console.log('Mobile menu opened');
     }
 
@@ -844,20 +848,20 @@ export class NavbarManager {
         }
 
         console.log('Closing mobile menu');
-        
+
         // Hide mobile menu
         this.mobileMenu.classList.add('hidden');
-        
+
         // Remove active class from burger button
         this.mainBurgerBtn.classList.remove('burger-active');
-        
+
         // Restore body scroll
         document.body.classList.remove('mobile-menu-open');
         document.body.style.backdropFilter = '';
-        
+
         // Set state
         this.isMobileMenuOpen = false;
-        
+
         console.log('Mobile menu closed');
     }
 

@@ -134,12 +134,21 @@
     <section class="py-12 bg-black relative min-h-screen overflow-visible">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row items-center relative">
             <!-- Gambar di kiri, portrait, overlap ke bawah -->
+<<<<<<< Updated upstream
             <div class="w-full lg:w-1/3 flex-shrink-0 mb-12 lg:mb-0 lg:mr-12 relative">
                 <div class="absolute left-0 top-1/2 lg:top-1/2 transform translate-y-16 lg:translate-y-24">
                     <img src="{{ asset('img/homepage2.jpeg') }}"
                         alt="Modern House"
                         class="w-[200px] h-[320px] md:w-[300px] md:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
                         data-src="{{ asset('img/homepage2.jpeg') }}">
+=======
+            <div class="w-full lg:w-1/3 flex-shrink-0 mb-8 lg:mb-0 lg:mr-12 relative">
+                <div class="relative lg:absolute lg:left-0 lg:top-1/2 transform lg:translate-y-24">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80"
+                        alt="Modern House"
+                        class="mx-auto w-[200px] h-[300px] md:w-[260px] md:h-[420px] lg:w-[300px] lg:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
+                        data-src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80">
+>>>>>>> Stashed changes
                 </div>
             </div>
 
@@ -152,10 +161,10 @@
 
                 <div class="flex flex-col">
                     <div
-                        class="text-base md:text-lg text-gray-300 mb-8 text-center lg:text-left max-w-2xl animate-fade-in-right delay-300">
+                        class="text-base md:text-lg text-gray-300 mb-6 md:mb-8 text-justify lg:text-left max-w-2xl mx-auto lg:mx-0 animate-fade-in-right delay-300">
                         <p class="leading-relaxed">Kami adalah partner terpercaya untuk mewujudkan hunian berkualitas dengan
                             standar konstruksi tertinggi. Dengan pengalaman lebih dari 15 tahun, tim ahli kami siap
-                            menghadirkan rumah impian yang sempurna sesuai budget dan keinginan Anda.</p>
+                            hadirkan rumah impian yang sempurna sesuai budget dan keinginan Anda.</p>
                         <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan dengan
                             presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap proyek yang
                             dikerjakan.</p>
@@ -434,7 +443,7 @@
     <section id="portofolio" class="bg-black py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
-                <div class="w-2/3">
+                <div class="w-full md:w-2/3">
                     <div class="text-white font-bold text-xl mb-4">WUJUDKAN RUMAH IMPIAN ANDA BERSAMA KAMI</div>
                     <div class="text-gray-300">Dari desain hingga pembangunan, kami menghadirkan hunian yang memadukan
                         estetika, kenyamanan, dan kualitas terbaik. Tim profesional kami siap membimbing setiap
@@ -445,7 +454,7 @@
                     class="bg-yellow-400 text-black px-6 py-2 rounded shadow hover:bg-yellow-500 transition font-semibold mt-4 md:mt-0">Lihat
                     Portofolio</a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-2/3 mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full md:w-2/3 mx-auto">
                 {{-- Portfolio Item 1 - Large --}}
                 <div
                     class="md:col-span-2 md:row-span-2 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">

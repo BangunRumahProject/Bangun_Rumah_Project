@@ -19,6 +19,7 @@ class Portfolio extends Model
         'sort_order',
         'is_featured',
         'image',
+        'build_duration',
     ];
 
     protected $casts = [

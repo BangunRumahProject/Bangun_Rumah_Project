@@ -458,6 +458,7 @@
         `;
             document.head.appendChild(antiStyle);
         } catch (err) {
-            /* noop */ }
+            /* noop */
+        }
     })();
 </script>
