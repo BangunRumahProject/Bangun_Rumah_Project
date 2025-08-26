@@ -11,9 +11,9 @@
 
     {{-- Hero Section --}}
     <section id="home" class="pt-20 pb-0 relative min-h-screen flex items-center"
-        style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/siang2.png') center -65px/cover no-repeat;">
+        style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/homepage1.jpeg') center -65px/cover no-repeat;">
         <!-- Overlay untuk memastikan teks terbaca -->
-        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="absolute inset-0 bg-black/25"></div>
         <div class="w-full px-16 md:px-24 lg:px-32 pt-8 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center">
                 <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
@@ -136,10 +136,10 @@
             <!-- Gambar di kiri, portrait, overlap ke bawah -->
             <div class="w-full lg:w-1/3 flex-shrink-0 mb-12 lg:mb-0 lg:mr-12 relative">
                 <div class="absolute left-0 top-1/2 lg:top-1/2 transform translate-y-16 lg:translate-y-24">
-                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80"
+                    <img src="{{ asset('img/homepage2.jpeg') }}"
                         alt="Modern House"
                         class="w-[200px] h-[320px] md:w-[300px] md:h-[480px] object-cover rounded-lg shadow-2xl aspect-[10/16] hover:scale-105 transition-all duration-500 parallax-img animate-fade-in-left"
-                        data-src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=80">
+                        data-src="{{ asset('img/homepage2.jpeg') }}">
                 </div>
             </div>
 
@@ -403,7 +403,7 @@
     <section class="bg-gradient-to-b from-white to-gray-50 py-12">
         <div class="max-w-6xl mx-auto px-8">
             <div class="text-center mb-12">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+                <img src="{{ asset('img/homepage3.jpeg') }}"
                     alt="Modern Living Room"
                     class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl mb-8 hover:scale-105 transition parallax-img">
             </div>
@@ -449,7 +449,7 @@
                 {{-- Portfolio Item 1 - Large --}}
                 <div
                     class="md:col-span-2 md:row-span-2 bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
+                    <img src="{{ asset('img/homepage4.jpeg') }}"
                         alt="Portfolio" class="w-full h-full object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 2 --}}
