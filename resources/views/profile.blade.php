@@ -150,35 +150,35 @@
                         <!-- Image 1 - Left aligned -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-lg w-4/5 gallery-item image-hover"
                             data-delay="0">
-                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image gallery 1.jpg') }}"
                                 alt="Modern Interior Design 1" class="w-full h-full object-cover">
                         </div>
 
                         <!-- Image 2 - Right aligned -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-lg w-4/5 ml-auto gallery-item image-hover"
                             data-delay="0.1">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image gallery 2.jpg') }}"
                                 alt="Modern Exterior Design 1" class="w-full h-full object-cover">
                         </div>
 
                         <!-- Image 3 - Left aligned -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-lg w-4/5 gallery-item image-hover"
                             data-delay="0.2">
-                            <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image gallery 3.jpg') }}"
                                 alt="Modern Living Room Design" class="w-full h-full object-cover">
                         </div>
 
                         <!-- Image 4 - Right aligned -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-lg w-4/5 ml-auto gallery-item image-hover"
                             data-delay="0.3">
-                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image gallery 4.jpg') }}"
                                 alt="Modern Kitchen Design" class="w-full h-full object-cover">
                         </div>
 
                         <!-- Image 5 - Left aligned -->
                         <div class="aspect-[16/9] bg-gray-800 rounded-lg overflow-hidden shadow-lg w-4/5 gallery-item image-hover"
                             data-delay="0.4">
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <img src="{{ asset('img/image gallery 5.jpg') }}"
                                 alt="Modern Bedroom Design" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -268,7 +268,7 @@
             <div class="relative slide-in-right">
                 <div
                     class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    <img src="{{ asset('img/img1.jpg') }}"
                         alt="Modern House Design" class="w-full h-full object-cover">
                 </div>
 
@@ -290,7 +290,7 @@
             <div class="relative lg:sticky lg:top-32 transition-transform duration-500 ease-in-out slide-in-left">
                 <div
                     class="aspect-[3/4] bg-gray-800 rounded-none overflow-hidden shadow-2xl image-hover image-reveal">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    <img src="{{ asset('img/profil4.jpg') }}"
                         alt="Modern House Exterior" class="w-full h-full object-cover">
                 </div>
             </div>
