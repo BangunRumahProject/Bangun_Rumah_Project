@@ -201,8 +201,8 @@
                 <!-- Description -->
                 <div class="space-y-4 max-w-lg mx-auto lg:mx-0">
                     <p class="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed">
-                    Kami telah menyelesaikan beragam proyek mulai dari pembangunan hunian, desain rumah, renovasi, hingga pengurusan surat dan RAB. 
-                    Semua dikerjakan dengan perencanaan matang, material berkualitas, dan sentuhan profesional. 
+                    Kami telah menyelesaikan beragam proyek mulai dari pembangunan hunian, desain rumah, renovasi, hingga pengurusan surat dan RAB.
+                    Semua dikerjakan dengan perencanaan matang, material berkualitas, dan sentuhan profesional.
                     Kepercayaan klien menjadi bukti komitmen kami dalam mewujudkan hunian yang nyaman, fungsional, dan berkelas.
                     </p>
                 </div>
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <!-- Right Content -->
-            <div class="space-y-6 sm:space-y-8 lg:pl-8 slide-in-right">
+            <div class="space-y-10 sm:space-y-10 lg:pl-8 slide-in-right">
                 <!-- Main Title -->
                 <div class="space-y-4">
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
@@ -304,69 +304,46 @@
                 </div>
 
                 <!-- Advantages Grid -->
-                <div class="grid grid-cols-1 gap-4 sm:gap-6">
-                    <!-- Row 1 -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-                        <!-- Advantage 1 -->
-                        <div class="space-y-2 fade-in" data-delay="0.1">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Legalitas Terjamin
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                               Menjamin kepercayaan penuh dengan badan hukum resmi dalam setiap proyek.
-                            </p>
-                        </div>
-
-                        <!-- Advantage 2 -->
-                        <div class="space-y-2 fade-in" data-delay="0.2">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Proses Kerja Terstandarisasi
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                               Setiap tahap pembangunan berjalan rapi, terukur, dan sesuai prosedur.
-                            </p>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
+                    <!-- Row 1 - Dua item -->
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-semibold text-white">Legalitas Terjamin</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Menjamin kepercayaan penuh dengan badan hukum resmi dalam setiap proyek.
+                        </p>
                     </div>
 
-                    <!-- Row 2 -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-                        <!-- Advantage 3 -->
-                        <div class="space-y-2 fade-in" data-delay="0.3">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Kualitas Bersertifikat
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                Tersertifikasi ISO 9001:2015 sebagai bukti standar internasional yang kami pegang.
-                            </p>
-                        </div>
-
-                        <!-- Advantage 4 -->
-                        <div class="space-y-2 fade-in" data-delay="0.4">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Tim Profesional Handal
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                               Didukung tenaga ahli berpengalaman yang siap memberikan hasil terbaik.
-                            </p>
-                        </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-semibold text-white">Proses Kerja Terstandarisasi</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Setiap tahap pembangunan berjalan rapi, terukur, dan sesuai prosedur.
+                        </p>
                     </div>
 
-                    <!-- Row 3 -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-                        <!-- Advantage 5 -->
-                        <div class="space-y-2 fade-in" data-delay="0.5">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Rekam Jejak Terbukti
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                Berbagai proyek konstruksi dan desain sukses menjadi bukti dedikasi kami.
-                            </p>
-                        </div>
-
-                        <!-- Advantage 6 -->
-                        <div class="space-y-2 fade-in" data-delay="0.6">
-                            <h3 class="text-base sm:text-lg font-semibold text-white">Harga Transparan
-                            </h3>
-                            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                Memberikan estimasi biaya yang jelas, tanpa biaya tersembunyi.
-                            </p>
-                        </div>
+                    <!-- Row 2 - Satu item di tengah -->
+                    <div class="space-y-2 col-span-1 lg:col-span-2 mx-auto w-full lg:w-1/2">
+                        <h3 class="text-lg font-semibold text-white">Tim Profesional Handal</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Didukung tenaga ahli berpengalaman yang siap memberikan hasil terbaik.
+                        </p>
                     </div>
+
+                    <!-- Row 3 - Dua item -->
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-semibold text-white">Rekam Jejak Terbukti</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Berbagai proyek konstruksi dan desain sukses menjadi bukti dedikasi kami.
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-semibold text-white">Harga Transparan</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Memberikan estimasi biaya yang jelas, tanpa biaya tersembunyi.
+                        </p>
+                    </div>
+                </div>
+
 
                     <!-- Bottom Statement -->
                     <div class="pt-4 sm:pt-6 border-t border-gray-800 fade-in" data-delay="0.7">
