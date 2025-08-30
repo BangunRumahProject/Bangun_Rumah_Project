@@ -815,6 +815,47 @@ export class NavbarManager {
         return window.scrollY > this.scrollThreshold;
     }
 
+    // Ensure mobile menu navigation is properly scrollable
+    ensureMobileMenuScrollability() {
+        if (!this.mobileMenuContent) return;
+
+        const nav = this.mobileMenuContent.querySelector('nav');
+        if (!nav) return;
+
+        // Reset scroll position when opening menu
+        nav.scrollTop = 0;
+
+        // Ensure proper overflow settings
+        nav.style.overflowY = 'auto';
+        nav.style.overflowX = 'hidden';
+        nav.style.webkitOverflowScrolling = 'touch';
+
+        // Add scroll event listener for better UX
+        nav.addEventListener('scroll', this.handleMobileMenuScroll.bind(this), { passive: true });
+    }
+
+    // Handle mobile menu scroll for better UX
+    handleMobileMenuScroll(event) {
+        const nav = event.target;
+        const scrollTop = nav.scrollTop;
+        const scrollHeight = nav.scrollHeight;
+        const clientHeight = nav.clientHeight;
+
+        // Add visual feedback for scroll position
+        if (scrollTop > 0) {
+            nav.classList.add('has-scrolled');
+        } else {
+            nav.classList.remove('has-scrolled');
+        }
+
+        // Ensure smooth scrolling behavior
+        if (scrollTop + clientHeight >= scrollHeight - 10) {
+            nav.classList.add('at-bottom');
+        } else {
+            nav.classList.remove('at-bottom');
+        }
+    }
+
     // Open mobile menu
     openMobileMenu() {
         if (!this.mobileMenu || !this.mainBurgerBtn || this.isMobileMenuOpen) {
@@ -837,6 +878,9 @@ export class NavbarManager {
 
         // Add backdrop blur effect
         document.body.style.backdropFilter = 'blur(5px)';
+
+        // Ensure mobile menu navigation is properly scrollable
+        this.ensureMobileMenuScrollability();
 
         console.log('Mobile menu opened');
     }

@@ -25,8 +25,15 @@
     <nav class="bg-white shadow-lg border-b-4 border-yellow-400">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Left Side - Admin Panel Text -->
+                <!-- Left Side - Burger Menu & Admin Panel Text -->
                 <div class="flex items-center">
+                    <!-- Burger Menu Button -->
+                    <button id="sidebarToggle" class="md:hidden mr-3 p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    
                     <div class="flex-shrink-0">
                         <h1 class="text-xl font-bold text-gray-900">
                             <span class="text-yellow-400">Admin</span> Panel
@@ -67,7 +74,17 @@
 
     <!-- Sidebar + Main as responsive stack -->
     <div class="flex flex-col md:flex-row">
-        <div class="w-full md:w-64 bg-white shadow-lg md:min-h-screen border-r border-gray-200">
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:relative md:inset-y-auto md:z-auto">
+            <!-- Close button for mobile -->
+            <div class="md:hidden flex justify-end p-4 border-b border-gray-200">
+                <button id="sidebarClose" class="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
             <div class="p-4 md:p-6">
                 <div class="mb-4 md:mb-6 pb-4 border-b border-gray-200">
                     <h3 class="text-base md:text-lg font-semibold text-gray-900">Menu Navigasi</h3>
@@ -96,6 +113,9 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Overlay for mobile -->
+        <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden hidden"></div>
 
         <!-- Main Content -->
         <div class="flex-1 p-4 md:p-8 bg-gray-50">
@@ -148,6 +168,53 @@
             @yield('content')
         </div>
     </div>
+
+    <!-- JavaScript for Sidebar Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const sidebarToggle = document.getElementById('sidebarToggle');
+            const sidebarClose = document.getElementById('sidebarClose');
+            const sidebarOverlay = document.getElementById('sidebarOverlay');
+            
+            // Toggle sidebar
+            function toggleSidebar() {
+                sidebar.classList.toggle('-translate-x-full');
+                sidebarOverlay.classList.toggle('hidden');
+            }
+            
+            // Close sidebar
+            function closeSidebar() {
+                sidebar.classList.add('-translate-x-full');
+                sidebarOverlay.classList.add('hidden');
+            }
+            
+            // Event listeners
+            sidebarToggle.addEventListener('click', toggleSidebar);
+            sidebarClose.addEventListener('click', closeSidebar);
+            sidebarOverlay.addEventListener('click', closeSidebar);
+            
+            // Close sidebar when clicking on menu items (mobile)
+            const menuItems = sidebar.querySelectorAll('nav a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (window.innerWidth < 768) { // md breakpoint
+                        closeSidebar();
+                    }
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) { // md breakpoint
+                    sidebar.classList.remove('-translate-x-full');
+                    sidebarOverlay.classList.add('hidden');
+                } else {
+                    sidebar.classList.add('-translate-x-full');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

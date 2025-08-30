@@ -11,3 +11,369 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Custom scrollbar styles for mobile menu */
+@layer components {
+    /* Mobile menu scrollbar styling */
+    .mobile-menu-content nav {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+    }
+
+    .mobile-menu-content nav::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .mobile-menu-content nav::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 3px;
+    }
+
+    .mobile-menu-content nav::-webkit-scrollbar-thumb {
+        background: rgba(156, 163, 175, 0.5);
+        border-radius: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile-menu-content nav::-webkit-scrollbar-thumb:hover {
+        background: rgba(156, 163, 175, 0.8);
+    }
+
+    .mobile-menu-content nav::-webkit-scrollbar-thumb:active {
+        background: rgba(156, 163, 175, 1);
+    }
+
+    /* Ensure mobile menu content is properly scrollable */
+    .mobile-menu-content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-height: 100vh;
+        position: relative;
+        min-height: 100vh;
+    }
+
+    /* Mobile menu navigation area with proper scrolling */
+    .mobile-menu-content nav {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 4px; /* Add padding to prevent content from touching scrollbar */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        min-height: 0;
+        max-height: calc(100vh - 200px); /* Reserve space for header and footer */
+    }
+
+    /* Ensure footer stays at bottom and is always visible */
+    .mobile-menu-content > div:last-child {
+        position: sticky;
+        bottom: 0;
+        background: black;
+        z-index: 10;
+        margin-top: auto;
+        flex-shrink: 0;
+        min-height: auto;
+    }
+
+    /* Header stays at top */
+    .mobile-menu-content > div:first-child {
+        position: sticky;
+        top: 0;
+        background: black;
+        z-index: 10;
+        flex-shrink: 0;
+    }
+
+    /* Smooth scroll behavior for mobile menu items */
+    .mobile-menu-content nav ul {
+        scroll-margin-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* Custom scrollbar for Firefox */
+    @supports (scrollbar-color: auto) {
+        .mobile-menu-content nav {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+        }
+    }
+
+    /* Ensure proper spacing for mobile menu items */
+    .mobile-menu-content nav ul li:last-child {
+        margin-bottom: 1rem;
+    }
+
+    /* Add visual indicator for scrollable content */
+    .mobile-menu-content nav::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 6px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-content nav:hover::after {
+        opacity: 1;
+    }
+
+    /* Additional mobile menu scrollbar improvements */
+    .mobile-menu-content nav {
+        /* Ensure proper scroll behavior on all devices */
+        overscroll-behavior: contain;
+        scrollbar-gutter: stable;
+    }
+
+    /* Better scrollbar visibility on small screens */
+    @media (max-width: 640px) {
+        .mobile-menu-content nav::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.7);
+            border-radius: 4px;
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb:hover {
+            background: rgba(156, 163, 175, 0.9);
+        }
+    }
+
+    /* Ensure mobile menu items are properly spaced for scrolling */
+    .mobile-menu-content nav ul {
+        min-height: calc(100vh - 200px); /* Ensure minimum height for scrolling */
+    }
+
+    /* Add subtle scroll indicator */
+    .mobile-menu-content nav::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 6px;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-content nav:hover::before {
+        opacity: 1;
+    }
+
+    /* Ensure smooth scrolling on all devices */
+    .mobile-menu-content nav {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: contain;
+    }
+
+    /* Better touch scrolling on mobile devices */
+    @media (hover: none) and (pointer: coarse) {
+        .mobile-menu-content nav {
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: auto;
+        }
+    }
+
+    /* Visual feedback for scroll state */
+    .mobile-menu-content nav.has-scrolled {
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-menu-content nav.at-bottom {
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    /* Enhanced scrollbar visibility for better UX */
+    .mobile-menu-content nav::-webkit-scrollbar {
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-content nav:hover::-webkit-scrollbar {
+        opacity: 1;
+    }
+
+    /* Ensure proper touch targets for mobile devices */
+    .mobile-menu-content nav ul li a {
+        min-height: 44px; /* iOS recommended touch target size */
+        display: flex;
+        align-items: center;
+    }
+
+    /* Better spacing for mobile menu items */
+    .mobile-menu-content nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Cross-browser scrollbar compatibility */
+    .mobile-menu-content nav {
+        /* For older browsers */
+        scrollbar-width: auto;
+        scrollbar-color: auto;
+    }
+
+    /* Ensure proper touch scrolling on all mobile devices */
+    .mobile-menu-content nav {
+        touch-action: pan-y;
+        -ms-touch-action: pan-y;
+    }
+
+    /* Better visibility for scrollbar on different backgrounds */
+    .mobile-menu-content nav::-webkit-scrollbar-thumb {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add subtle border to indicate scrollable area */
+    .mobile-menu-content nav {
+        border-right: 1px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .mobile-menu-content nav:hover {
+        border-right-color: rgba(156, 163, 175, 0.3);
+    }
+
+    /* Ensure proper z-index for scrollbar */
+    .mobile-menu-content nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Better contrast for scrollbar on dark backgrounds */
+    @media (prefers-color-scheme: dark) {
+        .mobile-menu-content nav::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    /* Additional improvements for very small screens */
+    @media (max-width: 480px) {
+        .mobile-menu-content nav::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        .mobile-menu-content nav {
+            padding-right: 6px;
+        }
+    }
+
+    /* Better mobile layout for very small screens */
+    @media (max-height: 600px) {
+        .mobile-menu-content nav {
+            max-height: calc(100vh - 160px);
+        }
+        
+        .mobile-menu-content > div:last-child {
+            padding: 0.75rem 1rem;
+        }
+    }
+
+    /* Ensure footer is visible on landscape mobile */
+    @media (max-height: 500px) and (orientation: landscape) {
+        .mobile-menu-content nav {
+            max-height: calc(100vh - 140px);
+        }
+        
+        .mobile-menu-content > div:last-child {
+            padding: 0.5rem 1rem;
+        }
+        
+        .mobile-menu-content > div:last-child .flex {
+            min-height: 50px;
+        }
+    }
+
+    /* Better scrollbar for high-DPI displays */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .mobile-menu-content nav::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+        }
+    }
+
+    /* Ensure scrollbar is always visible on touch devices */
+    @media (hover: none) and (pointer: coarse) {
+        .mobile-menu-content nav::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb {
+            background: rgba(156, 163, 175, 0.8);
+        }
+    }
+
+    /* Prevent horizontal scroll on mobile */
+    .mobile-menu-content nav {
+        overflow-x: hidden;
+        word-wrap: break-word;
+    }
+
+    /* Ensure menu items are properly contained */
+    .mobile-menu-content nav ul li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Add smooth transitions for better UX */
+    .mobile-menu-content nav,
+    .mobile-menu-content nav::-webkit-scrollbar,
+    .mobile-menu-content nav::-webkit-scrollbar-thumb {
+        transition: all 0.3s ease;
+    }
+
+    /* Ensure proper scroll behavior on all mobile devices */
+    .mobile-menu-content nav {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        overscroll-behavior: contain;
+    }
+
+    /* Better scrollbar visibility for accessibility */
+    .mobile-menu-content nav::-webkit-scrollbar-thumb:focus {
+        background: rgba(156, 163, 175, 1);
+        outline: 2px solid rgba(59, 130, 246, 0.5);
+    }
+
+    /* Ensure proper contrast on light backgrounds */
+    @media (prefers-color-scheme: light) {
+        .mobile-menu-content nav::-webkit-scrollbar-thumb {
+            background: rgba(75, 85, 99, 0.6);
+            border: 1px solid rgba(75, 85, 99, 0.2);
+        }
+        
+        .mobile-menu-content nav::-webkit-scrollbar-thumb:hover {
+            background: rgba(75, 85, 99, 0.8);
+        }
+    }
+
+    /* Improve footer social media layout */
+    .mobile-menu-content > div:last-child .flex {
+        padding: 1rem 0;
+        min-height: 60px;
+        align-items: center;
+    }
+
+    /* Ensure proper spacing between nav and footer */
+    .mobile-menu-content nav:last-of-type {
+        margin-bottom: 0;
+    }
+}

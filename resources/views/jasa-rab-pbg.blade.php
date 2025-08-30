@@ -330,7 +330,7 @@
                     <!-- Right Image -->
                     <div>
                         <img src="{{ asset('img/rab.jpg') }}"
-                            class="w-full h-auto rounded-lg shadow-lg">
+                            class="w- h-auto rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
@@ -485,7 +485,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     <!-- Left Column: Image -->
                     <div class="relative">
-                        <img src="/img/image-contact.jpg" alt="Process Illustration"
+                        <img src="/img/pbg_imb.jpg" alt="Process Illustration"
                             class="w-full h-auto rounded-lg shadow-lg">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-lg"></div>
                     </div>
