@@ -63,19 +63,8 @@ Route::get('/portofolio', function () {
     return view('portofolio', compact('portfolios'));
 })->name('portofolio');
 
-// API Route for Portfolio Details
-Route::get('/api/portfolios/{id}', function ($id) {
-    $portfolio = \App\Models\Portfolio::with('images')->find($id);
-
-    if (!$portfolio) {
-        return response()->json([
-            'success' => false,
-            'message' => 'Portfolio tidak ditemukan'
-        ], 404);
-    }
-
-    return response()->json([
-        'success' => true,
-        'portfolio' => $portfolio
-    ]);
-})->name('api.portfolios.show');
+// API Routes for Portfolio
+Route::prefix('api')->group(function () {
+    Route::get('/portfolios/{id}', [\App\Http\Controllers\Api\PortfolioController::class, 'show'])->name('api.portfolios.show');
+    Route::get('/portfolios', [\App\Http\Controllers\Api\PortfolioController::class, 'index'])->name('api.portfolios.index');
+});

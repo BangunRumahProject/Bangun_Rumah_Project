@@ -282,8 +282,8 @@
                 ${portfolio.images && portfolio.images.length > 0 ?
                     portfolio.images.map((img) => {
                         return `
-                                            <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
-                                                <img src="/storage/${img.image}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image">
+                                            <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image_url)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
+                                                <img src="${img.image_url}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image" onerror="this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; this.onerror=null;">
                                                 <div class="anti-save-overlay absolute inset-0"></div>
                                                 <div class="image-hover-overlay">
                                                     <div class="text-center text-white font-semibold">
@@ -530,7 +530,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
-            <img src="/storage/${imagePath}" alt="${title || 'Portfolio Image'}" class="w-full h-auto max-h-[70vh] object-contain rounded-xl shadow-lg protect-image" onerror="this.onerror=null; this.src='/img/placeholder-image.jpg'; console.error('Failed to load image:', imagePath);">
+            <img src="${imagePath}" alt="${title || 'Portfolio Image'}" class="w-full h-auto max-h-[70vh] object-contain rounded-xl shadow-lg protect-image" onerror="this.onerror=null; this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; console.error('Failed to load image:', imagePath);">
             ${title ? `<h3 class="text-black text-2xl font-bold mt-6 text-center">${title}</h3>` : ''}
             ${description ? `<p class="text-black text-center mt-3 text-lg">${description}</p>` : ''}
         </div>
