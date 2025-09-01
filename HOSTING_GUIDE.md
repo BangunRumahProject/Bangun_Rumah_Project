@@ -129,6 +129,9 @@ php artisan images:check
 # Fix portfolio images
 php artisan portfolio:fix-images
 
+# Generate missing portfolio images
+php artisan portfolio:generate-images
+
 # Set permission
 chmod -R 775 storage bootstrap/cache
 chmod -R 644 public_html/img/
