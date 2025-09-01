@@ -145,7 +145,7 @@
                     <div class="relative slide-in-right">
                         <div
                             class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
-                           <img src="{{ asset('img/kolam 2 malam.png') }}"
+                           <img src="{{ asset('img/Kolam 2 malam.png') }}"
                                 alt="Tim Profesional" class="w-full h-full object-cover">
                         </div>
 
