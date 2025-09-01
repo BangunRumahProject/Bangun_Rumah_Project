@@ -191,7 +191,7 @@
                 <div class="space-y-2 scale-in">
                     <h1
                         class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black leading-none counter-animation text-gradient">
-                        100+
+                        77+
                     </h1>
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                         Proyek selesai

@@ -77,7 +77,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
-                    animateCounter(counter, 0, 100, 2000);
+                    animateCounter(counter, 0, 77, 2000);
                     counterObserver.unobserve(counter);
                 }
             });
