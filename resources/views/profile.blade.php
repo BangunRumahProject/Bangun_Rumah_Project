@@ -20,30 +20,30 @@
 
     <!-- Main Content Container -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start min-h-[80vh]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start min-h-[80vh]">
 
             <!-- Left Content - Text Section -->
             <div class="space-y-4 sm:space-y-6 mb-4 lg:mb-0 transform -translate-y-8 lg:-translate-y-12">
                 <!-- Main Title -->
                 <div class="space-y-2 sm:space-y-4">
                     <h1
-                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl pt-16 font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pt-16 font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
                         Bangun Rumah
                     </h1>
                     <h2
-                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
                         Project
                     </h2>
                 </div>
 
                 <!-- Description -->
                 <div class="space-y-4 sm:space-y-6 max-w-xl">
-                    <p class="text-white text-lg sm:text-xl lg:text-2xl leading-relaxed font-medium drop-shadow-lg animate-fade-in-up">
+                    <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium drop-shadow-lg animate-fade-in-up">
                         Bangun Rumah Project menghadirkan layanan arsitektur
                         dan konstruksi hunian modern dengan perpaduan estetika, fungsionalitas, dan kenyamanan yang sesuai kebutuhan Anda.
                     </p>
 
-                    <p class="text-gray-200 text-base sm:text-lg lg:text-xl leading-relaxed drop-shadow-lg animate-fade-in-up">
+                    <p class="text-gray-200 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed drop-shadow-lg animate-fade-in-up">
                        Dengan pendekatan end-to-end solution, mulai dari perencanaan konsep hingga tahap finishing,
                        tim profesional kami menghadirkan standar kualitas tinggi untuk mewujudkan hunian impian yang selaras dengan gaya hidup modern.
                     </p>
@@ -52,8 +52,8 @@
                 <!-- CTA Button -->
                 <div class="pt-2 sm:pt-4 drop-shadow-lg animate-fade-in-up">
                     <a href="/portofolio"
-                        class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-base sm:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-xl btn-hover magnetic">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" fill="none" stroke="currentColor"
+                        class="inline-flex items-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm sm:text-base md:text-lg rounded-lg transform hover:scale-105 transition-all duration-300 shadow-xl btn-hover magnetic">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -67,7 +67,7 @@
             </div>
 
             <!-- Right Content - Image Gallery -->
-            <div class="relative mt-8 lg:mt-0 ">
+            <div class="relative mt-8 lg:mt-0">
                 <!-- Main Container untuk Gallery -->
                 <div class="grid grid-cols-2 gap-2 sm:gap-3 max-w-sm sm:max-w-md mx-auto lg:max-w-lg">
 
@@ -137,7 +137,7 @@
     class="relative w-full min-h-screen overflow-hidden bg-gradient-to-t from-black via-black-500 to-yellow-300">
     <!-- Main Content Container -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[80vh]">
 
             <!-- Left Content - Zigzag Image Gallery -->
             <div class="relative max-w-sm sm:max-w-md mx-auto lg:max-w-lg slide-in-left">
@@ -190,17 +190,17 @@
                 <!-- Main Statistic -->
                 <div class="space-y-2 scale-in">
                     <h1
-                        class="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black leading-none counter-animation text-gradient">
+                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-black leading-none counter-animation text-gradient">
                         77+
                     </h1>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                         Proyek selesai
                     </h2>
                 </div>
 
                 <!-- Description -->
                 <div class="space-y-4 max-w-lg mx-auto lg:mx-0">
-                    <p class="text-gray-200 text-sm sm:text-base lg:text-lg leading-relaxed">
+                    <p class="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
                     Kami telah menyelesaikan beragam proyek mulai dari pembangunan hunian, desain rumah, renovasi, hingga pengurusan surat dan RAB.
                     Semua dikerjakan dengan perencanaan matang, material berkualitas, dan sentuhan profesional.
                     Kepercayaan klien menjadi bukti komitmen kami dalam mewujudkan hunian yang nyaman, fungsional, dan berkelas.
@@ -213,16 +213,16 @@
 
 <section class="relative w-full min-h-screen bg-black text-white py-8 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 fade-in">
                 <!-- Main Title -->
                 <div class="space-y-4">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                         Rencana Besar Di <span class="text-yellow-400">Masa Depan</span>
                     </h2>
-                    <p class="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl">
+                    <p class="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
                         Kami percaya bahwa setiap hunian adalah investasi jangka panjang bagi masa depan.
                         Dengan perencanaan yang matang, desain modern, serta konstruksi yang berkualitas, Bangun Rumah Project berkomitmen untuk menghadirkan karya arsitektur yang tidak hanya indah dipandang,
                         tetapi juga fungsional dan tahan lama.
@@ -233,7 +233,7 @@
 
                 <!-- Goals/Plans Section -->
                 <div class="space-y-4 sm:space-y-6">
-                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-yellow-400">
+                    <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-yellow-400">
                         Tujuan dan Dedikasi Kami
                     </h3>
 
@@ -286,7 +286,7 @@
 <!-- Section: Kelebihan Kami -->
 <section class="relative w-full min-h-screen bg-black text-white py-8 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
             <div class="relative lg:sticky lg:top-32 transition-transform duration-500 ease-in-out slide-in-left">
                 <div
@@ -296,34 +296,34 @@
                 </div>
             </div>
             <!-- Right Content -->
-            <div class="space-y-10 sm:space-y-10 lg:pl-8 slide-in-right">
+            <div class="space-y-8 sm:space-y-10 lg:pl-8 slide-in-right">
                 <!-- Main Title -->
                 <div class="space-y-4">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                         <span class="text-yellow-400">Kelebihan</span> Kami
                     </h2>
                 </div>
 
                 <!-- Advantages Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-9">
                     <!-- Row 1 - Dua item -->
                     <div class="space-y-2">
-                        <h3 class="text-lg font-semibold text-white">Legalitas Terjamin</h3>
+                        <h3 class="text-base sm:text-lg font-semibold text-white">Legalitas Terjamin</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Menjamin kepercayaan penuh dengan badan hukum resmi dalam setiap proyek.
                         </p>
                     </div>
 
                     <div class="space-y-2">
-                        <h3 class="text-lg font-semibold text-white">Proses Kerja Terstandarisasi</h3>
+                        <h3 class="text-base sm:text-lg font-semibold text-white">Proses Kerja Terstandarisasi</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Setiap tahap pembangunan berjalan rapi, terukur, dan sesuai prosedur.
                         </p>
                     </div>
 
                     <!-- Row 2 - Satu item di tengah -->
-                    <div class="space-y-2 col-span-1 lg:col-span-2 mx-auto w-full lg:w-1/2">
-                        <h3 class="text-lg font-semibold text-white">Tim Profesional Handal</h3>
+                    <div class="space-y-2 col-span-1 md:col-span-2 mx-auto w-full md:w-2/3 lg:w-1/2">
+                        <h3 class="text-base sm:text-lg font-semibold text-white">Tim Profesional Handal</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Didukung tenaga ahli berpengalaman yang siap memberikan hasil terbaik.
                         </p>
@@ -331,33 +331,31 @@
 
                     <!-- Row 3 - Dua item -->
                     <div class="space-y-2">
-                        <h3 class="text-lg font-semibold text-white">Rekam Jejak Terbukti</h3>
+                        <h3 class="text-base sm:text-lg font-semibold text-white">Rekam Jejak Terbukti</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Berbagai proyek konstruksi dan desain sukses menjadi bukti dedikasi kami.
                         </p>
                     </div>
 
                     <div class="space-y-2">
-                        <h3 class="text-lg font-semibold text-white">Harga Transparan</h3>
+                        <h3 class="text-base sm:text-lg font-semibold text-white">Harga Transparan</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">
                             Memberikan estimasi biaya yang jelas, tanpa biaya tersembunyi.
                         </p>
                     </div>
                 </div>
 
-
-                    <!-- Bottom Statement -->
-                    <div class="pt-4 sm:pt-6 border-t border-gray-800 fade-in" data-delay="0.7">
-                        <p class="text-white font-medium text-sm sm:text-base mb-6">
-                            Kami Bekerja Sama dengan :
-                        </p>
-                        
-                        <!-- Infinite Scroll Container untuk Logo Mitra -->
-                        <div class="relative mt-6 overflow-hidden">
-                            <!-- Single Row - Moving Left -->
-                            <div class="flex space-x-6 partner-logos-row" style="width: max-content;">
-                                <!-- Logo items will be populated by JavaScript -->
-                            </div>
+                <!-- Bottom Statement -->
+                <div class="pt-4 sm:pt-6 border-t border-gray-800 fade-in" data-delay="0.7">
+                    <p class="text-white font-medium text-sm sm:text-base mb-6">
+                        Kami Bekerja Sama dengan :
+                    </p>
+                    
+                    <!-- Infinite Scroll Container untuk Logo Mitra -->
+                    <div class="relative mt-6 overflow-hidden">
+                        <!-- Single Row - Moving Left -->
+                        <div class="flex space-x-6 partner-logos-row" style="width: max-content;">
+                            <!-- Logo items will be populated by JavaScript -->
                         </div>
                     </div>
                 </div>
