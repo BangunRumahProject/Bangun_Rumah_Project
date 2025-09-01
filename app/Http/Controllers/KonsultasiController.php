@@ -16,6 +16,7 @@ class KonsultasiController extends Controller
             'no_hp' => 'required|string|max:20',
             'email' => 'required|email',
             'kategori' => 'required|string|max:255',
+            'luas_tanah' => 'nullable|numeric|min:0',
             'kebutuhan' => 'nullable|string',
         ]);
 

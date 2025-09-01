@@ -389,6 +389,13 @@
                             </div>
 
                             <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Luas Tanah (m²)</label>
+                                <input type="number" name="luas_tanah" placeholder="Masukkan luas tanah dalam meter persegi"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300"
+                                    min="1" step="0.01">
+                            </div>
+
+                            <div>
                                 <label class="block text-gray-700 font-semibold mb-2">Kebutuhan (Opsional)</label>
                                 <textarea name="kebutuhan" rows="4" placeholder="Jelaskan Kebutuhan Anda disini"
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300 resize-none"></textarea>
