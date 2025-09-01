@@ -856,7 +856,7 @@
                     <!-- Left Content - House Image -->
                     <div class="space-y-8">
                         <div class="aspect-[4/5] bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                            <img src="{{ asset('img/image2.jpg') }}"
+                            <img src="{{ asset('img/image2.png') }}"
                                 alt="Modern House Exterior" class="w-full h-full object-cover">
                         </div>
                     </div>
