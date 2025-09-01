@@ -562,18 +562,18 @@
             </div>
         </section>
         <!-- Client Testimonials Section -->
-        <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
+        <!-- <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <!-- Section Header -->
+              
                 <div class="text-center mb-16">
                     <h2 class="text-3xl lg:text-4xl font-normal text-black mb-4">
                         Tanggapan <span class="text-yellow-400 font-semibold">Positive</span> Para Klien
                     </h2>
                 </div>
 
-                <!-- Testimonials Grid -->
+             
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    <!-- Testimonial 1 -->
+                    
                     <div class="bg-gray-300 rounded-lg p-8 text-center">
                         <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
                         <h3 class="text-lg font-semibold text-black mb-4">Fiqri</h3>
@@ -582,7 +582,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonial 2 -->
+                   
                     <div class="bg-gray-300 rounded-lg p-8 text-center">
                         <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
                         <h3 class="text-lg font-semibold text-black mb-4">Afthar</h3>
@@ -591,7 +591,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonial 3 -->
+                  
                     <div class="bg-gray-300 rounded-lg p-8 text-center">
                         <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
                         <h3 class="text-lg font-semibold text-black mb-4">Abid</h3>
@@ -600,7 +600,7 @@
                         </p>
                     </div>
                 </div>
-        </section>
+        </section> -->
         <!-- Customer Reviews Section -->
 
 
