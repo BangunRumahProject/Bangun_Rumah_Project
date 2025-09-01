@@ -53,7 +53,7 @@
                                             <td class="whitespace-nowrap py-4 pl-4 pr-3 sm:pl-6">
                                                 <div class="h-16 w-16 flex-shrink-0">
                                                     <img class="h-16 w-16 rounded-lg object-cover"
-                                                        src="{{ Storage::url($portfolio->image) }}"
+                                                        src="{{ $portfolio->image_url }}"
                                                         alt="{{ $portfolio->title }}">
                                                 </div>
                                             </td>

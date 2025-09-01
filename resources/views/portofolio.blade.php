@@ -47,8 +47,9 @@
                         data-category="{{ $portfolio->category }}" onclick="showPortfolioDetails({{ $portfolio->id }})">
                         <!-- Portfolio Image Container -->
                         <div class="relative overflow-hidden group">
-                            <img src="{{ Storage::url($portfolio->image) }}" alt="{{ $portfolio->title }}"
-                                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 protect-image">
+                            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}"
+                                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 protect-image"
+                                onerror="this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; this.onerror=null;">
 
                             <!-- Overlay with Portfolio Info -->
                             <div

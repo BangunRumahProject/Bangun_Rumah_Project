@@ -109,7 +109,7 @@
                                             <div class="flex items-center">
                                                 <div class="flex-shrink-0 h-10 w-10">
                                                     <img class="h-10 w-10 rounded-lg object-cover"
-                                                        src="{{ Storage::url($portfolio->image) }}"
+                                                        src="{{ $portfolio->image_url }}"
                                                         alt="{{ $portfolio->title }}">
                                                 </div>
                                                 <div class="ml-4">

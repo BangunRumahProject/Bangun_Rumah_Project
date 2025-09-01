@@ -29,7 +29,7 @@
                         <div>
                             <h3 class="text-lg font-medium text-gray-900 mb-4">Gambar Portfolio</h3>
                             <div class="relative">
-                                <img src="{{ Storage::url($portfolio->image) }}" alt="{{ $portfolio->title }}"
+                                <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}"
                                     class="w-full h-80 object-cover rounded-lg shadow-lg">
 
                                 <!-- Status Badges -->
