@@ -283,6 +283,7 @@
     </div>
 </section>
 
+<!-- Section: Kelebihan Kami -->
 <section class="relative w-full min-h-screen bg-black text-white py-8 sm:py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -347,15 +348,24 @@
 
                     <!-- Bottom Statement -->
                     <div class="pt-4 sm:pt-6 border-t border-gray-800 fade-in" data-delay="0.7">
-                        <p class="text-white font-medium text-sm sm:text-base">
+                        <p class="text-white font-medium text-sm sm:text-base mb-6">
                             Kami Bekerja Sama dengan :
                         </p>
+                        
+                        <!-- Infinite Scroll Container untuk Logo Mitra -->
+                        <div class="relative mt-6 overflow-hidden">
+                            <!-- Single Row - Moving Left -->
+                            <div class="flex space-x-6 partner-logos-row" style="width: max-content;">
+                                <!-- Logo items will be populated by JavaScript -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <a href="https://wa.me/6285333353609?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20rancang%20bangun%20rumah"
    target="_blank"
    class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50"
@@ -370,4 +380,5 @@
 
 @section('scripts')
 @include('components.scripts')
+<script src="{{ asset('js/partner-logos.js') }}"></script>
 @endsection
