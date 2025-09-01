@@ -29,7 +29,7 @@ class UpdatePortfolioFromServer extends Command
     {
         $this->info('Updating portfolio database with server data...');
 
-        // Data portfolio dari server Hostinger (berdasarkan file yang ada)
+        // Data portfolio dari phpMyAdmin server Hostinger
         $portfolioData = [
             [
                 'id' => 4,

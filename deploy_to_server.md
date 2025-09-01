@@ -2,31 +2,33 @@
 
 ## Masalah Gambar Portfolio - SOLUSI LENGKAP
 
-### Penyebab Masalah:
+### 🔍 **Penyebab Masalah:**
 1. **Database lokal berbeda** dengan database server
-2. **File gambar tidak ter-upload** ke server
-3. **Path gambar tidak sesuai** antara lokal dan server
+2. **Nama file berbeda** antara lokal dan server:
+   - **Lokal**: `portfolios/portfolio-4-image-1.jpg`
+   - **Server**: `portfolios/YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg`
+3. **Laravel Storage** di server menghasilkan nama file unik (hash) untuk menghindari konflik
 
-### Solusi Lengkap:
+### ✅ **Solusi Lengkap:**
 
-#### 1. Persiapan Lokal
+#### **1. Persiapan Lokal**
 ```bash
-# Update database lokal sesuai server
-php artisan portfolio:update-from-server
+# Update database lokal sesuai data server
+php artisan portfolio:update-server-db
 
 # Download gambar dari server (jika perlu)
-php download_server_images.php
+php download_real_images.php
 
 # Build assets
 npm run build
 
 # Commit dan push ke GitHub
 git add .
-git commit -m "Fix portfolio images with server data"
+git commit -m "Fix portfolio images with correct server data"
 git push origin main
 ```
 
-#### 2. Upload ke Server
+#### **2. Upload ke Server**
 ```bash
 # SSH ke server
 ssh u733624421@bangunrumahproject.com
@@ -41,7 +43,7 @@ git pull origin main
 composer install --no-dev --optimize-autoloader
 ```
 
-#### 3. Setup Server
+#### **3. Setup Server**
 ```bash
 # Generate APP_KEY (jika belum)
 php artisan key:generate
@@ -49,8 +51,8 @@ php artisan key:generate
 # Create storage link
 php artisan storage:link-custom
 
-# Update database dengan data server
-php artisan portfolio:update-from-server
+# Update database dengan data server yang benar
+php artisan portfolio:update-server-db
 
 # Set permissions
 chmod -R 775 storage bootstrap/cache
@@ -62,13 +64,13 @@ php artisan config:clear
 php artisan view:clear
 ```
 
-#### 4. Upload Build Assets
+#### **4. Upload Build Assets**
 ```bash
 # Di lokal, copy folder build ke public_html
 # Upload folder public/build ke public_html/build di server
 ```
 
-#### 5. Konfigurasi .env Server
+#### **5. Konfigurasi .env Server**
 ```env
 APP_NAME=BangunRumahProject
 APP_ENV=production
@@ -98,7 +100,7 @@ MAIL_FROM_ADDRESS=fikryataya@gmail.com
 MAIL_FROM_NAME="Konsultasi Website"
 ```
 
-#### 6. Testing
+#### **6. Testing**
 1. Buka: `https://bangunrumahproject.com`
 2. Cek halaman portfolio
 3. Cek gambar portfolio muncul
@@ -118,8 +120,8 @@ ls -la storage/app/public/portfolios/
 # Cek permission
 chmod -R 775 storage/
 
-# Update database dengan data server
-php artisan portfolio:update-from-server
+# Update database dengan data server yang benar
+php artisan portfolio:update-server-db
 
 # Clear cache
 php artisan optimize:clear
@@ -128,10 +130,22 @@ php artisan optimize:clear
 ### File Gambar yang Harus Ada di Server:
 ```
 storage/app/public/portfolios/
-├── 6JctjsmlMfKziwHrWlDm7LVR50kug5H1FyXy5pAC.png
-├── MLai500GaAfZYAJP9hMkKMiSg1Bqyflksw6M1xUv.jpg
-├── SkpSiEuMDAXB0tMt5DxhkByFm8ak43hTLbCAqcq8.jpg
-└── YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg
+├── 6JctjsmlMfKziwHrWlDm7LVR50kug5H1FyXy5pAC.png  # Main image portfolio 4
+├── MLai500GaAfZYAJP9hMkKMiSg1Bqyflksw6M1xUv.jpg  # Additional image 1
+├── SkpSiEuMDAXB0tMt5DxhkByFm8ak43hTLbCAqcq8.jpg  # Additional image 2
+└── YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg  # Additional image 3
+```
+
+### Data Database yang Benar:
+```sql
+-- Portfolio table
+UPDATE portfolios SET image = 'portfolios/6JctjsmlMfKziwHrWlDm7LVR50kug5H1FyXy5pAC.png' WHERE id = 4;
+
+-- Portfolio_images table
+INSERT INTO portfolio_images (id, portfolio_id, image, title, description, sort_order) VALUES
+(4, 4, 'portfolios/MLai500GaAfZYAJP9hMkKMiSg1Bqyflksw6M1xUv.jpg', 'Image 1', 'Additional image for sdasdsadsdsad', 0),
+(5, 4, 'portfolios/SkpSiEuMDAXB0tMt5DxhkByFm8ak43hTLbCAqcq8.jpg', 'Image 2', 'Additional image for sdasdsadsdsad', 1),
+(6, 4, 'portfolios/YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg', 'Image 3', 'Additional image for sdasdsadsdsad', 2);
 ```
 
 ### Jika Error 500:
@@ -167,10 +181,10 @@ ls -la public_html/build/
 
 ### Command Penting:
 ```bash
-# Update database dengan data server
-php artisan portfolio:update-from-server
+# Update database dengan data server yang benar
+php artisan portfolio:update-server-db
 
-# Generate images
+# Generate images (jika perlu)
 php artisan portfolio:generate-images
 
 # Check images
@@ -202,8 +216,8 @@ git pull origin main
 # 2. Install dependencies
 composer install --no-dev --optimize-autoloader
 
-# 3. Update database
-php artisan portfolio:update-from-server
+# 3. Update database dengan data server yang benar
+php artisan portfolio:update-server-db
 
 # 4. Create storage link
 php artisan storage:link-custom
@@ -214,3 +228,18 @@ chmod -R 775 storage bootstrap/cache
 # 6. Clear cache
 php artisan optimize:clear
 ```
+
+## Perbedaan Nama File:
+
+### **Lokal (Development):**
+- `portfolios/portfolio-4-image-1.jpg`
+- `portfolios/portfolio-4-image-2.jpg`
+- `portfolios/portfolio-4-image-3.jpg`
+
+### **Server (Production):**
+- `portfolios/6JctjsmlMfKziwHrWlDm7LVR50kug5H1FyXy5pAC.png`
+- `portfolios/MLai500GaAfZYAJP9hMkKMiSg1Bqyflksw6M1xUv.jpg`
+- `portfolios/SkpSiEuMDAXB0tMt5DxhkByFm8ak43hTLbCAqcq8.jpg`
+- `portfolios/YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg`
+
+**Penyebab:** Laravel Storage di server menggunakan hash unik untuk menghindari konflik nama file.
