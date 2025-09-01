@@ -99,9 +99,12 @@ MAIL_FROM_NAME="Konsultasi Website"
 3. Set permission: `chmod -R 775 storage bootstrap/cache`
 
 ### Gambar Tidak Muncul
-1. Cek storage link: `ls -la public_html/storage`
-2. Cek file gambar: `ls -la storage/app/public/portfolios/`
-3. Cek permission: `chmod -R 775 storage`
+1. **Cek storage link**: `ls -la public_html/storage`
+2. **Cek file gambar**: `ls -la storage/app/public/portfolios/`
+3. **Cek permission**: `chmod -R 775 storage`
+4. **Cek karakter khusus**: File dengan nama `Image(2).png` bisa bermasalah
+5. **Rename file bermasalah**: Jalankan `php rename_images.php` di lokal
+6. **Upload ulang**: Pastikan semua file ter-upload ke server
 
 ### Vite Manifest Error
 1. Pastikan folder `build` ada di `public_html/build/`
@@ -120,8 +123,12 @@ php artisan optimize:clear
 # Create storage link
 php artisan storage:link-custom
 
+# Check problematic images
+php artisan images:check
+
 # Set permission
 chmod -R 775 storage bootstrap/cache
+chmod -R 644 public_html/img/
 
 # Install dependencies
 composer install --no-dev --optimize-autoloader

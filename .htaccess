@@ -9,6 +9,11 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
+    # Handle special characters in filenames
+    RewriteCond %{REQUEST_URI} ^/img/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^img/(.*)$ public/img/$1 [L,NC]
+
     # Serve static files directly from public folder
     RewriteCond %{REQUEST_URI} ^/(build|img|js|css|favicon\.ico|robots\.txt)
     RewriteRule ^(.*)$ public/$1 [L]
@@ -24,9 +29,28 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
+# Enable mod_headers for better file serving
+<IfModule mod_headers.c>
+    # Cache static files
+    <FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|svg)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    
+    # Handle special characters in filenames
+    Header always set Access-Control-Allow-Origin "*"
+</IfModule>
+
 # PHP Upload Limits
 php_value upload_max_filesize 20M
 php_value post_max_size 20M
 php_value max_execution_time 300
 php_value max_input_time 300
 php_value memory_limit 256M
+
+# Enable mod_mime for proper file type detection
+<IfModule mod_mime.c>
+    AddType image/png .png
+    AddType image/jpeg .jpg .jpeg
+    AddType image/gif .gif
+    AddType image/svg+xml .svg
+</IfModule>
