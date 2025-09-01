@@ -699,7 +699,7 @@
         </section>
 
         <!-- Client Testimonials Section -->
-        <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
+        <!-- <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                
                 <div class="text-center mb-16">
@@ -737,7 +737,7 @@
                         </p>
                     </div>
                 </div>
-        </section>
+        </section> -->
         <!-- Portfolio Section -->
         <section class="relative w-full bg-black text-white py-16 lg:py-20">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
