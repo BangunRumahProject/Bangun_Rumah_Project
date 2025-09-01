@@ -756,7 +756,7 @@
                     <!-- Left Content - Featured Project Showcase -->
                     <div class="space-y-8">
                         <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                            <img src="{{ asset('img/profil2.png') }}"
+                            <img src="{{ asset('img/project unggulan.jpg') }}"
                                 alt="Rumah Modern Minimalis" class="w-full h-full object-cover">
                         </div>
                     </div>

@@ -346,8 +346,25 @@
 
                         {{-- Pesan sukses --}}
                         @if (session('success'))
-                            <div class="p-4 mb-4 text-green-800 bg-green-100 rounded-lg">
+                            <div class="p-4 mb-4 text-green-800 bg-green-100 rounded-lg" data-success="konsultasi">
                                 {{ session('success') }}
+                            </div>
+                        @endif
+
+                        {{-- Pesan error --}}
+                        @if (session('error'))
+                            <div class="p-4 mb-4 text-red-800 bg-red-100 rounded-lg">
+                                {{ session('error') }}
+                            </div>
+                        @endif
+
+                        {{-- Data untuk popup --}}
+                        @if (session('popup_data'))
+                            <div id="popup-data" 
+                                 data-nama="{{ session('popup_data.nama') }}"
+                                 data-kategori="{{ session('popup_data.kategori') }}"
+                                 data-timestamp="{{ session('popup_data.timestamp') }}"
+                                 style="display: none;">
                             </div>
                         @endif
 
@@ -386,6 +403,12 @@
                                     <option value="Jasa Pembuatan RAB & PBG/IMB">Pembuatan RAB & PBG/IMB</option>
                                     <option value="Bangunan Lainnya">Bangunan Lainnya</option>
                                 </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Alamat Lahan</label>
+                                <input type="text" name="alamat_lahan" placeholder="Masukkan alamat lahan"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300"
+                                    >
                             </div>
 
                             <div>
@@ -1090,4 +1113,5 @@
 
 @section('scripts')
     @include('components.scripts')
+    <script src="{{ asset('js/konsultasi-popup.js') }}"></script>
 @endsection

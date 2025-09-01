@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\KonsultasiMail;
+use App\Mail\KonsultasiKonfirmasiMail;
 
 class KonsultasiController extends Controller
 {
@@ -16,14 +17,34 @@ class KonsultasiController extends Controller
             'no_hp' => 'required|string|max:20',
             'email' => 'required|email',
             'kategori' => 'required|string|max:255',
+            'alamat_lahan' => 'nullable|string|max:255',
             'luas_tanah' => 'nullable|numeric|min:0',
             'kebutuhan' => 'nullable|string',
         ]);
 
-        // Kirim email ke kamu
-        Mail::to('bangunrumahproject@gmail.com')->send(new KonsultasiMail($validated));
+        try {
+            // Kirim email ke admin
+            Mail::to('bangunrumahproject@gmail.com')->send(new KonsultasiMail($validated));
 
-        // Balik ke halaman dengan pesan sukses
-        return back()->with('success', 'Konsultasi berhasil dikirim! Kami akan segera menghubungi Anda.');
+            // Kirim email konfirmasi ke user
+            Mail::to($validated['email'])->send(new KonsultasiKonfirmasiMail($validated));
+
+            // Redirect dengan pesan sukses dan data untuk popup
+            return redirect()->back()->with([
+                'success' => 'Konsultasi berhasil dikirim! Kami akan segera menghubungi Anda.',
+                'popup_data' => [
+                    'nama' => $validated['nama'],
+                    'kategori' => $validated['kategori'],
+                    'timestamp' => now()->format('d M Y H:i')
+                ]
+            ]);
+
+        } catch (\Exception $e) {
+            // Jika ada error, redirect dengan pesan error
+            return redirect()->back()->with([
+                'error' => 'Maaf, terjadi kesalahan saat mengirim konsultasi. Silakan coba lagi atau hubungi kami langsung.',
+                'old_input' => $request->all()
+            ])->withInput();
+        }
     }
 }
