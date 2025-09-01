@@ -1,22 +1,32 @@
 # Panduan Deploy ke Server Hostinger
 
-## Langkah-langkah Deploy
+## Masalah Gambar Portfolio - SOLUSI LENGKAP
 
-### 1. Persiapan Lokal
+### Penyebab Masalah:
+1. **Database lokal berbeda** dengan database server
+2. **File gambar tidak ter-upload** ke server
+3. **Path gambar tidak sesuai** antara lokal dan server
+
+### Solusi Lengkap:
+
+#### 1. Persiapan Lokal
 ```bash
-# Generate placeholder images
-php artisan portfolio:generate-images
+# Update database lokal sesuai server
+php artisan portfolio:update-from-server
+
+# Download gambar dari server (jika perlu)
+php download_server_images.php
 
 # Build assets
 npm run build
 
 # Commit dan push ke GitHub
 git add .
-git commit -m "Fix portfolio images and add placeholder generation"
+git commit -m "Fix portfolio images with server data"
 git push origin main
 ```
 
-### 2. Upload ke Server
+#### 2. Upload ke Server
 ```bash
 # SSH ke server
 ssh u733624421@bangunrumahproject.com
@@ -31,7 +41,7 @@ git pull origin main
 composer install --no-dev --optimize-autoloader
 ```
 
-### 3. Setup Server
+#### 3. Setup Server
 ```bash
 # Generate APP_KEY (jika belum)
 php artisan key:generate
@@ -39,8 +49,8 @@ php artisan key:generate
 # Create storage link
 php artisan storage:link-custom
 
-# Generate missing portfolio images
-php artisan portfolio:generate-images
+# Update database dengan data server
+php artisan portfolio:update-from-server
 
 # Set permissions
 chmod -R 775 storage bootstrap/cache
@@ -52,13 +62,13 @@ php artisan config:clear
 php artisan view:clear
 ```
 
-### 4. Upload Build Assets
+#### 4. Upload Build Assets
 ```bash
 # Di lokal, copy folder build ke public_html
 # Upload folder public/build ke public_html/build di server
 ```
 
-### 5. Konfigurasi .env Server
+#### 5. Konfigurasi .env Server
 ```env
 APP_NAME=BangunRumahProject
 APP_ENV=production
@@ -88,7 +98,7 @@ MAIL_FROM_ADDRESS=fikryataya@gmail.com
 MAIL_FROM_NAME="Konsultasi Website"
 ```
 
-### 6. Testing
+#### 6. Testing
 1. Buka: `https://bangunrumahproject.com`
 2. Cek halaman portfolio
 3. Cek gambar portfolio muncul
@@ -108,8 +118,20 @@ ls -la storage/app/public/portfolios/
 # Cek permission
 chmod -R 775 storage/
 
-# Regenerate images
-php artisan portfolio:generate-images
+# Update database dengan data server
+php artisan portfolio:update-from-server
+
+# Clear cache
+php artisan optimize:clear
+```
+
+### File Gambar yang Harus Ada di Server:
+```
+storage/app/public/portfolios/
+├── 6JctjsmlMfKziwHrWlDm7LVR50kug5H1FyXy5pAC.png
+├── MLai500GaAfZYAJP9hMkKMiSg1Bqyflksw6M1xUv.jpg
+├── SkpSiEuMDAXB0tMt5DxhkByFm8ak43hTLbCAqcq8.jpg
+└── YoloXbLbH1SxEnlEoKRksINHfpUApvsVPUEwzqpw.jpg
 ```
 
 ### Jika Error 500:
@@ -145,6 +167,9 @@ ls -la public_html/build/
 
 ### Command Penting:
 ```bash
+# Update database dengan data server
+php artisan portfolio:update-from-server
+
 # Generate images
 php artisan portfolio:generate-images
 
@@ -166,4 +191,26 @@ mysqldump -u u733624421_bangunadmin -p u733624421_bangunrumah > backup.sql
 
 # Backup files
 tar -czf backup-files.tar.gz laravel-app/
+```
+
+## Langkah Cepat untuk Server:
+
+```bash
+# 1. Pull perubahan
+git pull origin main
+
+# 2. Install dependencies
+composer install --no-dev --optimize-autoloader
+
+# 3. Update database
+php artisan portfolio:update-from-server
+
+# 4. Create storage link
+php artisan storage:link-custom
+
+# 5. Set permissions
+chmod -R 775 storage bootstrap/cache
+
+# 6. Clear cache
+php artisan optimize:clear
 ```
