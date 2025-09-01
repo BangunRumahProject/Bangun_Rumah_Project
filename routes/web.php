@@ -18,7 +18,7 @@ Route::get('/profile', function () {
 // });
 
 Route::get('/services1', function () {
-    return view('layanan1');
+    return view('Layanan1');
 });
 
 Route::get('/services2', function () {
