@@ -49,7 +49,7 @@
                         <div class="relative overflow-hidden group">
                             <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}"
                                 class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 protect-image"
-                                onerror="this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; this.onerror=null;">
+                                onerror="this.src='{{ asset('storage/portfolios') }}'; this.onerror=null;">
 
                             <!-- Overlay with Portfolio Info -->
                             <div
