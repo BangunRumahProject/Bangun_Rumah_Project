@@ -27,6 +27,36 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # Handle Laravel storage access for images
+    RewriteCond %{REQUEST_URI} ^/storage/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/(.*)$ public/storage/$1 [L,NC]
+
+    # Handle direct storage access for portfolio images
+    RewriteCond %{REQUEST_URI} ^/storage/app/public/portfolios/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/app/public/portfolios/(.*)$ public/storage/portfolios/$1 [L,NC]
+
+    # Handle direct storage access for any public files
+    RewriteCond %{REQUEST_URI} ^/storage/app/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/app/public/(.*)$ public/storage/$1 [L,NC]
+
+    # Handle legacy image paths
+    RewriteCond %{REQUEST_URI} ^/images/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^images/(.*)$ public/storage/portfolios/$1 [L,NC]
+
+    # Handle portfolio images with different naming patterns
+    RewriteCond %{REQUEST_URI} ^/portfolios/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^portfolios/(.*)$ public/storage/portfolios/$1 [L,NC]
+
+    # Handle portfolio images from database
+    RewriteCond %{REQUEST_URI} ^/portfolio-images/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^portfolio-images/(.*)$ public/storage/portfolios/$1 [L,NC]
 </IfModule>
 
 # Enable mod_headers for better file serving
