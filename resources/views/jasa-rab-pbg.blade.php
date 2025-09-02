@@ -358,10 +358,6 @@
                                     <p class="text-gray-600">Paket lengkap untuk pembuatan RAB rumah sederhana dengan
                                         spesifikasi standar.</p>
                                 </div>
-                                <div class="text-center mb-8">
-                                    <div class="text-4xl font-black text-yellow-400 mb-2">Rp 2.500.000</div>
-                                    <div class="text-sm text-gray-500">per project</div>
-                                </div>
                                 <ul class="space-y-4 mb-8">
                                     <li class="flex items-center gap-3">
                                         <div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">

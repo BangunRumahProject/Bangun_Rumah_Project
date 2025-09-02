@@ -14,12 +14,12 @@ class PartnerLogosInfiniteScroll {
             },
             {
                 name: "Bangun Rumah Project",
-                logo: "/img/mitra/mitra1.png",
+                logo: "/img/mitra/mitra3.jpg",
                 alt: "Logo Bangun Rumah Project"
             },
             {
                 name: "Desain Rumah Modern",
-                logo: "/img/mitra/mitra2.jpg",
+                logo: "/img/mitra/mitra4.jpg",
                 alt: "Desain Rumah Modern 1"
             },
             {
@@ -34,12 +34,12 @@ class PartnerLogosInfiniteScroll {
             },
             {
                 name: "Bangun Rumah Project",
-                logo: "/img/mitra/mitra1.png",
+                logo: "/img/mitra/mitra3.jpg",
                 alt: "Logo Bangun Rumah Project"
             },
             {
                 name: "Desain Rumah Modern",
-                logo: "/img/mitra/mitra2.jpg",
+                logo: "/img/mitra/mitra4.jpg",
                 alt: "Desain Rumah Modern 1"
             },
         ];
