@@ -130,8 +130,7 @@
                     <div class="relative slide-in-right">
                         <div
                             class="aspect-[4/5] bg-gray-800 rounded-2xl overflow-hidden shadow-2xl image-hover image-reveal">
-                            <img src="{{ asset('img/bg02.jpg') }}"
-                                alt="Tim Profesional" class="w-full h-full object-cover">
+                            <img src="{{ asset('img/bg02.jpg') }}" alt="Tim Profesional" class="w-full h-full object-cover">
                         </div>
 
                         <!-- Decorative elements -->
@@ -169,8 +168,8 @@
                         <!-- House Image -->
                         <div class="relative">
                             <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                                <img src="{{ asset('img/image gallery 1.jpg') }}"
-                                    alt="Modern House Design" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/image gallery 1.jpg') }}" alt="Modern House Design"
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -308,8 +307,10 @@
                                     </svg>
                                 </div>
                                 <h3 class="text-xl font-semibold">Desain Arsitektur Rumah</h3>
-                                <p class="text-gray-600">Dokumen desain lengkap yang mencakup denah, tampilan fasad, serta detail arsitektur. 
-                                    Informasi ini sangat penting agar perhitungan volume pekerjaan dapat dilakukan dengan lebih akurat.</p>
+                                <p class="text-gray-600">Dokumen desain lengkap yang mencakup denah, tampilan fasad, serta
+                                    detail arsitektur.
+                                    Informasi ini sangat penting agar perhitungan volume pekerjaan dapat dilakukan dengan
+                                    lebih akurat.</p>
                             </div>
 
                             <div class="space-y-4">
@@ -321,16 +322,17 @@
                                     </svg>
                                 </div>
                                 <h3 class="text-xl font-semibold">Gambar Kerja Lengkap</h3>
-                                <p class="text-gray-600">Gambar teknis detail yang berisi spesifikasi material, dimensi konstruksi, serta metode pelaksanaan. 
-                                    Dokumen ini menjadi acuan utama dalam menghitung estimasi biaya pembangunan secara tepat dan transparan.</p>
+                                <p class="text-gray-600">Gambar teknis detail yang berisi spesifikasi material, dimensi
+                                    konstruksi, serta metode pelaksanaan.
+                                    Dokumen ini menjadi acuan utama dalam menghitung estimasi biaya pembangunan secara tepat
+                                    dan transparan.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right Image -->
                     <div>
-                        <img src="{{ asset('img/rab.jpg') }}"
-                            class="w- h-auto rounded-lg shadow-lg">
+                        <img src="{{ asset('img/rab.jpg') }}" class="w- h-auto rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
@@ -390,10 +392,10 @@
                                         <span class="text-gray-700">Dokumen RAB lengkap dan rapi</span>
                                     </li>
                                 </ul>
-                                <button
-                                    class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                    Pilih Paket
-                                </button>
+                                <a href="https://wa.me/6285333353609" target="_blank" rel="noopener"
+                                    class="block text-center w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    Hubungi via WhatsApp
+                                </a>
                             </div>
                         </div>
 
@@ -413,8 +415,7 @@
                                         intensif untuk rumah dengan spesifikasi tinggi.</p>
                                 </div>
                                 <div class="text-center mb-8">
-                                    <div class="text-4xl font-black text-yellow-400 mb-2">Rp 5.000.000</div>
-                                    <div class="text-sm text-gray-500">per project</div>
+                                    <!-- Harga disembunyikan -->
                                 </div>
                                 <ul class="space-y-4 mb-8">
                                     <li class="flex items-center gap-3">
@@ -458,10 +459,10 @@
                                         <span class="text-gray-700">Revisi dan penyesuaian tanpa batas</span>
                                     </li>
                                 </ul>
-                                <button
-                                    class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
-                                    Pilih Paket
-                                </button>
+                                <a href="https://wa.me/6285333353609" target="_blank" rel="noopener"
+                                    class="block text-center w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    Hubungi via WhatsApp
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -559,44 +560,44 @@
         </section>
         <!-- Client Testimonials Section -->
         <!-- <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-              
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-normal text-black mb-4">
-                        Tanggapan <span class="text-yellow-400 font-semibold">Positive</span> Para Klien
-                    </h2>
-                </div>
-
-             
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    
-                    <div class="bg-gray-300 rounded-lg p-8 text-center">
-                        <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                        <h3 class="text-lg font-semibold text-black mb-4">Fiqri</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                        </p>
-                    </div>
-
-                   
-                    <div class="bg-gray-300 rounded-lg p-8 text-center">
-                        <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                        <h3 class="text-lg font-semibold text-black mb-4">Afthar</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                        </p>
-                    </div>
-
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
                   
-                    <div class="bg-gray-300 rounded-lg p-8 text-center">
-                        <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                        <h3 class="text-lg font-semibold text-black mb-4">Abid</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                        </p>
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl lg:text-4xl font-normal text-black mb-4">
+                            Tanggapan <span class="text-yellow-400 font-semibold">Positive</span> Para Klien
+                        </h2>
                     </div>
-                </div>
-        </section> -->
+
+                 
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                        
+                        <div class="bg-gray-300 rounded-lg p-8 text-center">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                            <h3 class="text-lg font-semibold text-black mb-4">Fiqri</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                            </p>
+                        </div>
+
+                       
+                        <div class="bg-gray-300 rounded-lg p-8 text-center">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                            <h3 class="text-lg font-semibold text-black mb-4">Afthar</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                            </p>
+                        </div>
+
+                      
+                        <div class="bg-gray-300 rounded-lg p-8 text-center">
+                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                            <h3 class="text-lg font-semibold text-black mb-4">Abid</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                            </p>
+                        </div>
+                    </div>
+            </section> -->
         <!-- Customer Reviews Section -->
 
 
@@ -619,8 +620,8 @@
                         <!-- Left Content - Featured Project Showcase -->
                         <div class="space-y-8">
                             <div class="aspect-[4/3] bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
-                                <img src="{{ asset('img/project unggulan.jpg') }}"
-                                    alt="Rumah Modern Minimalis" class="w-full h-full object-cover">
+                                <img src="{{ asset('img/project unggulan.jpg') }}" alt="Rumah Modern Minimalis"
+                                    class="w-full h-full object-cover">
                             </div>
                         </div>
 
@@ -719,8 +720,8 @@
                 <!-- Left Content - House Image -->
                 <div class="space-y-8">
                     <div class="aspect-[4/5] bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <img src="{{ asset('img/profil5.png') }}"
-                            alt="Modern House Exterior" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/profil5.png') }}" alt="Modern House Exterior"
+                            class="w-full h-full object-cover">
                     </div>
                 </div>
 
