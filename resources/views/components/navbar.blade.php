@@ -2,22 +2,24 @@
 <nav id="main-navbar"
     class="flex items-center justify-between px-4 md:px-8 py-3 bg-transparent fixed w-full z-20 transition duration-300">
     <div class="flex items-center">
-        <a href="/"><div class="flex items-center mr-4 md:mr-8">
-            {{-- Logo that changes based on scroll state --}}
-            <div class="relative -ml-1 md:-ml-2 mr-2">
-                <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300"
-                    id="logo-dark">
-                <img src="/img/logo-white-brp.png" alt="Logo"
-                    class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0"
-                    id="logo-white">
+        <a href="/">
+            <div class="flex items-center mr-4 md:mr-8">
+                {{-- Logo that changes based on scroll state --}}
+                <div class="relative -ml-1 md:-ml-2 mr-2">
+                    <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300"
+                        id="logo-dark">
+                    <img src="/img/logo-white-brp.png" alt="Logo"
+                        class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0"
+                        id="logo-white">
+                </div>
+                <div class="font-bold text-[10px] md:text-[13px] text-yellow-400 leading-tight transition-colors duration-300 text-left"
+                    id="brand-text">
+                    <span class="block">Bangun</span>
+                    <span class="block">Rumah</span>
+                    <span class="block">Project</span>
+                </div>
             </div>
-            <div class="font-bold text-[10px] md:text-[13px] text-yellow-400 leading-tight transition-colors duration-300 text-left"
-                id="brand-text">
-                <span class="block">Bangun</span>
-                <span class="block">Rumah</span>
-                <span class="block">Project</span>
-            </div>
-        </div></a>
+        </a>
 
         {{-- Desktop Menu --}}
         <ul class="hidden md:flex items-center space-x-3 lg:space-x-5 font-semibold text-sm lg:text-base desktop-menu">
@@ -58,14 +60,14 @@
                     <li><a href="/services3"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Desain Eksterior / Interior</a></li>
-        </ul>
-        </li>
-        <li><a href="/contact"
-                class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('contact*') ? 'nav-active' : '' }}">
-                <span>KONTAK</span>
-                <div class="nav-indicator"></div>
-            </a>
-        </li>
+                </ul>
+            </li>
+            <li><a href="/contact"
+                    class="nav-link rounded px-2 lg:px-3 py-2 transition text-yellow-400 hover:bg-white/40 hover:text-black relative {{ request()->is('contact*') ? 'nav-active' : '' }}">
+                    <span>KONTAK</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -80,20 +82,22 @@
 
 {{-- Mobile Menu Overlay --}}
 <div id="mobile-menu-overlay" class="mobile-menu fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm z-30 hidden">
-            {{-- Mobile Menu Content --}}
-        <div class="mobile-menu-content w-full h-full bg-black flex flex-col overflow-hidden">
+    {{-- Mobile Menu Content --}}
+    <div class="mobile-menu-content w-full h-full bg-black flex flex-col overflow-hidden">
         {{-- Header with close button --}}
         <div class="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700 flex-shrink-0">
-            <a href="/"><div class="flex items-center mr-4 md:mr-8">
-                <div class="relative -ml-1 md:-ml-2 mr-2">
-                    <img src="/img/logo-white-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity ">
+            <a href="/">
+                <div class="flex items-center mr-4 md:mr-8">
+                    <div class="relative -ml-1 md:-ml-2 mr-2">
+                        <img src="/img/logo-white-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity ">
+                    </div>
+                    <div class="font-bold text-[10px] md:text-[13px] leading-tight">
+                        <span class="block text-white">Bangun</span>
+                        <span class="block text-white">Rumah</span>
+                        <span class="block text-white">Project</span>
+                    </div>
                 </div>
-                <div class="font-bold text-[10px] md:text-[13px] leading-tight">
-                    <span class="block text-white">Bangun</span>
-                    <span class="block text-white">Rumah</span>
-                    <span class="block text-white">Project</span>
-                </div>
-            </div></a>
+            </a>
             <button id="close-burger-btn"
                 class="mobile-close-btn bg-white text-black p-2 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 flex flex-col justify-center items-center w-8 h-8 sm:w-10 sm:h-10">
                 <span class="burger-line w-4 sm:w-5 h-0.5 bg-black mb-1 transition-all duration-300"></span>
@@ -133,7 +137,7 @@
                 </li>
                 <li>
                     <a href="/portofolio"
-                        class="mobile-nav-link block px-3 sm:px-4 py-3 sm:py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('portfolio*') ? 'mobile-nav-active' : '' }}">
+                        class="mobile-nav-link block px-3 sm:px-4 py-3 sm:py-4 text-white hover:bg-gray-800 rounded-lg transition-all duration-300 flex items-center {{ request()->is('portofolio*') ? 'mobile-nav-active' : '' }}">
                         <div class="flex items-center">
                             <svg class="w-4 sm:w-5 h-4 sm:h-5 mr-3 flex-shrink-0" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
