@@ -59,7 +59,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
 // Public Portfolio Route (akan dibuat nanti)
 Route::get('/portofolio', function () {
-    $portfolios = \App\Models\Portfolio::active()->orderBy('sort_order')->orderBy('created_at', 'desc')->get();
+    $portfolios = \App\Models\Portfolio::whereIn('status', ['planning', 'ongoing', 'completed'])
+        ->orderBy('sort_order')
+        ->orderBy('created_at', 'desc')
+        ->get();
     return view('portofolio', compact('portfolios'));
 })->name('portofolio');
 

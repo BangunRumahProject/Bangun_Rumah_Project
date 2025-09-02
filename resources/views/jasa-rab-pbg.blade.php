@@ -560,44 +560,44 @@
         </section>
         <!-- Client Testimonials Section -->
         <!-- <section class="relative w-full bg-gray-100 text-black py-16 lg:py-20">
-                <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                  
-                    <div class="text-center mb-16">
-                        <h2 class="text-3xl lg:text-4xl font-normal text-black mb-4">
-                            Tanggapan <span class="text-yellow-400 font-semibold">Positive</span> Para Klien
-                        </h2>
-                    </div>
-
-                 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                        
-                        <div class="bg-gray-300 rounded-lg p-8 text-center">
-                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                            <h3 class="text-lg font-semibold text-black mb-4">Fiqri</h3>
-                            <p class="text-sm text-gray-700 leading-relaxed">
-                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                            </p>
-                        </div>
-
-                       
-                        <div class="bg-gray-300 rounded-lg p-8 text-center">
-                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                            <h3 class="text-lg font-semibold text-black mb-4">Afthar</h3>
-                            <p class="text-sm text-gray-700 leading-relaxed">
-                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                            </p>
-                        </div>
-
+                    <div class="max-w-7xl mx-auto px-6 lg:px-8">
                       
-                        <div class="bg-gray-300 rounded-lg p-8 text-center">
-                            <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
-                            <h3 class="text-lg font-semibold text-black mb-4">Abid</h3>
-                            <p class="text-sm text-gray-700 leading-relaxed">
-                                "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
-                            </p>
+                        <div class="text-center mb-16">
+                            <h2 class="text-3xl lg:text-4xl font-normal text-black mb-4">
+                                Tanggapan <span class="text-yellow-400 font-semibold">Positive</span> Para Klien
+                            </h2>
                         </div>
-                    </div>
-            </section> -->
+
+                     
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                            
+                            <div class="bg-gray-300 rounded-lg p-8 text-center">
+                                <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-lg font-semibold text-black mb-4">Fiqri</h3>
+                                <p class="text-sm text-gray-700 leading-relaxed">
+                                    "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                                </p>
+                            </div>
+
+                           
+                            <div class="bg-gray-300 rounded-lg p-8 text-center">
+                                <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-lg font-semibold text-black mb-4">Afthar</h3>
+                                <p class="text-sm text-gray-700 leading-relaxed">
+                                    "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                                </p>
+                            </div>
+
+                          
+                            <div class="bg-gray-300 rounded-lg p-8 text-center">
+                                <div class="w-20 h-20 bg-white rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-lg font-semibold text-black mb-4">Abid</h3>
+                                <p class="text-sm text-gray-700 leading-relaxed">
+                                    "Saya Sangat Menyukai Desain Yang kalian Buat, Semuanya Serasa Di Surga"
+                                </p>
+                            </div>
+                        </div>
+                </section> -->
         <!-- Customer Reviews Section -->
 
 
