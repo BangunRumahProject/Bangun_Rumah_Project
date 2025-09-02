@@ -18,6 +18,37 @@
     RewriteCond %{REQUEST_URI} ^/(build|img|js|css|favicon\.ico|robots\.txt)
     RewriteRule ^(.*)$ public/$1 [L]
 
+    # Handle Laravel storage access - FIXED VERSION
+    # Redirect /storage/portfolios/ to actual storage location
+    RewriteCond %{REQUEST_URI} ^/storage/portfolios/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/portfolios/(.*)$ storage/app/public/portfolios/$1 [L,NC]
+
+    # Handle /storage/ to actual storage location
+    RewriteCond %{REQUEST_URI} ^/storage/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/(.*)$ storage/app/public/$1 [L,NC]
+
+    # Handle direct access to storage/app/public
+    RewriteCond %{REQUEST_URI} ^/storage/app/public/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^storage/app/public/(.*)$ storage/app/public/$1 [L,NC]
+
+    # Handle portfolio images with different naming patterns
+    RewriteCond %{REQUEST_URI} ^/portfolios/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^portfolios/(.*)$ storage/app/public/portfolios/$1 [L,NC]
+
+    # Handle legacy image paths
+    RewriteCond %{REQUEST_URI} ^/images/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^images/(.*)$ storage/app/public/portfolios/$1 [L,NC]
+
+    # Handle admin uploaded images
+    RewriteCond %{REQUEST_URI} ^/admin-images/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^admin-images/(.*)$ storage/app/public/$1 [L,NC]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
@@ -54,3 +85,17 @@ php_value memory_limit 256M
     AddType image/gif .gif
     AddType image/svg+xml .svg
 </IfModule>
+
+# Additional security and access rules for images
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+    Order Allow,Deny
+    Allow from all
+    Require all granted
+</FilesMatch>
+
+# Handle directory access for storage
+<Directory "storage/app/public/portfolios">
+    Options -Indexes
+    AllowOverride All
+    Require all granted
+</Directory>
