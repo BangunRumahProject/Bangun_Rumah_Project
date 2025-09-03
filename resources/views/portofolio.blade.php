@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Portofolio')
+@section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project: lihat hasil kerja kami dari tahap perencanaan hingga selesai.')
 
 @section('styles')
     @include('components.styles')

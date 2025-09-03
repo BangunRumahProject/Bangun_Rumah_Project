@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Layanan Bangun & Renovasi rumah')
+@section('meta_description', 'Jasa bangun dan renovasi rumah: pengerjaan rapi, material berkualitas, timeline jelas, dan anggaran transparan. Dapatkan penawaran gratis.')
 
 @section('styles')
     @include('components.styles')

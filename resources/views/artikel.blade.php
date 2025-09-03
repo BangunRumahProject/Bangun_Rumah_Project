@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Artikel - Bangun Rumah Project')
+@section('meta_description', 'Artikel seputar bangun dan renovasi rumah, tips memilih material, biaya pembangunan, dan regulasi PBG/IMB.')
 
 @section('styles')
 @include('components.styles')

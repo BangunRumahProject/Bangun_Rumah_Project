@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Profile')
+@section('meta_description', 'Profil Bangun Rumah Project: tim profesional bangun & renovasi rumah dengan layanan transparan, bergaransi, dan fokus pada kualitas hasil.')
 
 @section('styles')
     @include('components.styles')

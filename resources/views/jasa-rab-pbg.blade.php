@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Layanan Buat RAB & PBG/IMB ')
+@section('meta_description', 'Layanan pembuatan RAB (Rencana Anggaran Biaya) dan pendampingan perizinan PBG/IMB untuk pembangunan/renovasi rumah Anda. Profesional dan cepat.')
 
 @section('styles')
     @include('components.styles')
