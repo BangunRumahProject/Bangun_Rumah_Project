@@ -582,6 +582,15 @@
         top: calc(100% + 0.5rem) !important;
     }
 
+    /* Explicit open state controlled by JS */
+    .group[data-dropdown] ul.dropdown-open {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
     /* Fix for mobile devices */
     @media (max-width: 768px) {
         .group[data-dropdown] ul {
