@@ -524,4 +524,87 @@
         max-width: 100vw !important;
         overflow: hidden !important;
     }
+
+    /* LAYANAN Dropdown basic styles */
+    .group[data-dropdown] {
+        position: relative !important;
+    }
+
+    .group[data-dropdown] ul {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        z-index: 9999 !important;
+        background: white !important;
+        border-radius: 0.5rem !important;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+        border: 1px solid #e5e7eb !important;
+        min-width: 12rem !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(-8px) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        pointer-events: none !important;
+    }
+
+    .group[data-dropdown]:hover ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
+    .group[data-dropdown] ul li {
+        margin: 0 !important;
+    }
+
+    .group[data-dropdown] ul li a {
+        display: block !important;
+        padding: 0.75rem 1rem !important;
+        color: #374151 !important;
+        font-size: 0.875rem !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+        border-radius: 0.25rem !important;
+        margin: 0.125rem 0.25rem !important;
+    }
+
+    .group[data-dropdown] ul li a:hover {
+        background-color: #fef3c7 !important;
+        color: #92400e !important;
+        transform: translateX(4px) !important;
+    }
+
+    /* Ensure dropdown is above other elements */
+    .group[data-dropdown] ul {
+        z-index: 99999 !important;
+        position: absolute !important;
+        top: calc(100% + 0.5rem) !important;
+    }
+
+    /* Fix for mobile devices */
+    @media (max-width: 768px) {
+        .group[data-dropdown] ul {
+            position: static !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
+            box-shadow: none !important;
+            border: none !important;
+            background: transparent !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .group[data-dropdown] ul li a {
+            color: #9ca3af !important;
+            padding: 0.5rem 1rem !important;
+            margin: 0.25rem 0 !important;
+        }
+
+        .group[data-dropdown] ul li a:hover {
+            background-color: #374151 !important;
+            color: white !important;
+            transform: none !important;
+        }
+    }
 </style>

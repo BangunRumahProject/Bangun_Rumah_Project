@@ -50,15 +50,16 @@
                     </svg>
                     <div class="nav-indicator"></div>
                 </a>
-                <ul class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded shadow-lg py-2 z-50 min-w-max hidden">
+                <ul
+                    class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded-lg shadow-2xl py-3 z-[9999] min-w-max opacity-0 invisible transform -translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 border border-gray-200">
                     <li><a href="/services1"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Bangun & Renovasi Rumah</a></li>
                     <li><a href="/services2"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Buat RAB & PBG/IMB</a></li>
                     <li><a href="/services3"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Desain Eksterior / Interior</a></li>
                 </ul>
             </li>
