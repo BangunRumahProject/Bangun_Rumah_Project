@@ -19,7 +19,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/30"></div>
 
         <!-- Main Content Container -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-16">
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-start min-h-[70vh] sm:min-h-[80vh]">
 
                 <!-- Left Content - Text Section -->
@@ -142,7 +142,7 @@
     <section
         class="relative w-full min-h-[70vh] sm:min-h-screen overflow-hidden bg-gradient-to-t from-black via-black-500 to-yellow-300">
         <!-- Main Content Container -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-16">
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center min-h-[60vh] sm:min-h-[80vh]">
 
                 <!-- Left Content - Zigzag Image Gallery -->
@@ -295,7 +295,7 @@
 
     <!-- Section: Kelebihan Kami -->
     <section class="relative w-full min-h-screen bg-black text-white py-8 sm:py-12 lg:py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-start">
 
                 <div class="relative lg:sticky lg:top-32 transition-transform duration-500 ease-in-out slide-in-left">
