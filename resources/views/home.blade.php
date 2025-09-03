@@ -14,7 +14,7 @@
         style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/hero section 1.jpg') center -65px/cover no-repeat;">
         <!-- Overlay untuk memastikan teks terbaca -->
         <div class="absolute inset-0 bg-black/25"></div>
-        <div class="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-8 pb-8 text-left relative z-10">
+        <div class="w-full px-4 sm:px-8 md:px-24 lg:px-24 xl:px-32 pt-8 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center">
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
