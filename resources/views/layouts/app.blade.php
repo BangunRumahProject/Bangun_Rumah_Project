@@ -24,6 +24,16 @@
     <meta property="og:description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia.')">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ url('/img/logo-brp.png') }}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YVGBPE7CF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YVGBPE7CF');
+    </script>
 </head>
 
 <body class="bg-white text-gray-900 min-h-screen overflow-x-hidden">
