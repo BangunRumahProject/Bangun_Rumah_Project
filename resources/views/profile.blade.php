@@ -204,11 +204,11 @@
 
                 <!-- Left Content - Text Section -->
                 <div
-                    class="space-y-3 sm:space-y-6 mb-4 lg:mb-0 transform -translate-y-4 sm:-translate-y-8 lg:-translate-y-12">
+                    class="space-y-3 sm:space-y-6 mb-4 lg:mb-0 transform -translate-y-2 sm:-translate-y-4 lg:-translate-y-6">
                     <!-- Main Title -->
                     <div class="space-y-1 sm:space-y-2 lg:space-y-4">
                         <h1
-                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pt-8 sm:pt-12 lg:pt-16 font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pt-12 sm:pt-16 lg:pt-20 font-black text-yellow-400 drop-shadow-lg animate-fade-in-up">
                             Bangun Rumah
                         </h1>
                         <h2
