@@ -120,10 +120,19 @@ export class NavbarManager {
                     isOpen: false
                 });
 
-                // Add click handler to trigger
+                // Click handler (useful for touch devices)
                 trigger.addEventListener('click', (e) => {
+                    // Prevent navigation if dropdown exists
                     e.preventDefault();
                     this.toggleDropdown(container);
+                });
+
+                // Hover handlers for desktop
+                container.addEventListener('mouseenter', () => {
+                    this.openDropdown(container);
+                });
+                container.addEventListener('mouseleave', () => {
+                    this.closeDropdown(container);
                 });
 
                 // Close dropdown when clicking on menu items
@@ -156,8 +165,10 @@ export class NavbarManager {
         if (!dropdownData) return;
 
         dropdownData.isOpen = true;
-        dropdownData.dropdown.style.display = 'block';
+        // Rely on CSS: just add class
         dropdownData.dropdown.classList.add('dropdown-open');
+        // Ensure stacking above navbar
+        dropdownData.dropdown.style.zIndex = '99999';
     }
 
     // Close dropdown
@@ -166,7 +177,6 @@ export class NavbarManager {
         if (!dropdownData) return;
 
         dropdownData.isOpen = false;
-        dropdownData.dropdown.style.display = 'none';
         dropdownData.dropdown.classList.remove('dropdown-open');
     }
 
@@ -174,7 +184,6 @@ export class NavbarManager {
     closeAllDropdowns() {
         this.dropdowns.forEach(dropdownData => {
             dropdownData.isOpen = false;
-            dropdownData.dropdown.style.display = 'none';
             dropdownData.dropdown.classList.remove('dropdown-open');
         });
     }
