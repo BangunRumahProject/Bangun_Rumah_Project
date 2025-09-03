@@ -329,7 +329,13 @@
     }
 
     /* Global navbar overflow prevention */
-    #main-navbar,
+    #main-navbar {
+        max-width: 100vw !important;
+        overflow: visible !important;
+        /* allow dropdown to overflow */
+        z-index: 100 !important;
+    }
+
     .mobile-menu,
     .mobile-menu-content {
         max-width: 100vw !important;
