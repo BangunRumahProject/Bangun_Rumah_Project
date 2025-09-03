@@ -14,12 +14,14 @@
         style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0.8) 85%, rgba(0,0,0,1) 100%), url('/img/hero section 1.jpg') center -65px/cover no-repeat;">
         <!-- Overlay untuk memastikan teks terbaca -->
         <div class="absolute inset-0 bg-black/25"></div>
-        <div class="w-full px-16 md:px-24 lg:px-32 pt-8 pb-8 text-left relative z-10">
+        <div class="w-full px-4 sm:px-8 md:px-24 lg:px-24 xl:px-32 pt-8 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center">
-                <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
                     Bangun Rancang<br>Desain Rumah
                 </h1>
-                <p class="text-white max-w-2xl mb-6 drop-shadow text-lg leading-relaxed animate-fade-in-up delay-200">
+                <p
+                    class="text-white max-w-2xl mb-6 drop-shadow text-base sm:text-lg leading-relaxed animate-fade-in-up delay-200">
                     Wujudkan rumah impian Anda dengan desain yang memadukan keindahan, kenyamanan, dan kualitas terbaik dari
                     konsep hingga berdiri megah, semua kami tangani dengan sepenuh hati.
                 </p>
@@ -31,36 +33,41 @@
     <div class="gradient-divider"></div>
 
     {{-- Section Pengalaman --}}
-    <section id="pengalaman" class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 relative overflow-hidden">
+    <section id="pengalaman"
+        class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-12 sm:py-16 md:py-20 relative overflow-hidden">
         <!-- Background decorative elements -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-10 left-10 w-32 h-32 bg-yellow-400 rounded-full blur-3xl"></div>
             <div class="absolute bottom-10 right-10 w-40 h-40 bg-yellow-400 rounded-full blur-3xl"></div>
         </div>
 
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center mb-8 sm:mb-12 md:mb-16">
+                <h2
+                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 animate-fade-in-up">
                     Pengalaman <span class="text-yellow-400">Membangun Kepercayaan</span>
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200">
+                <p
+                    class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200 px-4">
                     Meski baru berdiri, kami telah membuktikan komitmen dalam menghadirkan
                     rumah impian dengan kualitas terbaik dan pelayanan profesional
                 </p>
             </div>
 
             <!-- Main Experience Counter -->
-            <div class="flex justify-center mb-16">
+            <div class="flex justify-center mb-8 sm:mb-12 md:mb-16">
                 <div class="relative group">
                     <!-- Large counter display -->
                     <div
-                        class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-12 md:p-16 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in-up delay-300">
+                        class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 shadow-2xl transform hover:scale-105 transition-all duration-500 animate-fade-in-up delay-300">
                         <div class="text-center">
-                            <div class="text-6xl md:text-8xl font-bold text-white mb-4 drop-shadow-lg">
+                            <div
+                                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 drop-shadow-lg">
                                 <span id="tahun-pengalaman" class="counter">3</span>
                             </div>
-                            <div class="text-2xl md:text-3xl font-semibold text-white mb-2">Tahun</div>
-                            <div class="text-lg text-yellow-100">Membangun Kepercayaan</div>
+                            <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-2">Tahun
+                            </div>
+                            <div class="text-base sm:text-lg text-yellow-100">Membangun Kepercayaan</div>
                         </div>
                     </div>
 
@@ -360,11 +367,9 @@
 
                         {{-- Data untuk popup --}}
                         @if (session('popup_data'))
-                            <div id="popup-data" 
-                                 data-nama="{{ session('popup_data.nama') }}"
-                                 data-kategori="{{ session('popup_data.kategori') }}"
-                                 data-timestamp="{{ session('popup_data.timestamp') }}"
-                                 style="display: none;">
+                            <div id="popup-data" data-nama="{{ session('popup_data.nama') }}"
+                                data-kategori="{{ session('popup_data.kategori') }}"
+                                data-timestamp="{{ session('popup_data.timestamp') }}" style="display: none;">
                             </div>
                         @endif
 
@@ -407,13 +412,13 @@
                             <div>
                                 <label class="block text-gray-700 font-semibold mb-2">Alamat Lahan</label>
                                 <input type="text" name="alamat_lahan" placeholder="Masukkan alamat lahan"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300"
-                                    >
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300">
                             </div>
 
                             <div>
                                 <label class="block text-gray-700 font-semibold mb-2">Luas Tanah (m²)</label>
-                                <input type="number" name="luas_tanah" placeholder="Masukkan luas tanah dalam meter persegi"
+                                <input type="number" name="luas_tanah"
+                                    placeholder="Masukkan luas tanah dalam meter persegi"
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-300"
                                     min="1" step="0.01">
                             </div>
@@ -490,23 +495,23 @@
                 </div>
                 {{-- Portfolio Item 2 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="{{ asset('img/profil5.png') }}"
-                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
+                    <img src="{{ asset('img/profil5.png') }}" alt="Portfolio"
+                        class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 3 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="{{ asset('img/desain4.jpg') }}"
-                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
+                    <img src="{{ asset('img/desain4.jpg') }}" alt="Portfolio"
+                        class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 4 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="{{ asset('img/profil5.jpg') }}"
-                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
+                    <img src="{{ asset('img/profil5.jpg') }}" alt="Portfolio"
+                        class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
                 {{-- Portfolio Item 5 --}}
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-scale transition">
-                    <img src="{{ asset('img/image gallery 4.jpg') }}"
-                        alt="Portfolio" class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
+                    <img src="{{ asset('img/image gallery 4.jpg') }}" alt="Portfolio"
+                        class="w-full h-40 sm:h-44 object-cover hover:scale-105 transition parallax-img">
                 </div>
             </div>
         </div>

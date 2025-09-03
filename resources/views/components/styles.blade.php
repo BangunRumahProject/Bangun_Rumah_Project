@@ -327,4 +327,293 @@
             padding-right: 1rem !important;
         }
     }
+
+    /* Global navbar overflow prevention */
+    #main-navbar,
+    .mobile-menu,
+    .mobile-menu-content {
+        max-width: 100vw !important;
+        overflow: hidden !important;
+    }
+
+    /* Profile page specific responsive fixes */
+    @media (max-width: 1024px) {
+
+        /* Tablet specific fixes */
+        .max-w-6xl {
+            max-width: 100vw !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        /* Ensure proper grid behavior */
+        .grid.grid-cols-1.lg\:grid-cols-2 {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+        }
+
+        /* Fix image gallery spacing */
+        .grid.grid-cols-2 {
+            gap: 0.75rem !important;
+            max-width: 100% !important;
+        }
+
+        /* Adjust text containers */
+        .space-y-3.sm\:space-y-6,
+        .space-y-4.sm\:space-y-6.lg\:space-y-8,
+        .space-y-6.sm\:space-y-8.lg\:space-y-10 {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* Fix section containers */
+        .relative.w-full.min-h-screen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            overflow: hidden !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        /* Mobile specific fixes */
+        .max-w-6xl {
+            max-width: 100vw !important;
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+        }
+
+        /* Stack all layouts on mobile */
+        .grid.grid-cols-1.lg\:grid-cols-2,
+        .grid.grid-cols-1.md\:grid-cols-2 {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+        }
+
+        /* Adjust spacing for mobile */
+        .py-4.sm\:py-8.lg\:py-16 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .py-8.sm\:py-12.lg\:py-16 {
+            padding-top: 1.5rem !important;
+            padding-bottom: 1.5rem !important;
+        }
+
+        /* Fix image gallery on mobile */
+        .grid.grid-cols-2 {
+            gap: 0.5rem !important;
+            max-width: 100% !important;
+        }
+
+        /* Ensure text doesn't overflow */
+        .text-2xl.sm\:text-3xl.md\:text-4xl.lg\:text-5xl.xl\:text-6xl {
+            font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+            line-height: 1.2 !important;
+        }
+
+        .text-xl.sm\:text-2xl.md\:text-3xl.lg\:text-4xl.xl\:text-5xl {
+            font-size: clamp(1.25rem, 4vw, 2rem) !important;
+            line-height: 1.2 !important;
+        }
+
+        .text-base.sm\:text-lg.md\:text-xl.lg\:text-2xl {
+            font-size: clamp(0.875rem, 3vw, 1.25rem) !important;
+            line-height: 1.4 !important;
+        }
+
+        /* Fix section containers on mobile */
+        .relative.w-full.min-h-screen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            overflow: hidden !important;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        /* Small mobile fixes */
+        .max-w-6xl {
+            max-width: 100vw !important;
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        /* Ensure no horizontal scroll */
+        body,
+        html {
+            overflow-x: hidden !important;
+            width: 100% !important;
+        }
+
+        /* Fix any remaining overflow issues */
+        .relative.w-full.min-h-screen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+        }
+
+        /* Adjust image gallery for very small screens */
+        .grid.grid-cols-2 {
+            gap: 0.25rem !important;
+            max-width: 100% !important;
+        }
+
+        /* Ensure text containers don't cause overflow */
+        .space-y-3.sm\:space-y-6,
+        .space-y-4.sm\:space-y-6.lg\:space-y-8,
+        .space-y-6.sm\:space-y-8.lg\:space-y-10 {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* Fix padding for very small screens */
+        .px-4.sm\:px-6.lg\:px-8 {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+
+        /* Fix section containers on small mobile */
+        .relative.w-full.min-h-screen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            overflow: hidden !important;
+        }
+    }
+
+    /* Prevent any horizontal overflow globally */
+    * {
+        box-sizing: border-box;
+    }
+
+    body,
+    html {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Ensure all profile page containers respect viewport */
+    .max-w-6xl {
+        max-width: min(100vw - 1rem, 72rem) !important;
+        width: 100% !important;
+    }
+
+    /* Fix specific profile page elements */
+    .relative.z-10.w-full.max-w-6xl.mx-auto {
+        max-width: 100vw !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Ensure grid layouts don't overflow */
+    .grid.grid-cols-1.lg\:grid-cols-2 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Fix image gallery container */
+    .grid.grid-cols-2.gap-2.sm\:gap-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    /* Fix section containers */
+    .relative.w-full.min-h-screen {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        overflow: hidden !important;
+    }
+
+    /* LAYANAN Dropdown basic styles */
+    .group[data-dropdown] {
+        position: relative !important;
+    }
+
+    .group[data-dropdown] ul {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        z-index: 9999 !important;
+        background: white !important;
+        border-radius: 0.5rem !important;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+        border: 1px solid #e5e7eb !important;
+        min-width: 12rem !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(-8px) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        pointer-events: none !important;
+    }
+
+    .group[data-dropdown]:hover ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
+    .group[data-dropdown] ul li {
+        margin: 0 !important;
+    }
+
+    .group[data-dropdown] ul li a {
+        display: block !important;
+        padding: 0.75rem 1rem !important;
+        color: #374151 !important;
+        font-size: 0.875rem !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+        border-radius: 0.25rem !important;
+        margin: 0.125rem 0.25rem !important;
+    }
+
+    .group[data-dropdown] ul li a:hover {
+        background-color: #fef3c7 !important;
+        color: #92400e !important;
+        transform: translateX(4px) !important;
+    }
+
+    /* Ensure dropdown is above other elements */
+    .group[data-dropdown] ul {
+        z-index: 99999 !important;
+        position: absolute !important;
+        top: calc(100% + 0.5rem) !important;
+    }
+
+    /* Explicit open state controlled by JS */
+    .group[data-dropdown] ul.dropdown-open {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+
+    /* Fix for mobile devices */
+    @media (max-width: 768px) {
+        .group[data-dropdown] ul {
+            position: static !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: none !important;
+            box-shadow: none !important;
+            border: none !important;
+            background: transparent !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .group[data-dropdown] ul li a {
+            color: #9ca3af !important;
+            padding: 0.5rem 1rem !important;
+            margin: 0.25rem 0 !important;
+        }
+
+        .group[data-dropdown] ul li a:hover {
+            background-color: #374151 !important;
+            color: white !important;
+            transform: none !important;
+        }
+    }
 </style>

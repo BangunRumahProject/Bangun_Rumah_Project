@@ -50,15 +50,16 @@
                     </svg>
                     <div class="nav-indicator"></div>
                 </a>
-                <ul class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded shadow-lg py-2 z-50 min-w-max hidden">
+                <ul
+                    class="absolute left-0 mt-2 w-48 lg:w-56 bg-white rounded-lg shadow-2xl py-3 z-[9999] min-w-max opacity-0 invisible transform -translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 border border-gray-200">
                     <li><a href="/services1"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services1*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Bangun & Renovasi Rumah</a></li>
                     <li><a href="/services2"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services2*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Buat RAB & PBG/IMB</a></li>
                     <li><a href="/services3"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-100 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
+                            class="block px-4 py-3 text-sm text-gray-700 hover:bg-yellow-100 hover:text-yellow-700 transition-all duration-200 {{ request()->is('services3*') ? 'bg-yellow-100 text-yellow-700 font-semibold' : '' }}">
                             Desain Eksterior / Interior</a></li>
                 </ul>
             </li>
@@ -228,11 +229,8 @@
         {{-- Footer with social links --}}
         <div class="p-4 sm:p-6 border-t border-gray-700 flex-shrink-0 bg-black sticky bottom-0 z-10">
             <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
-                    <svg class="w-5 sm:w-6 h-5 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                    </svg>
+                <a href="https://www.instagram.com/bangunrumah.project?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300" target="_blank" rel="noopener">
+                <i class="fab fa-instagram text-xl"></i>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
                     <svg class="w-5 sm:w-6 h-5 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
