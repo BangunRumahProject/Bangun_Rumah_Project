@@ -72,13 +72,7 @@ Route::prefix('api')->group(function () {
     Route::get('/portfolios', [\App\Http\Controllers\Api\PortfolioController::class, 'index'])->name('api.portfolios.index');
 });
 
-// Serve sitemap.xml via Laravel to avoid web server static file issues
+// Sitemap route (serve the file from public/ so it never 404s)
 Route::get('/sitemap.xml', function () {
-    $path = public_path('sitemap.xml');
-    if (!file_exists($path)) {
-        abort(404);
-    }
-    return response()->file($path, [
-        'Content-Type' => 'application/xml',
-    ]);
+	return response()->file(public_path('sitemap.xml'), ['Content-Type' => 'application/xml']);
 });
