@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="aV8myPkGCy07_79rrfohgnTBb50l8OF5wIQUEiaC0BQ" />
     <meta name="description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia. Konsultasi gratis, harga transparan, dan hasil berkualitas.')">
-    <title>@yield('title', 'Bangun Rumah Project')</title>
+    <title>@yield('title', 'Bangun Rumah Project - Jasa Bangun & Renovasi Rumah Terpercaya')</title>
     <link rel="icon" type="image/png" href="/img/logo-brp.png">
     <link rel="apple-touch-icon" href="/img/logo-brp.png">
     <!-- Font Awesome CDN for icons -->
@@ -24,6 +24,26 @@
     <meta property="og:description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia.')">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ url('/img/logo-brp.png') }}">
+
+    <!-- Structured Data for Site Name -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bangun Rumah Project",
+        "alternateName": "BangunRumahProject",
+        "url": "{{ url('/') }}",
+        "description": "Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia. Konsultasi gratis, harga transparan, dan hasil berkualitas.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bangun Rumah Project",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ url('/img/logo-brp.png') }}"
+            }
+        }
+    }
+    </script>
 
     <!-- Cookiebot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f3db7ff2-7bcd-414b-b5ec-ff4acacb7bc2" type="text/javascript" async></script>
