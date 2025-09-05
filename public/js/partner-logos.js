@@ -96,20 +96,20 @@ class PartnerLogosInfiniteScroll {
         const logoItem = document.createElement('div');
         logoItem.className = 'flex-shrink-0';
         
-        // Create logo container with pure Tailwind classes - Larger size for better visibility
+        // Create logo container with pure Tailwind classes
         logoItem.innerHTML = `
             <div class="group relative">
-                <div class="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 bg-white/5 rounded-lg flex items-center justify-center p-4 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-110 hover:border-yellow-400/50 overflow-hidden shadow-lg">
+                <div class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 bg-white/5 rounded-xl flex items-center justify-center p-4 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-110 hover:border-yellow-400/50 overflow-hidden shadow-lg">
                     <img src="${partner.logo}" 
                          alt="${partner.alt}" 
                          class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="hidden items-center justify-center text-center text-sm text-gray-400 font-medium">
+                    <div class="hidden items-center justify-center text-center text-xs text-gray-400 font-medium">
                         ${partner.name}
                     </div>
                 </div>
-                <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
-                    <div class="bg-black/90 text-white text-sm px-3 py-2 rounded whitespace-nowrap border border-yellow-400/30 shadow-lg">
+                <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                    <div class="bg-black/90 text-white text-xs px-2 py-1 rounded whitespace-nowrap border border-yellow-400/30 shadow-lg">
                         ${partner.name}
                     </div>
                     <div class="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black/90 mx-auto"></div>

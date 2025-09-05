@@ -540,7 +540,7 @@
                         <!-- Infinite Scroll Container untuk Logo Mitra -->
                         <div class="relative mt-4 sm:mt-6 overflow-hidden">
                             <!-- Single Row - Moving Left -->
-                            <div class="flex space-x-6 partner-logos-row" style="width: max-content;">
+                            <div class="flex space-x-8 partner-logos-row" style="width: max-content;">
                                 <!-- Logo items will be populated by JavaScript -->
                             </div>
                         </div>
