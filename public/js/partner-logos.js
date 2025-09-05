@@ -82,7 +82,7 @@ class PartnerLogosInfiniteScroll {
 
     createLogosSet() {
         const logosContainer = document.createElement('div');
-        logosContainer.className = 'flex space-x-8 logos-set';
+        logosContainer.className = 'flex space-x-6 logos-set';
         
         this.partnerData.forEach(partner => {
             const logoItem = this.createLogoItem(partner);
@@ -99,10 +99,10 @@ class PartnerLogosInfiniteScroll {
         // Create logo container with pure Tailwind classes
         logoItem.innerHTML = `
             <div class="group relative">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 bg-white/5 rounded-xl flex items-center justify-center p-4 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-110 hover:border-yellow-400/50 overflow-hidden shadow-lg">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-white/5 rounded-lg flex items-center justify-center p-3 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-110 hover:border-yellow-400/50 overflow-hidden shadow-lg">
                     <img src="${partner.logo}" 
                          alt="${partner.alt}" 
-                         class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100"
+                         class="w-full h-full object-cover transition-all duration-300 group-hover:opacity-100"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="hidden items-center justify-center text-center text-xs text-gray-400 font-medium">
                         ${partner.name}
