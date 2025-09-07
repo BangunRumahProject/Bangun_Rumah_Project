@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bangun Rumah Project - Jasa Bangun & Renovasi Rumah Terpercaya')
+@section('title', 'Home')
 @section('meta_description', 'Bangun Rumah Project - Layanan bangun dan renovasi rumah, desain arsitektur, estimasi biaya (RAB) dan pendampingan PBG/IMB. Konsultasi gratis untuk area Indonesia.')
 
 @section('styles')
