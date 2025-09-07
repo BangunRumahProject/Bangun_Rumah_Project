@@ -25,24 +25,24 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ url('/img/logo-brp.png') }}">
 
-    <!-- Structured Data for Site Name -->
+    <!-- Structured Data for Site Name (use json_encode to avoid Blade parsing @context) -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Bangun Rumah Project",
-        "alternateName": "BangunRumahProject",
-        "url": "{{ url('/') }}",
-        "description": "Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia. Konsultasi gratis, harga transparan, dan hasil berkualitas.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Bangun Rumah Project",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "{{ url('/img/logo-brp.png') }}"
-            }
-        }
-    }
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'WebSite',
+        'name' => 'Bangun Rumah Project',
+        'alternateName' => 'BangunRumahProject',
+        'url' => url('/'),
+        'description' => 'Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia. Konsultasi gratis, harga transparan, dan hasil berkualitas.',
+        'publisher' => [
+            '@type' => 'Organization',
+            'name' => 'Bangun Rumah Project',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => url('/img/logo-brp.png'),
+            ],
+        ],
+    ], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}
     </script>
 
     <!-- Cookiebot -->
