@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Profile')
-@section('meta_description', 'Profil Bangun Rumah Project: tim profesional bangun & renovasi rumah dengan layanan transparan, bergaransi, dan fokus pada kualitas hasil.')
+@section('title', 'Profil Bangun Rumah Project - Kontraktor Terpercaya di Kendari Sulawesi Tenggara')
+@section('meta_description', 'Profil Bangun Rumah Project: kontraktor terpercaya di Kendari Sulawesi Tenggara. Tim profesional bangun & renovasi rumah dengan layanan transparan, bergaransi, dan fokus pada kualitas hasil.')
 
 @section('styles')
     @include('components.styles')

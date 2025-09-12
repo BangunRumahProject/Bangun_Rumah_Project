@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Desain Interior/Eksterior')
-@section('meta_description', 'Jasa desain interior dan eksterior rumah: konsep estetis, fungsional, dan sesuai budget. Dapatkan konsultasi desain dari arsitek kami.')
+@section('title', 'Jasa Desain Interior & Eksterior Rumah di Kendari Sulawesi Tenggara')
+@section('meta_description', 'Jasa desain interior dan eksterior rumah di Kendari Sulawesi Tenggara. Konsep estetis, fungsional, dan sesuai budget. Arsitek profesional untuk rumah impian Anda.')
 
 @section('styles')
     @include('components.styles')

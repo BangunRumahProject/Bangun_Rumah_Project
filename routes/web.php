@@ -36,6 +36,11 @@ Route::get('/artikel', function () {
     return view('artikel');
 });
 
+// Blog routes for SEO
+Route::get('/blog/kontraktor-terpercaya-kendari', function () {
+    return view('blog.kontraktor-terpercaya-kendari');
+});
+
 Route::post('/konsultasi/kirim', [KonsultasiController::class, 'kirim'])->name('konsultasi.kirim');
 
 // Admin Routes

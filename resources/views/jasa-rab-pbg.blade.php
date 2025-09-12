@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Buat RAB & PBG/IMB ')
-@section('meta_description', 'Layanan pembuatan RAB (Rencana Anggaran Biaya) dan pendampingan perizinan PBG/IMB untuk pembangunan/renovasi rumah Anda. Profesional dan cepat.')
+@section('title', 'Jasa RAB & PBG/IMB di Kendari Sulawesi Tenggara')
+@section('meta_description', 'Jasa pembuatan RAB dan pengurusan PBG/IMB di Kendari Sulawesi Tenggara. Layanan profesional untuk pembangunan rumah dengan dokumen lengkap dan legal.')
 
 @section('styles')
     @include('components.styles')
