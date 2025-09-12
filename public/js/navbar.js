@@ -117,7 +117,8 @@ export class NavbarManager {
                     container,
                     dropdown,
                     trigger,
-                    isOpen: false
+                    isOpen: false,
+                    closeTimeoutId: null
                 });
 
                 // Click handler (useful for touch devices)
@@ -127,12 +128,26 @@ export class NavbarManager {
                     this.toggleDropdown(container);
                 });
 
-                // Hover handlers for desktop
+                // Hover handlers for desktop with delay on leave
                 container.addEventListener('mouseenter', () => {
+                    const d = this.dropdowns.find(x => x.container === container);
+                    if (d && d.closeTimeoutId) {
+                        clearTimeout(d.closeTimeoutId);
+                        d.closeTimeoutId = null;
+                    }
                     this.openDropdown(container);
                 });
                 container.addEventListener('mouseleave', () => {
-                    this.closeDropdown(container);
+                    const d = this.dropdowns.find(x => x.container === container);
+                    if (!d) return;
+                    if (d.closeTimeoutId) {
+                        clearTimeout(d.closeTimeoutId);
+                    }
+                    // Delay close to allow cursor to reach submenu comfortably
+                    d.closeTimeoutId = setTimeout(() => {
+                        this.closeDropdown(container);
+                        d.closeTimeoutId = null;
+                    }, 300);
                 });
 
                 // Close dropdown when clicking on menu items
