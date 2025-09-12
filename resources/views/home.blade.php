@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Kontraktor Terpercaya di Kendari Sulawesi Tenggara - Bangun Rumah Project')
-@section('meta_description', 'Bangun Rumah Project - Kontraktor terpercaya di Kendari Sulawesi Tenggara. Jasa bangun rumah, renovasi, desain arsitektur, RAB & PBG/IMB. Konsultasi gratis, harga transparan, hasil berkualitas.')
+@section('title', 'Home')
+@section('meta_description', 'Bangun Rumah Project - Layanan bangun dan renovasi rumah, desain arsitektur, estimasi biaya (RAB) dan pendampingan PBG/IMB. Konsultasi gratis untuk area Indonesia.')
 
 @section('styles')
     @include('components.styles')
@@ -19,11 +19,12 @@
             <div class="flex flex-col justify-center">
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
-                    Kontraktor Terpercaya<br>di Kendari Sulawesi Tenggara
+                    Bangun Rancang<br>Desain Rumah
                 </h1>
                 <p
                     class="text-white max-w-2xl mb-6 drop-shadow text-base sm:text-lg leading-relaxed animate-fade-in-up delay-200">
-                    Wujudkan rumah impian Anda di Kendari dengan jasa kontraktor terpercaya. Desain modern, kualitas terbaik, dan pelayanan profesional untuk pembangunan rumah di Sulawesi Tenggara.
+                    Wujudkan rumah impian Anda dengan desain yang memadukan keindahan, kenyamanan, dan kualitas terbaik dari
+                    konsep hingga berdiri megah, semua kami tangani dengan sepenuh hati.
                 </p>
             </div>
         </div>

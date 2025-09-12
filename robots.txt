@@ -1,16 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /storage/
-Disallow: /vendor/
-Disallow: /node_modules/
-Disallow: /bootstrap/cache/
-Allow: /
+Disallow:
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Sitemap location
 Sitemap: https://bangunrumahproject.com/sitemap.xml
-
-# Host directive
-Host: bangunrumahproject.com
