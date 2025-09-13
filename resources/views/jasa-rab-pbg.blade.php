@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Buat RAB & PBG/IMB ')
-@section('meta_description', 'Layanan pembuatan RAB (Rencana Anggaran Biaya) dan pendampingan perizinan PBG/IMB untuk pembangunan/renovasi rumah Anda. Profesional dan cepat.')
+@section('title', 'Layanan Buat RAB & PBG/IMB Sulawesi Tenggara')
+@section('meta_description', 'Layanan pembuatan RAB (Rencana Anggaran Biaya) dan pendampingan perizinan PBG/IMB untuk pembangunan/renovasi rumah Anda di Sulawesi Tenggara. Profesional dan cepat di Kendari.')
 
 @section('styles')
     @include('components.styles')
@@ -26,12 +26,12 @@
                     <div class="ml-10 space-y-10">
                         <h1 class="text-2xl md:text-4xl font-bold leading-tight space-x-10">
                             Jasa Pembuatan RAB &
-                            <span class="text-yellow-400">Pengurusan PBG/IMB</span>
+                            <span class="text-yellow-400">Pengurusan PBG/IMB Sulawesi Tenggara</span>
                         </h1>
                         <p class="text-xl text-yellow-400 font-semibold">Akurat & Profesional</p>
                         <p class="text-gray-300 text-lg leading-relaxed">
-                            Kami menyediakan jasa pembuatan RAB (Rencana Anggaran Biaya) yang akurat dan profesional, serta
-                            pengurusan dokumen PBG/IMB secara lengkap. Tim ahli kami siap membantu mewujudkan rumah impian
+                            Kami menyediakan jasa pembuatan RAB (Rencana Anggaran Biaya) yang akurat dan profesional di Sulawesi Tenggara, serta
+                            pengurusan dokumen PBG/IMB secara lengkap di Kendari. Tim ahli kami siap membantu mewujudkan rumah impian
                             Anda dengan perencanaan yang matang dan transparan.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">

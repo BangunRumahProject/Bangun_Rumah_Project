@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Portofolio')
-@section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project: lihat hasil kerja kami dari tahap perencanaan hingga selesai.')
+@section('title', 'Portofolio Bangun Rumah Project Sulawesi Tenggara')
+@section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project di Sulawesi Tenggara: lihat hasil kerja kami dari tahap perencanaan hingga selesai di Kendari.')
 
 @section('styles')
     @include('components.styles')
@@ -15,11 +15,11 @@
         <div class="w-full px-16 md:px-24 lg:px-32 pt-16 pb-8 text-left relative z-10">
             <div class="flex flex-col justify-center pb-16">
                 <h1 class="text-5xl md:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
-                    Portofolio
+                    Portofolio Sulawesi Tenggara
                 </h1>
                 <p class="text-white max-w-2xl mb-6 drop-shadow text-lg leading-relaxed animate-fade-in-up delay-200">
-                    Dengan pengalaman lebih dari 3 tahun, kami telah sukses mengerjakan berbagai proyek bangun rumah,
-                    renovasi, desain interior yang unik, modern, dan inovatif.
+                    Dengan pengalaman lebih dari 3 tahun di Sulawesi Tenggara, kami telah sukses mengerjakan berbagai proyek bangun rumah,
+                    renovasi, desain interior yang unik, modern, dan inovatif di Kendari.
                 </p>
 
             </div>
@@ -48,7 +48,7 @@
                         data-category="{{ $portfolio->category }}" onclick="showPortfolioDetails({{ $portfolio->id }})">
                         <!-- Portfolio Image Container -->
                         <div class="relative overflow-hidden group">
-                            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }}"
+                            <img src="{{ $portfolio->image_url }}" alt="{{ $portfolio->title }} - Portfolio Bangun Rumah Project Sulawesi Tenggara"
                                 class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 protect-image"
                                 onerror="this.src='{{ asset('storage/portfolios') }}'; this.onerror=null;">
 
@@ -167,7 +167,7 @@
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
-                                <img src="/img/logo-brp.png" alt="BRP Logo" class="h-10 w-auto">
+                                <img src="/img/logo-brp.png" alt="Bangun Rumah Project Logo - Kontraktor Sulawesi Tenggara" class="h-10 w-auto">
                             </div>
                             <div class="flex flex-col">
                                 <h2 id="modal-title" class="text-2xl font-bold text-gray-900 leading-tight"></h2>
@@ -284,7 +284,7 @@
                     portfolio.images.map((img) => {
                         return `
                                             <div class="portfolio-image-container relative group cursor-pointer transform hover:scale-105 transition-all duration-300" onclick='showImageDetail(${JSON.stringify(img.image_url)}, ${JSON.stringify(img.title || "")}, ${JSON.stringify(img.description || "")})'>
-                                                <img src="${img.image_url}" alt="${img.title || 'Portfolio Image'}" class="portfolio-image protect-image" onerror="this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; this.onerror=null;">
+                                                <img src="${img.image_url}" alt="${img.title || 'Portfolio Image'} - Bangun Rumah Project Sulawesi Tenggara" class="portfolio-image protect-image" onerror="this.src='{{ asset('img/placeholder-portfolio.jpg') }}'; this.onerror=null;">
                                                 <div class="anti-save-overlay absolute inset-0"></div>
                                                 <div class="image-hover-overlay">
                                                     <div class="text-center text-white font-semibold">

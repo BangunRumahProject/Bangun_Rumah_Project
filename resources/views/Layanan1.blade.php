@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Bangun & Renovasi rumah')
-@section('meta_description', 'Jasa bangun dan renovasi rumah: pengerjaan rapi, material berkualitas, timeline jelas, dan anggaran transparan. Dapatkan penawaran gratis.')
+@section('title', 'Layanan Bangun & Renovasi Rumah Sulawesi Tenggara')
+@section('meta_description', 'Jasa bangun dan renovasi rumah di Sulawesi Tenggara: pengerjaan rapi, material berkualitas, timeline jelas, dan anggaran transparan di Kendari. Dapatkan penawaran gratis.')
 
 @section('styles')
     @include('components.styles')
@@ -28,20 +28,20 @@
                         <!-- Main Title -->
                         <div class="space-y-4">
                             <h1 class="text-3xl lg:text-4xl xl:text-5xl text-yellow-500 font-bold leading-tight">
-                                Pembangunan & Renovasi Rumah
+                                Pembangunan & Renovasi Rumah Sulawesi Tenggara
                             </h1>
                         </div>
 
                         <!-- Description -->
                         <div class="space-y-8 max-w-xl">
                             <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                                Wujudkan hunian impian Anda dengan layanan pembangunan dan renovasi rumah yang profesional,
-                                berkualitas tinggi, dan sesuai dengan standar konstruksi terbaik.
+                                Wujudkan hunian impian Anda di Sulawesi Tenggara dengan layanan pembangunan dan renovasi rumah yang profesional,
+                                berkualitas tinggi, dan sesuai dengan standar konstruksi terbaik di Kendari.
                             </p>
 
                             <p class="text-gray-200 text-base lg:text-lg leading-relaxed">
-                                Dari pembangunan rumah baru hingga renovasi total, kami menghadirkan solusi konstruksi
-                                terpadu dengan tim ahli berpengalaman dan material berkualitas premium.
+                                Dari pembangunan rumah baru hingga renovasi total di Sulawesi Tenggara, kami menghadirkan solusi konstruksi
+                                terpadu dengan tim ahli berpengalaman dan material berkualitas premium di Kendari.
                             </p>
                         </div>
 

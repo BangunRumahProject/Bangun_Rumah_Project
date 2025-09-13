@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Profile')
-@section('meta_description', 'Profil Bangun Rumah Project: tim profesional bangun & renovasi rumah dengan layanan transparan, bergaransi, dan fokus pada kualitas hasil.')
+@section('title', 'Profil Kontraktor Sulawesi Tenggara')
+@section('meta_description', 'Profil Bangun Rumah Project: kontraktor terpercaya di Sulawesi Tenggara dengan tim profesional bangun & renovasi rumah. Layanan transparan, bergaransi, dan fokus pada kualitas hasil di Kendari.')
 
 @section('styles')
     @include('components.styles')
@@ -223,15 +223,15 @@
                         <p
                             class="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium drop-shadow-lg animate-fade-in-up">
                             Bangun Rumah Project menghadirkan layanan arsitektur
-                            dan konstruksi hunian modern dengan perpaduan estetika, fungsionalitas, dan kenyamanan yang
-                            sesuai kebutuhan Anda.
+                            dan konstruksi hunian modern di Sulawesi Tenggara dengan perpaduan estetika, fungsionalitas, dan kenyamanan yang
+                            sesuai kebutuhan Anda di Kendari.
                         </p>
 
                         <p
                             class="text-gray-200 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed drop-shadow-lg animate-fade-in-up">
                             Dengan pendekatan end-to-end solution, mulai dari perencanaan konsep hingga tahap finishing,
-                            tim profesional kami menghadirkan standar kualitas tinggi untuk mewujudkan hunian impian yang
-                            selaras dengan gaya hidup modern.
+                            tim profesional kami di Sulawesi Tenggara menghadirkan standar kualitas tinggi untuk mewujudkan hunian impian yang
+                            selaras dengan gaya hidup modern di Kendari.
                         </p>
                     </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-@section('meta_description', 'Bangun Rumah Project - Layanan bangun dan renovasi rumah, desain arsitektur, estimasi biaya (RAB) dan pendampingan PBG/IMB. Konsultasi gratis untuk area Indonesia.')
+@section('title', 'Kontraktor Terpercaya Sulawesi Tenggara')
+@section('meta_description', 'Bangun Rumah Project - Kontraktor terpercaya di Sulawesi Tenggara. Jasa bangun rumah, renovasi, desain arsitektur, RAB & PBG/IMB di Kendari. Konsultasi gratis, harga transparan, hasil berkualitas.')
 
 @section('styles')
     @include('components.styles')
@@ -19,11 +19,11 @@
             <div class="flex flex-col justify-center">
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-400 mb-4 drop-shadow-lg animate-fade-in-up">
-                    Bangun Rancang<br>Desain Rumah
+                    Kontraktor Terpercaya<br>Sulawesi Tenggara
                 </h1>
                 <p
                     class="text-white max-w-2xl mb-6 drop-shadow text-base sm:text-lg leading-relaxed animate-fade-in-up delay-200">
-                    Wujudkan rumah impian Anda dengan desain yang memadukan keindahan, kenyamanan, dan kualitas terbaik dari
+                    Wujudkan rumah impian Anda di Kendari dan sekitarnya dengan desain yang memadukan keindahan, kenyamanan, dan kualitas terbaik dari
                     konsep hingga berdiri megah, semua kami tangani dengan sepenuh hati.
                 </p>
             </div>
@@ -46,11 +46,11 @@
             <div class="text-center mb-8 sm:mb-12 md:mb-16">
                 <h2
                     class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 animate-fade-in-up">
-                    Pengalaman <span class="text-yellow-400">Membangun Kepercayaan</span>
+                    Kontraktor <span class="text-yellow-400">Terpercaya di Sulawesi Tenggara</span>
                 </h2>
                 <p
                     class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200 px-4">
-                    Meski baru berdiri, kami telah membuktikan komitmen dalam menghadirkan
+                    Sebagai kontraktor berpengalaman di Kendari dan sekitarnya, kami telah membuktikan komitmen dalam menghadirkan
                     rumah impian dengan kualitas terbaik dan pelayanan profesional
                 </p>
             </div>
@@ -154,19 +154,19 @@
             <div class="w-full lg:w-2/3 ml-auto">
                 <h1
                     class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 text-center lg:text-left animate-fade-in-right delay-200">
-                    Wujudkan <span class="text-yellow-400">Rumah Impian</span> Bersama Kontraktor Terpercaya
+                    Wujudkan <span class="text-yellow-400">Rumah Impian</span> di Sulawesi Tenggara
                 </h1>
 
                 <div class="flex flex-col">
                     <div
                         class="text-base md:text-lg text-gray-300 mb-6 md:mb-8 text-justify lg:text-left max-w-2xl mx-auto lg:mx-0 animate-fade-in-right delay-300">
-                        <p class="leading-relaxed">Kami adalah partner terpercaya untuk mewujudkan hunian
+                        <p class="leading-relaxed">Kami adalah kontraktor terpercaya di Sulawesi Tenggara untuk mewujudkan hunian
                             berkualitas dengan
-                            standar konstruksi tertinggi. Dengan pengalaman lebih dari 15 tahun, tim ahli kami siap
+                            standar konstruksi tertinggi. Dengan pengalaman 3+ tahun di Kendari dan sekitarnya, tim ahli kami siap
                             hadirkan rumah impian yang sempurna sesuai budget dan keinginan Anda.</p>
                         <p class="mt-4 leading-relaxed">Dari perencanaan hingga finishing, setiap detail dikerjakan
                             dengan
-                            presisi dan dedikasi tinggi. Kepuasan klien adalah prioritas utama kami dalam setiap
+                            presisi dan dedikasi tinggi. Kepuasan klien di Sulawesi Tenggara adalah prioritas utama kami dalam setiap
                             proyek yang
                             dikerjakan.</p>
                     </div>

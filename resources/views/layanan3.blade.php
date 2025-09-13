@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Desain Interior/Eksterior')
-@section('meta_description', 'Jasa desain interior dan eksterior rumah: konsep estetis, fungsional, dan sesuai budget. Dapatkan konsultasi desain dari arsitek kami.')
+@section('title', 'Layanan Desain Interior/Eksterior Sulawesi Tenggara')
+@section('meta_description', 'Jasa desain interior dan eksterior rumah di Sulawesi Tenggara: konsep estetis, fungsional, dan sesuai budget di Kendari. Dapatkan konsultasi desain dari arsitek kami.')
 
 @section('styles')
     @include('components.styles')
@@ -29,21 +29,21 @@
                         <!-- Main Title -->
                         <div class="space-y-4">
                             <h1 class="text-3xl lg:text-4xl xl:text-5xl text-yellow-400 font-bold leading-tight">
-                                Eksterior & Interior Rumah
+                                Eksterior & Interior Rumah Sulawesi Tenggara
                             </h1>
                         </div>
 
                         <!-- Description -->
                         <div class="space-y-8 max-w-xl">
                             <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                                Wujudkan hunian yang indah, nyaman, dan fungsional dengan layanan desain
-                                eksterior dan interior dari kami.
+                                Wujudkan hunian yang indah, nyaman, dan fungsional di Sulawesi Tenggara dengan layanan desain
+                                eksterior dan interior dari kami di Kendari.
                             </p>
 
                             <p class="text-gray-200 text-base lg:text-lg leading-relaxed">
-                                Kami menghadirkan konsep desain modern, elegan, dan sesuai dengan gaya hidup Anda. Setiap
+                                Kami menghadirkan konsep desain modern, elegan, dan sesuai dengan gaya hidup Anda di Sulawesi Tenggara. Setiap
                                 detail dirancang untuk
-                                memberikan kenyamanan maksimal sekaligus meningkatkan nilai estetika rumah.
+                                memberikan kenyamanan maksimal sekaligus meningkatkan nilai estetika rumah di Kendari.
                             </p>
                         </div>
 
