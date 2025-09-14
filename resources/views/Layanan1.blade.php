@@ -28,20 +28,20 @@
                         <!-- Main Title -->
                         <div class="space-y-4">
                             <h1 class="text-3xl lg:text-4xl xl:text-5xl text-yellow-500 font-bold leading-tight">
-                                Pembangunan & Renovasi Rumah Sulawesi Tenggara
+                                Pembangunan & Renovasi Rumah
                             </h1>
                         </div>
 
                         <!-- Description -->
                         <div class="space-y-8 max-w-xl">
                             <p class="text-white text-lg lg:text-xl leading-relaxed font-medium">
-                                Wujudkan hunian impian Anda di Sulawesi Tenggara dengan layanan pembangunan dan renovasi rumah yang profesional,
-                                berkualitas tinggi, dan sesuai dengan standar konstruksi terbaik di Kendari.
+                                Wujudkan hunian impian Anda dengan layanan pembangunan dan renovasi rumah yang profesional,
+                                berkualitas tinggi, dan sesuai dengan standar konstruksi terbaik.
                             </p>
 
                             <p class="text-gray-200 text-base lg:text-lg leading-relaxed">
-                                Dari pembangunan rumah baru hingga renovasi total di Sulawesi Tenggara, kami menghadirkan solusi konstruksi
-                                terpadu dengan tim ahli berpengalaman dan material berkualitas premium di Kendari.
+                                Dari pembangunan rumah baru hingga renovasi total, kami menghadirkan solusi konstruksi
+                                terpadu dengan tim ahli berpengalaman dan material berkualitas premium.
                             </p>
                         </div>
 
