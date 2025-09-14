@@ -26,7 +26,7 @@
                     <div class="ml-10 space-y-10">
                         <h1 class="text-2xl md:text-4xl font-bold leading-tight space-x-10">
                             Jasa Pembuatan RAB &
-                            <span class="text-yellow-400">Pengurusan PBG/IMB Sulawesi Tenggara</span>
+                            <span class="text-yellow-400">Pengurusan PBG/IMB</span>
                         </h1>
                         <p class="text-xl text-yellow-400 font-semibold">Akurat & Profesional</p>
                         <p class="text-gray-300 text-lg leading-relaxed">

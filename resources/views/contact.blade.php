@@ -21,7 +21,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {{-- Kolom Kiri: Konten Teks --}}
                         <div class="text-white">
-                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Dapatkan Bantuan Terbaik dari Kami di Sulawesi Tenggara,</h1>
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Dapatkan Bantuan Terbaik dari Kami,</h1>
                             <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 mb-8">Hubungi Segera</h2>
 
                             {{-- Section Lokasi --}}
