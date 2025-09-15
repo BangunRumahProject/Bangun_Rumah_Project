@@ -14,7 +14,7 @@
     <meta name="geo.placename" content="Kendari, Sulawesi Tenggara">
     <meta name="geo.position" content="-3.9985;122.5136">
     <meta name="ICBM" content="-3.9985, 122.5136">
-    <title>@yield('title') - Bangun Rumah Project Sulawesi Tenggara</title>
+    <title>@yield('title') - Bangun Rumah Project</title>
     <link rel="icon" type="image/png" href="/img/logo-brp.png">
     <link rel="apple-touch-icon" href="/img/logo-brp.png">
     <!-- Font Awesome CDN for icons -->

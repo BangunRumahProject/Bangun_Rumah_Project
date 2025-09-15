@@ -131,7 +131,7 @@
             
             <div class="info-item">
                 <div class="info-label">Waktu Pengiriman:</div>
-                <div class="info-value">{{ now()->format('d M Y H:i') }} WITA</div>
+                <div class="info-value">{{ now()->setTimezone(config('app.admin_timezone', config('app.timezone')))->format('d M Y H:i') }} ({{ config('app.admin_timezone', config('app.timezone')) }})</div>
             </div>
         </div>
 

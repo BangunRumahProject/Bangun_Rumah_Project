@@ -64,12 +64,32 @@ class KonsultasiPopup {
         let nama = 'Anda';
         let kategori = 'layanan';
         let timestamp = '';
+        let formattedLocalTime = '';
 
         if (popupData) {
             nama = popupData.dataset.nama || 'Anda';
             kategori = popupData.dataset.kategori || 'layanan';
             timestamp = popupData.dataset.timestamp || '';
-            console.log('Popup data:', { nama, kategori, timestamp });
+            // Jika timestamp dalam ISO, format ke waktu lokal pengguna
+            if (timestamp) {
+                try {
+                    const date = new Date(timestamp);
+                    if (!isNaN(date)) {
+                        const options = {
+                            year: 'numeric',
+                            month: 'short',
+                            day: '2-digit',
+                            hour: '2-digit',
+                            minute: '2-digit',
+                            hour12: false
+                        };
+                        formattedLocalTime = new Intl.DateTimeFormat(undefined, options).format(date);
+                    }
+                } catch (e) {
+                    console.warn('Failed to parse timestamp for local timezone:', e);
+                }
+            }
+            console.log('Popup data:', { nama, kategori, timestamp, formattedLocalTime });
         }
 
         // Create popup HTML
@@ -91,13 +111,13 @@ class KonsultasiPopup {
                             Kami akan segera menghubungi Anda untuk membahas lebih lanjut.
                         </p>
                         
-                        ${timestamp ? `
+                        ${(formattedLocalTime || timestamp) ? `
                         <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
                             <div class="flex items-center justify-center">
                                 <svg class="h-5 w-5 text-gray-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
-                                <span class="text-sm text-gray-700 font-medium">Dikirim pada: ${timestamp}</span>
+                                <span class="text-sm text-gray-700 font-medium">Dikirim pada: ${formattedLocalTime || timestamp}</span>
                             </div>
                         </div>
                         ` : ''}

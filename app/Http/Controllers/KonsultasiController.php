@@ -35,7 +35,8 @@ class KonsultasiController extends Controller
                 'popup_data' => [
                     'nama' => $validated['nama'],
                     'kategori' => $validated['kategori'],
-                    'timestamp' => now()->format('d M Y H:i')
+                    // Kirim dalam format ISO UTC agar dapat diformat sesuai timezone pengunjung di frontend
+                    'timestamp' => now('UTC')->toIso8601String()
                 ]
             ]);
 

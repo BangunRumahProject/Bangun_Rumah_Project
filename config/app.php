@@ -67,6 +67,10 @@ return [
 
     'timezone' => 'UTC',
 
+    // Zona waktu admin untuk tampilan di backend/email admin.
+    // Atur di .env dengan APP_ADMIN_TIMEZONE=Asia/Makassar misalnya.
+    'admin_timezone' => env('APP_ADMIN_TIMEZONE', env('APP_TIMEZONE', 'Asia/Makassar')),
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
