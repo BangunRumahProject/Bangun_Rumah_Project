@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Portofolio Bangun Rumah Project Sulawesi Tenggara')
+@section('title', 'Portofolio - Bangun Rumah Project')
 @section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project di Sulawesi Tenggara: lihat hasil kerja kami dari tahap perencanaan hingga selesai di Kendari.')
 
 @section('styles')

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Layanan Bangun & Renovasi Rumah Sulawesi Tenggara')
+@section('title', 'Layanan Bangun & Renovasi Rumah - Bangun Rumah Project')
 @section('meta_description', 'Jasa bangun dan renovasi rumah di Sulawesi Tenggara: pengerjaan rapi, material berkualitas, timeline jelas, dan anggaran transparan di Kendari. Dapatkan penawaran gratis.')
 
 @section('styles')

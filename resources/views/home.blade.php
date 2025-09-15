@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Kontraktor Terpercaya Sulawesi Tenggara')
+@section('title', 'Home - Bangun Rumah Project')
 @section('meta_description', 'Bangun Rumah Project - Kontraktor terpercaya di Sulawesi Tenggara. Jasa bangun rumah, renovasi, desain arsitektur, RAB & PBG/IMB di Kendari. Konsultasi gratis, harga transparan, hasil berkualitas.')
 
 @section('styles')

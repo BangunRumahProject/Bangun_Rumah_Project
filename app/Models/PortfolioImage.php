@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
+ use Illuminate\Support\Facades\Storage;
 
 class PortfolioImage extends Model
 {

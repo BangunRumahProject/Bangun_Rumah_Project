@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Kontak Bangun Rumah Project Sulawesi Tenggara')
+@section('title', 'Contact - Bangun Rumah Project')
 @section('meta_description', 'Hubungi Bangun Rumah Project di Sulawesi Tenggara untuk konsultasi gratis bangun/renovasi rumah, pembuatan RAB, PBG/IMB, dan desain arsitektur di Kendari.')
 
 @section('styles')
