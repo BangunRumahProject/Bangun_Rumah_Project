@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home - Bangun Rumah Project')
+@section('title', 'Home')
 @section('meta_description', 'Jasa bangun rumah Kendari & renovasi rumah terpercaya. Kontraktor Kendari dengan harga transparan, konsultasi gratis, desain arsitektur modern, dan hasil berkualitas. Solusi terbaik untuk rumah impian Anda.')
 
 
