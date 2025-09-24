@@ -15,8 +15,8 @@
     <meta name="geo.position" content="-3.9985;122.5136">
     <meta name="ICBM" content="-3.9985, 122.5136">
     <title>@yield('title')</title>
-    <link rel="icon" type="image/png" href="{{ asset('img/LogoBR.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('img/LogoBR.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/LogoBR.png') }}?v=2">
+    <link rel="apple-touch-icon" href="{{ asset('img/LogoBR.png') }}?v=2">
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -31,7 +31,7 @@
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('meta_description', 'Bangun Rumah Project - kontraktor kendari, bangun rumah kendari, renovasi rumah kendari, desain arsitektur kendari, RAB & PBG/IMB kendari.')">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('img/LogoBR.png') }}">
+    <meta property="og:image" content="{{ asset('img/LogoBR.png') }}?v=2">
 
     <!-- Cookiebot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f3db7ff2-7bcd-414b-b5ec-ff4acacb7bc2" type="text/javascript" async></script>
