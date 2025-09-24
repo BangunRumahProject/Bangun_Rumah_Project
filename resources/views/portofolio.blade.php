@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Portofolio - Bangun Rumah Project')
-@section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project di Sulawesi Tenggara: lihat hasil kerja kami dari tahap perencanaan hingga selesai di Kendari.')
+@section('title', 'Portofolio')
+@section('meta_description', 'Portofolio proyek bangun dan renovasi rumah oleh Bangun Rumah Project di Kendari: lihat hasil kerja kami dari tahap perencanaan hingga selesai.')
 
 @section('styles')
     @include('components.styles')
@@ -167,7 +167,7 @@
                     <div class="flex justify-between items-center">
                             <div class="flex items-center space-x-4">
                             <div class="flex-shrink-0">
-                                <img src="/img/logo-brp.png" alt="Bangun Rumah Project Logo" class="h-10 w-auto">
+                                <img src="/img/LogoBR.png" alt="Bangun Rumah Project Logo" class="h-10 w-auto">
                             </div>
                             <div class="flex flex-col">
                                 <h2 id="modal-title" class="text-2xl font-bold text-gray-900 leading-tight"></h2>

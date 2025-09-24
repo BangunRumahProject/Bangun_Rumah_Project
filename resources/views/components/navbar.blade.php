@@ -6,7 +6,7 @@
             <div class="flex items-center mr-4 md:mr-8">
                 {{-- Logo that changes based on scroll state --}}
                 <div class="relative -ml-1 md:-ml-2 mr-2">
-                    <img src="/img/logo-brp.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300"
+                    <img src="/img/LogoBR.png" alt="Logo" class="h-8 md:h-9 w-auto transition-opacity duration-300"
                         id="logo-dark">
                     <img src="/img/logo-white-brp.png" alt="Logo"
                         class="h-8 md:h-9 w-auto transition-opacity duration-300 absolute top-0 left-0 opacity-0"

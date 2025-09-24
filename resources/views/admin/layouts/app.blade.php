@@ -46,7 +46,7 @@
                 <div class="hidden sm:flex items-center justify-center flex-1">
                     <div class="flex-shrink-0">
                         <div class="flex items-center space-x-3">
-                            <img src="/img/logo-brp.png" alt="BRP Logo" class="h-10 sm:h-12 w-auto">
+                            <img src="/img/LogoBR.png" alt="BRP Logo" class="h-10 sm:h-12 w-auto">
                             <div class="text-center">
                                 <h2 class="text-base sm:text-lg font-bold text-gray-900">Bangun Rumah Project</h2>
                                 <p class="text-[10px] sm:text-xs text-gray-500">Management System</p>

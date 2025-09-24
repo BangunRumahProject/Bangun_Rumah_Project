@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="aV8myPkGCy07_79rrfohgnTBb50l8OF5wIQUEiaC0BQ" />
-    <meta name="description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Sulawesi Tenggara. Kontraktor terpercaya di Kendari, konsultasi gratis, harga transparan, dan hasil berkualitas.')">
-    <meta name="keywords" content="kontraktor Sulawesi Tenggara, jasa bangun rumah Kendari, renovasi rumah Sulawesi Tenggara, desain arsitektur Kendari, RAB PBG IMB Sulawesi Tenggara, kontraktor terpercaya Kendari, bangun rumah modern, renovasi rumah minimalis">
+    <meta name="description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun rumah Kendari & renovasi rumah terpercaya. Kontraktor Kendari dengan harga transparan, konsultasi gratis, desain arsitektur modern, dan hasil berkualitas. Solusi terbaik untuk rumah impian Anda.')">
+    <meta name="keywords" content="kontraktor kendari, jasa bangun rumah Kendari, renovasi rumah kendari, desain arsitektur Kendari, RAB PBG IMB kendari, kontraktor terpercaya Kendari, bangun rumah kendari, renovasi rumah minimalis">
     <meta name="author" content="Bangun Rumah Project">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Indonesian">
@@ -15,8 +15,8 @@
     <meta name="geo.position" content="-3.9985;122.5136">
     <meta name="ICBM" content="-3.9985, 122.5136">
     <title>@yield('title') - Bangun Rumah Project</title>
-    <link rel="icon" type="image/png" href="/img/logo-brp.png">
-    <link rel="apple-touch-icon" href="/img/logo-brp.png">
+    <link rel="icon" type="image/png" href="{{ asset('img/LogoBR.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/LogoBR.png') }}">
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -29,9 +29,9 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bangun Rumah Project">
     <meta property="og:title" content="@yield('title')">
-    <meta property="og:description" content="@yield('meta_description', 'Bangun Rumah Project - Jasa bangun, renovasi, desain arsitektur, RAB & PBG/IMB di Indonesia.')">
+    <meta property="og:description" content="@yield('meta_description', 'Bangun Rumah Project - kontraktor kendari, bangun rumah kendari, renovasi rumah kendari, desain arsitektur kendari, RAB & PBG/IMB kendari.')">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ url('/img/logo-brp.png') }}">
+    <meta property="og:image" content="{{ asset('img/LogoBR.png') }}">
 
     <!-- Cookiebot -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f3db7ff2-7bcd-414b-b5ec-ff4acacb7bc2" type="text/javascript" async></script>
